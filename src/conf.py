@@ -6,12 +6,12 @@ from recommonmark.transform import AutoStructify
 # Customize for the specific site. Any options in the html_theme_options
 # dictionary below may be overriden here
 site_theme_options = {
-    'navbar_title': 'Curriculum Docs',
+    'navbar_title': '',
     'navbar_site_name': "Pages",
     'bootswatch_theme': 'launchcode',
 }
 
-project = 'LaunchCode Curriculum Docs'
+project = 'Liftoff'
 
 # -- Project information -----------------------------------------------------
 
@@ -32,13 +32,14 @@ release = ''
 extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.githubpages',
+    'sphinx.ext.todo',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
 # The suffix(es) of source filenames.
-source_suffix = ['.rst', '.md']
+source_suffix = ['.rst']
 
 # Configure markdown parsing
 source_parsers = {'.md': 'recommonmark.parser.CommonMarkParser'}
@@ -167,12 +168,9 @@ htmlhelp_basename = 'CurriculumModuledoc'
 # -- Options for todo extension ----------------------------------------------
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
-todo_include_todos = False
+todo_include_todos = True
 
 
 def setup(app):
     app.add_stylesheet('css/launchcode.css')
-    app.add_config_value('recommonmark_config', {
-            'enable_eval_rst': True,
-            }, True)
     app.add_transform(AutoStructify)

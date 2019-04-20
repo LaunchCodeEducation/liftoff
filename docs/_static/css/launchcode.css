@@ -1,0 +1,348 @@
+/* a, a:hover, a:focus {
+	color: #df552d;
+} */
+
+h1 {
+    /* TODO: this should be in /repos/bootswatch/launchcode/variables.less after we learn how to alter the theme */
+    color: #3c79b8;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a {
+    color: inherit;
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover {
+    text-decoration: none;
+}
+
+code {
+    /* color: #df552d;*/
+    background-color: #f9f1ef;
+}
+
+.navbar-brand {
+    padding: 15px 15px;
+    line-height: 30px;
+}
+
+.navbar-brand img {
+    margin-top: -10px;
+    margin-right: 10px;
+}
+
+.searchLabel {
+    color:white;
+    font-size: 1.4vw;
+    font-family: "Nexa Black";
+}
+
+/* Trick to prevent section headings from hiding behind the navbar */
+.section {
+    margin-top: -60px;
+    padding-top: 60px;
+}
+
+/* Allow scrolling of dropdown */
+.dropdown-menu.globaltoc {
+  max-height: calc(100vh - 60px);
+  overflow: scroll;
+}
+
+/* Aside Boxes and Admonitions  */
+aside {
+    padding: 2em;
+    padding-top: 1em;
+    border-radius: 2px;
+    margin: 2em;
+    /*border: 1px solid #eee;*/
+    box-shadow: 0 4px 10px 0 #eee;
+}
+
+aside::before {
+    position: relative;
+    left: -2em;
+    /*top: -1em;*/
+    padding: 0.5em;
+    padding-right: 1em;
+    font-family: "Nexa Black";
+    color: rgb(54, 74, 95);
+    border-bottom: 1px solid #eee;
+}
+
+.aside-note::before {
+    content: "Note";
+}
+
+.aside-warning::before {
+    content: "Warning";
+}
+
+.aside-hint::before {
+    content: "Hint";
+}
+
+.aside-pro-tip::before {
+    content: "Pro Tip";
+}
+
+.aside-example::before {
+    content: "Example";
+}
+
+.aside-question::before {
+    content: "Question";
+}
+
+.aside-definition::before {
+    content: "Definition";
+}
+
+.aside-custom::before {
+    content: attr(label);
+}
+
+.content aside p {
+    margin: 0;
+    margin-top: 1em;
+}
+
+.content aside p:first-child {
+    margin-top: 2em;
+}
+
+div.admonition {
+    padding: 2em;
+    padding-top: 1em;
+    border-radius: 2px;
+    margin: 2em;
+    border: 1px solid #354a5f;
+    /*box-shadow: 0 4px 10px 0 #eee;*/
+    background-color: #fff;
+    color: rgb(52, 74, 95);
+}
+
+.admonition-title {
+    position: relative;
+    left: -2em;
+    /*top: -1em;*/
+    padding: 0.5em;
+    padding-right: 1em;
+    padding-left: 2em;
+    font-family: "Nexa Black";
+    color: rgb(54, 74, 95);
+    /*border-bottom: 1px solid #eee;*/
+    display: inline-block;
+}
+
+.admonition .admonition-title::before {
+    margin-right: .25em;
+}
+
+/*
+.attention .admonition-title::before {
+    content: "📢";
+}
+
+.caution .admonition-title::before {
+    content: "⚠️";
+}
+
+.danger .admonition-title::before {
+    content: "🧨";
+}
+
+.error .admonition-title::before {
+    content: "🚨";
+}
+
+.hint .admonition-title::before {
+    content: "🔎";
+}
+
+.important .admonition-title::before {
+    content: "🔑";
+}
+
+.note .admonition-title::before {
+    content: "📘";
+}
+
+.tip .admonition-title::before {
+    content: "💡";
+}
+
+.warning .admonition-title::before {
+    content: "⚠️";
+}
+
+.admonition-generic .admonition-title::before {
+    content: "✱";
+}
+*/
+
+.content .admonition p.last {
+    margin: 0;
+    margin-top: 1em;
+}
+
+.content .admonition p.first {
+    margin-top: 2em;
+}
+
+/* Bonus Missions */
+
+#bonus-missions > h1 a:first-child::before,
+#bonus-mission > h1 a:first-child::before,
+#bonus-missions > h2 a:first-child::before,
+#bonus-mission > h2 a:first-child::before,
+#bonus-missions > h3 a:first-child::before,
+#bonus-mission > h3 a:first-child::before,
+#bonus-missions > h4 a:first-child::before,
+#bonus-mission > h4 a:first-child::before,
+#bonus-missions > h5 a:first-child::before,
+#bonus-mission > h5 a:first-child::before {
+    content: '🚀 ';
+}
+
+pre {
+    display: block;
+    overflow-x: auto;
+    padding: 1.5rem;
+    -webkit-text-size-adjust: none;
+    color: #ffffff;
+    border: 1px solid #777;
+    border-radius: 4px;
+    background-color: #354a5f;
+}
+
+blockquote {
+    padding: 30px 45px;
+    border: none;
+    font-style: italic;
+}
+
+blockquote div {
+    padding-top: 0;
+}
+
+.content img {
+    max-width: 100%;
+    box-shadow: 0 0 5px 0 #ddd;
+    margin: 20px auto;
+    border-radius: 4px;
+    padding: 20px;
+    display: block;
+}
+
+.figure img {
+    margin-bottom: 10px;
+}
+
+.figure .caption {
+    font-style: italic;
+}
+
+div.topic {
+    border: none;
+    background-color: #efefef;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+/* Sidebar Navigation */
+
+.bs-sidenav,
+div.contents {
+    background-color: #fff;
+    font-family: "Nexa",sans-serif;
+    /*
+    border: 1px solid #cacacb;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-radius: 0;
+    */
+}
+
+div.contents ul  {
+    list-style: none;
+    padding-left: 15px;
+}
+
+div.contents a:hover {
+    text-decoration: none;
+}
+
+.bs-sidenav .nav-header {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.bs-sidenav .nav > li > a:hover, 
+.bs-sidenav .nav > li > a:focus {
+    background-color: #fff;
+    border: none;
+    color: #354a5f;
+}
+
+.bs-sidenav > .nav-list {
+    margin: 10px 0;
+}
+
+.bs-sidenav .nav-list li {
+    font-size: 16px;
+    margin: 2px 0;
+}
+
+.admonition .highlight {
+    padding-top: 10px;
+}
+
+.highlight .c { color: #E67F74; font-style: italic; background-color: #354a5f } /* Comment */
+
+.highlight .sa { color: #61C08D } /* Literal.String.Affix */
+.highlight .sb { color: #61C08D } /* Literal.String.Backtick */
+.highlight .sc { color: #61C08D } /* Literal.String.Char */
+.highlight .dl { color: #61C08D } /* Literal.String.Delimiter */
+.highlight .sd { color: #61C08D } /* Literal.String.Doc */
+.highlight .s2 { color: #61C08D } /* Literal.String.Double */
+.highlight .se { color: #61C08D } /* Literal.String.Escape */
+.highlight .sh { color: #61C08D } /* Literal.String.Heredoc */
+.highlight .si { color: #61C08D } /* Literal.String.Interpol */
+.highlight .sx { color: #61C08D } /* Literal.String.Other */
+.highlight .sr { color: #61C08D } /* Literal.String.Regex */
+.highlight .s1 { color: #61C08D } /* Literal.String.Single */
+.highlight .ss { color: #61C08D } /* Literal.String.Symbol */
+
+.highlight .mb { color: #DF552D; font-weight: bold } /* Literal.Number.Bin */
+.highlight .mf { color: #DF552D; font-weight: bold } /* Literal.Number.Float */
+.highlight .mh { color: #DF552D; font-weight: bold } /* Literal.Number.Hex */
+.highlight .mi { color: #DF552D; font-weight: bold } /* Literal.Number.Integer */
+.highlight .mo { color: #DF552D; font-weight: bold } /* Literal.Number.Oct */
+
+.highlight .s { color: #61C08D } /* Literal.String */
+
+.highlight .na { color: #FF98CE; font-weight: bold } /* Name.Attribute */
+.highlight .nf { color: #FF98CE; font-weight: bold } /* Name.Function */
+.highlight .fm { color: #FF98CE; font-weight: bold } /* Name.Function.Magic */
+
+.highlight .kt { color: #f1A640; font-weight: bold } /* Keyword.Type */
+
+/* TODO - Remove these after updating shared ed styles(custom.css?) */
+
+h2, h3, h4, h5, h6 {
+    margin-top: 0.5em !important;
+}
+
+/* END TODO */
+
+.footer p {
+    margin: 0 0 10.5px;
+}
