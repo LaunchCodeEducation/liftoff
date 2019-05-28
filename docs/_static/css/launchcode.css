@@ -1,10 +1,43 @@
-/* a, a:hover, a:focus {
-	color: #df552d;
-} */
+/* TODO - remove these font defs once custom.css has been deployed */
+
+@font-face {
+    font-family: 'Nexa';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/NexaRegular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Nexa';
+    font-style: italic;
+    font-weight: 400;
+    src: url('fonts/Nexa-Regular-Italic.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Nexa';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/Nexa-XBold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Nexa';
+    font-style: italic;
+    font-weight: 700;
+    src: url('fonts/Nexa-XBold-Italic.otf') format('opentype');
+}
+
+/* END TODO */
 
 h1 {
     /* TODO: this should be in /repos/bootswatch/launchcode/variables.less after we learn how to alter the theme */
     color: #3c79b8;
+}
+
+
+h1, h2, h3, h4, h5 {
+    margin: 1em 0 .5em;
 }
 
 h1 a,
@@ -15,6 +48,14 @@ h5 a {
     color: inherit;
 }
 
+h1 strong,
+h2 strong,
+h3 strong,
+h4 strong,
+h5 strong {
+    color: #716b7a;
+}
+
 h1 a:hover,
 h2 a:hover,
 h3 a:hover,
@@ -23,9 +64,26 @@ h5 a:hover {
     text-decoration: none;
 }
 
+.toctree-wrapper ul,
+.toctree-wrapper ol  {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.toctree-wrapper > ul > li > a,
+.toctree-wrapper > ol > li > a {
+	font-size: 20px;
+}
 code {
-    /* color: #df552d;*/
-    background-color: #f9f1ef;
+    background: none;
+    color: #419f6a;
+    padding: 0;
+    font-weight: bold;
+}
+
+.pager code {
+	color: #fff;
+	font-weight: bold;
 }
 
 .navbar-brand {
@@ -35,13 +93,15 @@ code {
 
 .navbar-brand img {
     margin-top: -10px;
-    margin-right: 10px;
+    margin-right: 30px;
 }
 
 .searchLabel {
     color:white;
     font-size: 1.4vw;
-    font-family: "Nexa Black";
+    font-family: "Nexa";
+    font-weight: bold;
+    margin-right: 0.5em;
 }
 
 /* Trick to prevent section headings from hiding behind the navbar */
@@ -57,22 +117,31 @@ code {
 }
 
 /* Aside Boxes and Admonitions  */
+.fas {
+	color: #FF4F33;
+}
+
+.fas.fa-external-link-alt {
+	color: inherit;
+	font-size: 10px;
+    padding-left: 4px;
+}
+
 aside {
     padding: 2em;
     padding-top: 1em;
     border-radius: 2px;
     margin: 2em;
-    /*border: 1px solid #eee;*/
     box-shadow: 0 4px 10px 0 #eee;
 }
 
 aside::before {
     position: relative;
     left: -2em;
-    /*top: -1em;*/
     padding: 0.5em;
     padding-right: 1em;
-    font-family: "Nexa Black";
+    font-family: "Nexa";
+    font-weight: bold;
     color: rgb(54, 74, 95);
     border-bottom: 1px solid #eee;
 }
@@ -124,7 +193,6 @@ div.admonition {
     border-radius: 2px;
     margin: 2em;
     border: 1px solid #354a5f;
-    /*box-shadow: 0 4px 10px 0 #eee;*/
     background-color: #fff;
     color: rgb(52, 74, 95);
 }
@@ -132,61 +200,18 @@ div.admonition {
 .admonition-title {
     position: relative;
     left: -2em;
-    /*top: -1em;*/
     padding: 0.5em;
     padding-right: 1em;
     padding-left: 2em;
-    font-family: "Nexa Black";
+    font-family: "Nexa";
+    font-weight: bold;
     color: rgb(54, 74, 95);
-    /*border-bottom: 1px solid #eee;*/
     display: inline-block;
 }
 
-.admonition .admonition-title::before {
-    margin-right: .25em;
+.admonition-title .fas {
+    margin-right: .5em;
 }
-
-/*
-.attention .admonition-title::before {
-    content: "📢";
-}
-
-.caution .admonition-title::before {
-    content: "⚠️";
-}
-
-.danger .admonition-title::before {
-    content: "🧨";
-}
-
-.error .admonition-title::before {
-    content: "🚨";
-}
-
-.hint .admonition-title::before {
-    content: "🔎";
-}
-
-.important .admonition-title::before {
-    content: "🔑";
-}
-
-.note .admonition-title::before {
-    content: "📘";
-}
-
-.tip .admonition-title::before {
-    content: "💡";
-}
-
-.warning .admonition-title::before {
-    content: "⚠️";
-}
-
-.admonition-generic .admonition-title::before {
-    content: "✱";
-}
-*/
 
 .content .admonition p.last {
     margin: 0;
@@ -195,21 +220,6 @@ div.admonition {
 
 .content .admonition p.first {
     margin-top: 2em;
-}
-
-/* Bonus Missions */
-
-#bonus-missions > h1 a:first-child::before,
-#bonus-mission > h1 a:first-child::before,
-#bonus-missions > h2 a:first-child::before,
-#bonus-mission > h2 a:first-child::before,
-#bonus-missions > h3 a:first-child::before,
-#bonus-mission > h3 a:first-child::before,
-#bonus-missions > h4 a:first-child::before,
-#bonus-mission > h4 a:first-child::before,
-#bonus-missions > h5 a:first-child::before,
-#bonus-mission > h5 a:first-child::before {
-    content: '🚀 ';
 }
 
 pre {
@@ -221,6 +231,46 @@ pre {
     border: 1px solid #777;
     border-radius: 4px;
     background-color: #354a5f;
+    margin: 0;
+}
+
+div.highlight-js,
+div.highlight-none,
+div.highlight-css,
+div.highlight-html {
+    margin: 1em 0;
+}
+
+.highlighttable .linenos {
+    background-color: #354a5f;
+    border-radius: 4px 0 0 4px;
+    width: 42px;
+    text-align: right;
+}
+
+.highlighttable .linenos pre {
+    font-size: 14px;
+    padding: 0;
+    padding-right: 10px;
+    color: #354a5f;
+    color: #fff;
+    border-right: 1px solid #fff;
+    border-radius: 0;
+}
+
+table.highlighttable {
+    width: 100%;
+    margin: 0;
+    table-layout: fixed;
+}
+
+table.highlighttable td {
+	padding: 0;
+}
+
+.highlighttable .code pre {
+    border-radius: 0 4px 4px 0;
+    border-left: none;
 }
 
 blockquote {
@@ -263,12 +313,6 @@ div.topic {
 div.contents {
     background-color: #fff;
     font-family: "Nexa",sans-serif;
-    /*
-    border: 1px solid #cacacb;
-    border-left-width: 0;
-    border-right-width: 0;
-    border-radius: 0;
-    */
 }
 
 div.contents ul  {
@@ -301,8 +345,13 @@ div.contents a:hover {
     margin: 2px 0;
 }
 
-.admonition .highlight {
-    padding-top: 10px;
+.admonition .highlight,
+.admonition .highlighttable {
+    margin: 10px 0;
+}
+
+.admonition .highlighttable .highlight {
+    margin: 0;
 }
 
 .highlight .c { color: #E67F74; font-style: italic; background-color: #354a5f } /* Comment */
@@ -345,4 +394,22 @@ h2, h3, h4, h5, h6 {
 
 .footer p {
     margin: 0 0 10.5px;
+}
+
+/* Tables */
+
+table caption {
+    color: #716b7a;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* END Tables */
+
+p[id]:before { 
+    display: block; 
+    content: " "; 
+    margin-top: -60px;
+    height: 60px;
+    visibility: hidden; 
 }
