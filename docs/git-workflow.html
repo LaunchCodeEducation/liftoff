@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Git Workflow &#8212; Liftoff  documentation</title>
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/launchcode.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><span><img src="_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+          Liftoff</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Pages <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ol>
+<li class="toctree-l1"><a class="reference internal" href="todos.html">TODOs</a></li>
+</ol>
+</ul>
+</li>
+              
+            
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li><a class="reference internal" href="#">Git Workflow</a><ul>
+<li><a class="reference internal" href="#what-is-a-git-workflow">What is a Git Workflow?</a></li>
+<li><a class="reference internal" href="#feature-branch-workflow">Feature Branch Workflow</a><ul>
+<li><a class="reference internal" href="#master-branch">Master Branch</a></li>
+<li><a class="reference internal" href="#what-is-a-feature">What is a Feature?</a></li>
+<li><a class="reference internal" href="#feature-branch">Feature Branch</a></li>
+<li><a class="reference internal" href="#making-commits">Making Commits</a></li>
+<li><a class="reference internal" href="#push-your-work-to-origin">Push Your Work to Origin</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#pull-requests">Pull Requests</a><ul>
+<li><a class="reference internal" href="#how-to-create-a-pull-request">How to Create a Pull Request</a></li>
+<li><a class="reference internal" href="#requesting-a-review">Requesting a Review</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#reviewing-a-pull-request">Reviewing a Pull Request</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="git-workflow">
+<h1>Git Workflow<a class="headerlink" href="#git-workflow" title="Permalink to this headline">¶</a></h1>
+<p>This guide is for mentors and students in Liftoff. This is a suggestion for how groups in
+Liftoff should use Git on their group projects. Groups are also allowed to use their group mentor’s
+Git workflow if so desired.</p>
+<div class="section" id="what-is-a-git-workflow">
+<h2>What is a Git Workflow?<a class="headerlink" href="#what-is-a-git-workflow" title="Permalink to this headline">¶</a></h2>
+<p>A git workflow is a strategy for using git. Git is a powerful tool that can be used many ways.
+Having a common strategy for using git makes it’s easier and more efficient for teams to collaborate.
+The are many git workflows that can be adopted by a team. For this course we suggest the
+Feature Branch workflow. Details about other git workflows can be found in this
+<a class="reference external" href="https://www.atlassian.com/git/tutorials/comparing-workflows" target="_blank">comparison git workflows<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+</div>
+<div class="section" id="feature-branch-workflow">
+<h2>Feature Branch Workflow<a class="headerlink" href="#feature-branch-workflow" title="Permalink to this headline">¶</a></h2>
+<p>The feature branch workflow is focused on keeping work on different features in separate feature branches.
+Those features branches are then merged into a master branch.</p>
+<div class="section" id="master-branch">
+<h3>Master Branch<a class="headerlink" href="#master-branch" title="Permalink to this headline">¶</a></h3>
+<p>Before discussing how to create feature branches, let’s discuss the master branch. The master branch
+will be the branch that your feature branches will be created from.</p>
+<p>Master branch facts</p>
+<ul class="simple">
+<li>The master branch is the main branch for your repository and project.</li>
+<li>The master branch should contain code that is working and ready to be released.<ul>
+<li>Don’t merge broken code into master!</li>
+</ul>
+</li>
+<li>Code should be tested and reviewed before being merged into master.</li>
+<li>Avoid committing directly to the master branch.</li>
+</ul>
+<div class="admonition">
+<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p class="last">Avoid committing directly to master. Instead create a feature branch and merge the branch
+into master using a pull request. Pull requests will be discussed soon.</p>
+</div>
+</div>
+<div class="section" id="what-is-a-feature">
+<h3>What is a Feature?<a class="headerlink" href="#what-is-a-feature" title="Permalink to this headline">¶</a></h3>
+<p>A <strong>feature</strong> is a requirement or related set of
+requirements that add value to a project. Before you can start coding, your team will need to
+create a list of features. Sometimes these features are called stories or even
+cards if you are using a tool such as Trello. Each feature should be as small as possible, while
+still adding value to the project.</p>
+<p>Example Features</p>
+<ul class="simple">
+<li>Adding a login page</li>
+<li>Fix change password bug</li>
+<li>Make the user list sortable</li>
+</ul>
+</div>
+<div class="section" id="feature-branch">
+<h3>Feature Branch<a class="headerlink" href="#feature-branch" title="Permalink to this headline">¶</a></h3>
+<p>When you go to work on a feature, you will need to create a branch specifically for that feature.
+Most of the time you will branch off of the master branch.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p>In this example we want to create a feature  branch for the “Fix change password bug” feature.</p>
+<ol class="arabic simple">
+<li>Make sure you are on the correct source branch before creating the new feature branch.</li>
+<li>Pull to make sure that the source branch is up to date.</li>
+</ol>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>git checkout master
+git pull
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li>Create a new branch with a meaningful name.<ul>
+<li><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">-b</span> <span class="pre">branch-name</span></code> creates and then switches to the new branch</li>
+</ul>
+</li>
+</ol>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>git checkout -b fix-change-password-bug
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li>Check your git status to make sure you are on the right branch</li>
+</ol>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>git status
+</pre></div>
+</div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>On branch fix-change-password-bug
+nothing to commit, working tree clean
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="making-commits">
+<h3>Making Commits<a class="headerlink" href="#making-commits" title="Permalink to this headline">¶</a></h3>
+<p>You will write code and make commits to implement the feature. Make a commit when you have made
+progress towards the feature. Don’t commit every time you add a line of code. Don’t wait too long
+to commit or you will forget what you have done.</p>
+</div>
+<div class="section" id="push-your-work-to-origin">
+<h3>Push Your Work to Origin<a class="headerlink" href="#push-your-work-to-origin" title="Permalink to this headline">¶</a></h3>
+<p>After making commits to your feature branch, you will need to push them to origin. This will
+make sure they are backed up in case something bad happens to your computer and it will make
+the branch visible on origin.</p>
+</div>
+</div>
+<div class="section" id="pull-requests">
+<h2>Pull Requests<a class="headerlink" href="#pull-requests" title="Permalink to this headline">¶</a></h2>
+<p>A pull request (PR) represents the process of merging (or pulling) a feature branch into master.
+A pull request is created and managed on your repository page on github.com. Pull requests are
+also referred to as PRs.</p>
+<div class="admonition">
+<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p class="last">Pull requests can be created to merge a branch into any other branch. For the majority
+of this project your pull requests will merge a feature branch into the master branch.</p>
+</div>
+<div class="section" id="how-to-create-a-pull-request">
+<h3>How to Create a Pull Request<a class="headerlink" href="#how-to-create-a-pull-request" title="Permalink to this headline">¶</a></h3>
+<p>You can create a PR anytime after you have pushed your feature branch to origin. You can wait
+until you are done coding and you have verified that the feature works.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p>This example creates a pull request for the <code class="docutils literal notranslate"><span class="pre">add-login-page</span></code> feature branch.</p>
+<ol class="arabic simple">
+<li>Your feature branch must exist on origin.</li>
+<li>Go to the list of branches for your repository.</li>
+<li>Click on the New pull request button for the feature branch.</li>
+</ol>
+<div class="figure" id="id1">
+<img alt="List of branches on Github showing New pull request button." src="_images/create-pr-from-branch.png" />
+<p class="caption"><span class="caption-text">New pull request button showing for feature branch.</span></p>
+</div>
+<ol class="last arabic simple" start="4">
+<li>Do more stuff!!!!!!</li>
+</ol>
+</div>
+</div>
+<div class="section" id="requesting-a-review">
+<h3>Requesting a Review<a class="headerlink" href="#requesting-a-review" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>assign a reviewer</li>
+</ul>
+</div>
+</div>
+<div class="section" id="reviewing-a-pull-request">
+<h2>Reviewing a Pull Request<a class="headerlink" href="#reviewing-a-pull-request" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>benefits of a code review</li>
+<li>how to review code and leave comments</li>
+<li>when to approve/merge the PR (who merges)</li>
+</ul>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+<div id="sourcelink">
+  <a href="_sources/git-workflow.rst.txt"
+     rel="nofollow">Page Source</a>
+</div>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
