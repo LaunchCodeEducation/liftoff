@@ -64,8 +64,8 @@ Most of the time you will branch off of the master branch.
 
    In this example we want to create a feature  branch for the "Fix change password bug" feature.
 
-   1. Make sure you are on the correct source branch before creating the new feature branch.
-   2. Pull to make sure that the source branch is up to date.
+   1. Make sure you are on the correct base branch before creating the new feature branch.
+   2. Pull to make sure that the base branch is up to date.
 
    ::
 
@@ -109,8 +109,9 @@ the branch visible on origin.
 Pull Requests
 -------------
 A pull request (PR) represents the process of merging (or pulling) a feature branch into master.
-A pull request is created and managed on your repository page on github.com. Pull requests are
-also referred to as PRs.
+A pull request is created and managed on your repository page on github.com. Pull requests
+provide a user interface for reviewing files that were changed, approving the changes, and finally
+merging those changes into the master branch.
 
 .. note::
 
@@ -136,12 +137,53 @@ until you are done coding and you have verified that the feature works.
 
       New pull request button showing for feature branch.
 
-   4. Do more stuff!!!!!!
+   4. Change the pull request name to a meaningful name, usually the feature name works best.
 
+      * You can also add notes in the description.
+      * The notes section is a good place to tell people what to look out for when testing.
+      * You can also give reviewers hints about new libraries or code you added.
+
+   5. Notice that ``master`` is shown as the base branch and that the ``add-login-page`` branch will be merged into it.
+
+   .. figure:: figures/create-pr-form.png
+      :alt: Create pull request form with branches highlighted.
+
+      Create pull request form with branches highlighted.
+
+   6. Click the create pull request button.
+
+      * URL is changed to a unique address for the new PR. https://github.com/LaunchCodeEducation/example-pull-request/pull/1
+      * This URL change shared with teammates.
+      * You can also see open PRs by going to the list of pull requests for your repository on github.
+
+   After these steps you will have an open pull request. An open pull request can be merged or closed. Closing
+   will cancel the pull request. Merging will merge the feature branch into master. Before merging the code
+   needs to be reviewed.
 
 Requesting a Review
 ^^^^^^^^^^^^^^^^^^^
-* assign a reviewer
+After creating a pull request, you need to assign a reviewer. Pull requests provide an organized way to
+see what files were edited, added, and removed. You can even compare the changes to what was previously
+there. This allows a reviewer to see what was changed and if it meets team and language programming standards.
+
+.. admonition:: Example
+
+   Assign code reviewer for Add login page pull request.
+
+   1. Go to the pull request on github
+   2. Click the gear in the Assignees section
+
+      * There is also a Reviewer section as well, the main difference is that the Assignee has been officially assigned to review this PR.
+
+   3. Find and click on team member that you want to assign to review the PR.
+
+      * You can assign multiple people, but you only need one.
+      * The assignee will be notified by github, but it's also a good idea to remind them directly that they need to review the PR.
+
+   .. figure:: figures/assign-pr.png
+      :alt: Pull request form with assignee selected.
+
+      Pull request form with assignee selected.
 
 
 Reviewing a Pull Request

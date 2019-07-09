@@ -167,8 +167,8 @@ Most of the time you will branch off of the master branch.</p>
 <p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <p>In this example we want to create a feature  branch for the “Fix change password bug” feature.</p>
 <ol class="arabic simple">
-<li>Make sure you are on the correct source branch before creating the new feature branch.</li>
-<li>Pull to make sure that the source branch is up to date.</li>
+<li>Make sure you are on the correct base branch before creating the new feature branch.</li>
+<li>Pull to make sure that the base branch is up to date.</li>
 </ol>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>git checkout master
 git pull
@@ -212,8 +212,9 @@ the branch visible on origin.</p>
 <div class="section" id="pull-requests">
 <h2>Pull Requests<a class="headerlink" href="#pull-requests" title="Permalink to this headline">¶</a></h2>
 <p>A pull request (PR) represents the process of merging (or pulling) a feature branch into master.
-A pull request is created and managed on your repository page on github.com. Pull requests are
-also referred to as PRs.</p>
+A pull request is created and managed on your repository page on github.com. Pull requests
+provide a user interface for reviewing files that were changed, approving the changes, and finally
+merging those changes into the master branch.</p>
 <div class="admonition">
 <p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
 <p class="last">Pull requests can be created to merge a branch into any other branch. For the majority
@@ -235,16 +236,57 @@ until you are done coding and you have verified that the feature works.</p>
 <img alt="List of branches on Github showing New pull request button." src="_images/create-pr-from-branch.png" />
 <p class="caption"><span class="caption-text">New pull request button showing for feature branch.</span></p>
 </div>
-<ol class="last arabic simple" start="4">
-<li>Do more stuff!!!!!!</li>
+<ol class="arabic simple" start="4">
+<li>Change the pull request name to a meaningful name, usually the feature name works best.<ul>
+<li>You can also add notes in the description.</li>
+<li>The notes section is a good place to tell people what to look out for when testing.</li>
+<li>You can also give reviewers hints about new libraries or code you added.</li>
+</ul>
+</li>
+<li>Notice that <code class="docutils literal notranslate"><span class="pre">master</span></code> is shown as the base branch and that the <code class="docutils literal notranslate"><span class="pre">add-login-page</span></code> branch will be merged into it.</li>
 </ol>
+<div class="figure" id="id2">
+<img alt="Create pull request form with branches highlighted." src="_images/create-pr-form.png" />
+<p class="caption"><span class="caption-text">Create pull request form with branches highlighted.</span></p>
+</div>
+<ol class="arabic simple" start="6">
+<li>Click the create pull request button.<ul>
+<li>URL is changed to a unique address for the new PR. <a class="reference external" href="https://github.com/LaunchCodeEducation/example-pull-request/pull/1" target="_blank">https://github.com/LaunchCodeEducation/example-pull-request/pull/1<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li>This URL change shared with teammates.</li>
+<li>You can also see open PRs by going to the list of pull requests for your repository on github.</li>
+</ul>
+</li>
+</ol>
+<p class="last">After these steps you will have an open pull request. An open pull request can be merged or closed. Closing
+will cancel the pull request. Merging will merge the feature branch into master. Before merging the code
+needs to be reviewed.</p>
 </div>
 </div>
 <div class="section" id="requesting-a-review">
 <h3>Requesting a Review<a class="headerlink" href="#requesting-a-review" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li>assign a reviewer</li>
+<p>After creating a pull request, you need to assign a reviewer. Pull requests provide an organized way to
+see what files were edited, added, and removed. You can even compare the changes to what was previously
+there. This allows a reviewer to see what was changed and if it meets team and language programming standards.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p>Assign code reviewer for Add login page pull request.</p>
+<ol class="arabic simple">
+<li>Go to the pull request on github</li>
+<li>Click the gear in the Assignees section<ul>
+<li>There is also a Reviewer section as well, the main difference is that the Assignee has been officially assigned to review this PR.</li>
 </ul>
+</li>
+<li>Find and click on team member that you want to assign to review the PR.<ul>
+<li>You can assign multiple people, but you only need one.</li>
+<li>The assignee will be notified by github, but it’s also a good idea to remind them directly that they need to review the PR.</li>
+</ul>
+</li>
+</ol>
+<div class="last figure" id="id3">
+<img alt="Pull request form with assignee selecetd." src="_images/assign-pr.png" />
+<p class="caption"><span class="caption-text">Pull request form with assignee selecetd.</span></p>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="reviewing-a-pull-request">
