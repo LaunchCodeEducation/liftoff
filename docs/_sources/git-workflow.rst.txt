@@ -342,3 +342,9 @@ anyone on the project can click merge if needed.
    4. Merge master into the feature branch ``git merge master``
    5. Resolve and conflicts
    6. Commit and push to origin
+
+
+Additional Resources
+--------------------
+* `Atlassian article comparing git workflows <https://www.atlassian.com/git/tutorials/comparing-workflows>`_
+* `Github pull request reference <https://help.github.com/en/articles/about-pull-requests>`_
