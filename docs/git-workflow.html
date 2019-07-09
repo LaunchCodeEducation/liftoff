@@ -99,7 +99,11 @@
 <li><a class="reference internal" href="#requesting-a-review">Requesting a Review</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#reviewing-a-pull-request">Reviewing a Pull Request</a></li>
+<li><a class="reference internal" href="#reviewing-a-pull-request">Reviewing a Pull Request</a><ul>
+<li><a class="reference internal" href="#how-to-review-code">How to Review Code</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#merging-into-master">Merging Into Master</a></li>
 </ul>
 </li>
 </ul>
@@ -241,6 +245,7 @@ until you are done coding and you have verified that the feature works.</p>
 <li>You can also add notes in the description.</li>
 <li>The notes section is a good place to tell people what to look out for when testing.</li>
 <li>You can also give reviewers hints about new libraries or code you added.</li>
+<li>Finally adding a link to the Trello card, or other documentation, can also help the reviewer know what the feature is supposed to do.</li>
 </ul>
 </li>
 <li>Notice that <code class="docutils literal notranslate"><span class="pre">master</span></code> is shown as the base branch and that the <code class="docutils literal notranslate"><span class="pre">add-login-page</span></code> branch will be merged into it.</li>
@@ -283,19 +288,174 @@ there. This allows a reviewer to see what was changed and if it meets team and l
 </li>
 </ol>
 <div class="last figure" id="id3">
-<img alt="Pull request form with assignee selecetd." src="_images/assign-pr.png" />
-<p class="caption"><span class="caption-text">Pull request form with assignee selecetd.</span></p>
+<img alt="Pull request with assignee selected." src="_images/assign-pr.png" />
+<p class="caption"><span class="caption-text">Pull request with assignee selected.</span></p>
 </div>
 </div>
 </div>
 </div>
 <div class="section" id="reviewing-a-pull-request">
 <h2>Reviewing a Pull Request<a class="headerlink" href="#reviewing-a-pull-request" title="Permalink to this headline">¶</a></h2>
+<p>A pull request should not be merged unless it has been reviewed and approved by a teammate.</p>
+<p>Benefits of code reviews:</p>
 <ul class="simple">
-<li>benefits of a code review</li>
-<li>how to review code and leave comments</li>
-<li>when to approve/merge the PR (who merges)</li>
+<li>Knowledge sharing between teammates<ul>
+<li>Technical knowledge and business knowledge is shared by having someone other than the original developer look at the code.</li>
 </ul>
+</li>
+<li>Best practices enforced<ul>
+<li>Team coding best practices are shared and reinforced.</li>
+</ul>
+</li>
+<li>Code confidence<ul>
+<li>The team has more confidence in the code, because more than one person has looked at it.</li>
+</ul>
+</li>
+</ul>
+<div class="section" id="how-to-review-code">
+<h3>How to Review Code<a class="headerlink" href="#how-to-review-code" title="Permalink to this headline">¶</a></h3>
+<p>When reviewing code, don’t be picky just to be picky. Only provide feedback you have a question,
+or you feel strongly that the there is an issue with the code. Code reviews can be a place
+to have a conversation about a requirement or the code itself. The comments will stay on the PR
+and could serve as documentation in the future.</p>
+<p>Focus on these topics when reviewing code:</p>
+<ul class="simple">
+<li>Language conventions<ul>
+<li>Variable, function, and class names meet the language standards.</li>
+</ul>
+</li>
+<li>Security concerns<ul>
+<li>Don’t commit passwords to github!</li>
+<li>Don’t use risky third party code that hasn’t been verified.</li>
+<li>Look out for SQL injection attacks.</li>
+</ul>
+</li>
+<li>Non ideal code<ul>
+<li>Repeated code that could be turned into a function</li>
+<li>Unnecessary complexity, maybe a class was created that isn’t needed</li>
+</ul>
+</li>
+<li>Does the code work?<ul>
+<li>Test out the feature to see if it works</li>
+<li>Are there unit tests? If so are they passing?</li>
+</ul>
+</li>
+</ul>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p>In this example we will review and eventually approve the “Add login page” PR.</p>
+<ol class="arabic simple">
+<li>Go to the pull request on github</li>
+<li>Go to the “Files changed” tab<ul>
+<li>This tab lists all files that were edited, added, or removed.</li>
+<li>Each file is listed and the changes have been color coded.</li>
+<li>Red lines have been removed.</li>
+<li>Green lines have been added or edited.</li>
+</ul>
+</li>
+<li>To add a comment, hover over a line of code and click the blue plus icon.<ul>
+<li>This will open a comment editor</li>
+<li>Type in the note about the line of code</li>
+</ul>
+</li>
+<li>Then click the green button to add the comment<ul>
+<li>This button will say “Start a review” or “Add a review comment”</li>
+</ul>
+</li>
+</ol>
+<div class="figure" id="id4">
+<img alt="Comment added to pull request." src="_images/add-comment.png" />
+<p class="caption"><span class="caption-text">Comment added to pull request.</span></p>
+</div>
+<ol class="arabic simple" start="5">
+<li>Next the programmer that created the PR needs to address the issue.</li>
+<li>The programmer updates the code and pushes a new commit to the feature branch.<ul>
+<li>As soon as the push happens, the new commit appears on the pull request page.</li>
+</ul>
+</li>
+<li>The “Conversation Tab” is where you can reply to previous comments.</li>
+<li>Notice the reply comment, that says the issue has been fixed.</li>
+</ol>
+<div class="figure" id="id5">
+<img alt="Conversation tab showing comment and reply." src="_images/reply-after-fixing-code.png" />
+<p class="caption"><span class="caption-text">Conversation tab showing comment and reply.</span></p>
+</div>
+<ol class="arabic simple" start="9">
+<li>Finally the pull request can be approved.<ul>
+<li>Since that is the only issue the reviewer found, the pull request can be approved.</li>
+<li>This will mark the pull request as approved.</li>
+<li>You can also mark a pull request as “Request Changes”<ul>
+<li>This is done when the reviewer wants to indicate that some issues need to be addressed before they are willing to give their approval.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Approving is done by clicking on “Review Changes” on the “Files Changed” tab.<ul>
+<li>You can provide a message when approving or requesting changes.</li>
+<li>You can also simply add comments without changing the status of the pull request.</li>
+</ul>
+</li>
+</ol>
+<div class="last figure" id="id6">
+<img alt="Review changes form." src="_images/approve-changes.png" />
+<p class="caption"><span class="caption-text">Review changes form.</span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="merging-into-master">
+<h2>Merging Into Master<a class="headerlink" href="#merging-into-master" title="Permalink to this headline">¶</a></h2>
+<p>After a pull request has been approved by a reviewer, it can be merged. Normally the
+developer or person that opened the PR should click the big green merge button. However
+anyone on the project can click merge if needed.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p>Let’s merge <code class="docutils literal notranslate"><span class="pre">add-login-page</span></code> into master by clicking the merge button.</p>
+<ol class="arabic simple">
+<li>Click the green merge button show on the conversation tab.</li>
+</ol>
+<div class="figure" id="id7">
+<img alt="Merge button." src="_images/merge-button.png" />
+<p class="caption"><span class="caption-text">Merge button.</span></p>
+</div>
+<ol class="arabic simple" start="2">
+<li>Click the green confirm button</li>
+</ol>
+<div class="figure" id="id8">
+<img alt="Confirm button." src="_images/confirm-merge-button.png" />
+<p class="caption"><span class="caption-text">Confirm button.</span></p>
+</div>
+<ol class="arabic simple" start="3">
+<li>Click the grey delete branch button<ul>
+<li>The branch is no longer needed because all of it’s commits are now merged into master.</li>
+</ul>
+</li>
+</ol>
+<div class="figure" id="id9">
+<img alt="Delete branch button." src="_images/delete-branch.png" />
+<p class="caption"><span class="caption-text">Delete branch button.</span></p>
+</div>
+<ol class="last arabic simple" start="4">
+<li>Tell your teammates that master has been updated and that they should update their local master branches.<ul>
+<li>Now celebrate! You merged code into master!</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="admonition">
+<p class="first admonition-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Warning</p>
+<p>Sometimes the merge button is NOT clickable because there are conflicts that can not be
+resolved automatically. This happens when you need to update the feature branch with commits
+that are in master. These are usually very basic conflicts to fix, so don’t be scared.</p>
+<ol class="last arabic simple">
+<li>Checkout the master branch <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">master</span></code></li>
+<li>Git pull to update master <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code></li>
+<li>Checkout the feature branch <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">add-login-page</span></code></li>
+<li>Merge master into the feature branch <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">merge</span> <span class="pre">master</span></code></li>
+<li>Resolve and conflicts</li>
+<li>Commit and push to origin</li>
+</ol>
+</div>
 </div>
 </div>
 

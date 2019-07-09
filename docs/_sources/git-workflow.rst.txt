@@ -142,6 +142,7 @@ until you are done coding and you have verified that the feature works.
       * You can also add notes in the description.
       * The notes section is a good place to tell people what to look out for when testing.
       * You can also give reviewers hints about new libraries or code you added.
+      * Finally adding a link to the Trello card, or other documentation, can also help the reviewer know what the feature is supposed to do.
 
    5. Notice that ``master`` is shown as the base branch and that the ``add-login-page`` branch will be merged into it.
 
@@ -181,13 +182,163 @@ there. This allows a reviewer to see what was changed and if it meets team and l
       * The assignee will be notified by github, but it's also a good idea to remind them directly that they need to review the PR.
 
    .. figure:: figures/assign-pr.png
-      :alt: Pull request form with assignee selecetd.
-     
-      Pull request form with assignee selecetd.
+      :alt: Pull request with assignee selected.
+
+      Pull request with assignee selected.
 
 
 Reviewing a Pull Request
 ------------------------
-* benefits of a code review
-* how to review code and leave comments
-* when to approve/merge the PR (who merges)
+A pull request should not be merged unless it has been reviewed and approved by a teammate.
+
+Benefits of code reviews:
+
+* Knowledge sharing between teammates
+
+  * Technical knowledge and business knowledge is shared by having someone other than the original developer look at the code.
+
+* Best practices enforced
+
+  * Team coding best practices are shared and reinforced.
+
+* Code confidence
+
+  * The team has more confidence in the code, because more than one person has looked at it.
+
+How to Review Code
+^^^^^^^^^^^^^^^^^^
+When reviewing code, don't be picky just to be picky. Only provide feedback you have a question,
+or you feel strongly that the there is an issue with the code. Code reviews can be a place
+to have a conversation about a requirement or the code itself. The comments will stay on the PR
+and could serve as documentation in the future.
+
+Focus on these topics when reviewing code:
+
+* Language conventions
+
+  * Variable, function, and class names meet the language standards.
+
+* Security concerns
+
+  * Don't commit passwords to github!
+  * Don't use risky third party code that hasn't been verified.
+  * Look out for SQL injection attacks.
+
+* Non ideal code
+ 
+  * Repeated code that could be turned into a function
+  * Unnecessary complexity, maybe a class was created that isn't needed
+
+* Does the code work?
+
+  * Test out the feature to see if it works
+  * Are there unit tests? If so are they passing?
+
+.. admonition:: Example
+
+  In this example we will review and eventually approve the "Add login page" PR.
+
+  1. Go to the pull request on github
+  2. Go to the "Files changed" tab
+
+     * This tab lists all files that were edited, added, or removed.
+     * Each file is listed and the changes have been color coded.
+     * Red lines have been removed.
+     * Green lines have been added or edited.
+
+  3. To add a comment, hover over a line of code and click the blue plus icon.
+  
+     * This will open a comment editor
+     * Type in the note about the line of code
+   
+  4. Then click the green button to add the comment
+   
+     * This button will say "Start a review" or "Add a review comment"
+
+  .. figure:: figures/add-comment.png
+    :alt: Comment added to pull request.
+
+    Comment added to pull request.
+
+  5. Next the programmer that created the PR needs to address the issue.
+  6. The programmer updates the code and pushes a new commit to the feature branch.
+
+     * As soon as the push happens, the new commit appears on the pull request page.
+
+  7. The "Conversation Tab" is where you can reply to previous comments.
+  8. Notice the reply comment, that says the issue has been fixed.
+
+  .. figure:: figures/reply-after-fixing-code.png
+    :alt: Conversation tab showing comment and reply.
+
+    Conversation tab showing comment and reply.
+
+  9. Finally the pull request can be approved.
+
+     * Since that is the only issue the reviewer found, the pull request can be approved.
+     * This will mark the pull request as approved.
+     * You can also mark a pull request as "Request Changes"
+    
+       * This is done when the reviewer wants to indicate that some issues need to be addressed before they are willing to give their approval.
+
+  10. Approving is done by clicking on "Review Changes" on the "Files Changed" tab.
+
+      * You can provide a message when approving or requesting changes.
+      * You can also simply add comments without changing the status of the pull request.
+
+  .. figure:: figures/approve-changes.png
+      :alt: Review changes form.
+
+      Review changes form.
+
+Merging Into Master
+-------------------
+After a pull request has been approved by a reviewer, it can be merged. Normally the
+developer or person that opened the PR should click the big green merge button. However
+anyone on the project can click merge if needed.
+
+.. admonition:: Example
+
+   Let's merge ``add-login-page`` into master by clicking the merge button.
+
+   1. Click the green merge button show on the conversation tab.
+
+   .. figure:: figures/merge-button.png
+      :alt: Merge button.
+
+      Merge button.
+
+   2. Click the green confirm button
+
+   .. figure:: figures/confirm-merge-button.png
+      :alt: Confirm button.
+
+      Confirm button.
+
+   3. Click the grey delete branch button
+
+      * The branch is no longer needed because all of it's commits are now merged into master.
+
+   .. figure:: figures/delete-branch.png
+      :alt: Delete branch button.
+
+      Delete branch button.
+
+   4. Tell your teammates that master has been updated and that they should update their local master branches.
+
+      * Now celebrate! You merged code into master!
+
+.. warning::
+
+   Sometimes the merge button is NOT clickable because there are conflicts that can not be
+   resolved automatically. This happens when you need to update the feature branch with commits
+   that are in master. These are usually very basic conflicts to fix, so don't be scared.
+
+   How to update feature branch with master:
+
+   1. Checkout the master branch ``git checkout master``
+   2. Git pull to update master ``git pull``
+   3. Checkout the feature branch ``git checkout add-login-page``
+   4. Merge master into the feature branch ``git merge master``
+   5. Resolve and conflicts
+   6. Commit and push to origin
