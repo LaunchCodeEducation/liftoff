@@ -55,7 +55,24 @@
   <ul class="dropdown-menu globaltoc"
       role="menu"
       aria-labelledby="dLabelGlobalToc"><ol class="current">
-<li class="toctree-l1"><a class="reference internal" href="git-refresher.html">Git Refresher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="git-setup.html">Git Setup</a><ol>
+<li class="toctree-l2"><a class="reference internal" href="git-setup.html#launchcode-creates-repository">LaunchCode Creates Repository</a></li>
+<li class="toctree-l2"><a class="reference internal" href="git-setup.html#group-mentor-as-repository-admin">Group Mentor as Repository Admin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="git-setup.html#group-mentor-adds-students-to-repository">Group Mentor Adds Students to Repository</a></li>
+<li class="toctree-l2"><a class="reference internal" href="git-setup.html#students-clone-repository">Students Clone Repository</a></li>
+</ol>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="git-refresher.html">Git Refresher</a><ol>
+<li class="toctree-l2"><a class="reference internal" href="git-refresher.html#read-the-git-messages">Read the Git Messages!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="git-refresher.html#cloning-the-group-repository">Cloning the Group Repository</a></li>
+<li class="toctree-l2"><a class="reference internal" href="git-refresher.html#keeping-local-repository-up-to-date">Keeping Local Repository Up to Date</a></li>
+<li class="toctree-l2"><a class="reference internal" href="git-refresher.html#creating-new-branches">Creating New Branches</a></li>
+<li class="toctree-l2"><a class="reference internal" href="git-refresher.html#committing-your-work">Committing Your Work</a></li>
+<li class="toctree-l2"><a class="reference internal" href="git-refresher.html#stashing-instead-of-committing">Stashing Instead of Committing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="git-refresher.html#git-commands">Git Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="git-refresher.html#additional-resources">Additional Resources</a></li>
+</ol>
+</li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Git Workflow</a><ol>
 <li class="toctree-l2"><a class="reference internal" href="#what-is-a-git-workflow">What is a Git Workflow?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#feature-branch-workflow">Feature Branch Workflow</a></li>
@@ -128,7 +145,7 @@
     <div class="col-md-9 content">
       
   <div class="section" id="git-workflow">
-<h1>Git Workflow<a class="headerlink" href="#git-workflow" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>Git Workflow<a class="headerlink" href="#git-workflow" title="Permalink to this headline">¶</a></h1>
 <p>This guide is for mentors and students in Liftoff. This is a suggestion for how groups in
 Liftoff should use Git on their group projects. Groups are also allowed to use their group mentor’s
 Git workflow if so desired.</p>
@@ -251,7 +268,7 @@ until you are done coding and you have verified that the feature works.</p>
 <li>Go to the list of branches for your repository.</li>
 <li>Click on the New pull request button for the feature branch.</li>
 </ol>
-<div class="figure" id="id1">
+<div class="figure" id="id2">
 <img alt="List of branches on Github showing New pull request button." src="_images/create-pr-from-branch.png" />
 <p class="caption"><span class="caption-text">New pull request button showing for feature branch.</span></p>
 </div>
@@ -265,7 +282,7 @@ until you are done coding and you have verified that the feature works.</p>
 </li>
 <li>Notice that <code class="docutils literal notranslate"><span class="pre">master</span></code> is shown as the base branch and that the <code class="docutils literal notranslate"><span class="pre">add-login-page</span></code> branch will be merged into it.</li>
 </ol>
-<div class="figure" id="id2">
+<div class="figure" id="id3">
 <img alt="Create pull request form with branches highlighted." src="_images/create-pr-form.png" />
 <p class="caption"><span class="caption-text">Create pull request form with branches highlighted.</span></p>
 </div>
@@ -302,7 +319,7 @@ there. This allows a reviewer to see what was changed and if it meets team and l
 </ul>
 </li>
 </ol>
-<div class="last figure" id="id3">
+<div class="last figure" id="id4">
 <img alt="Pull request with assignee selected." src="_images/assign-pr.png" />
 <p class="caption"><span class="caption-text">Pull request with assignee selected.</span></p>
 </div>
@@ -378,7 +395,7 @@ and could serve as documentation in the future.</p>
 </ul>
 </li>
 </ol>
-<div class="figure" id="id4">
+<div class="figure" id="id5">
 <img alt="Comment added to pull request." src="_images/add-comment.png" />
 <p class="caption"><span class="caption-text">Comment added to pull request.</span></p>
 </div>
@@ -391,7 +408,7 @@ and could serve as documentation in the future.</p>
 <li>The “Conversation Tab” is where you can reply to previous comments.</li>
 <li>Notice the reply comment, that says the issue has been fixed.</li>
 </ol>
-<div class="figure" id="id5">
+<div class="figure" id="id6">
 <img alt="Conversation tab showing comment and reply." src="_images/reply-after-fixing-code.png" />
 <p class="caption"><span class="caption-text">Conversation tab showing comment and reply.</span></p>
 </div>
@@ -411,7 +428,7 @@ and could serve as documentation in the future.</p>
 </ul>
 </li>
 </ol>
-<div class="last figure" id="id6">
+<div class="last figure" id="id7">
 <img alt="Review changes form." src="_images/approve-changes.png" />
 <p class="caption"><span class="caption-text">Review changes form.</span></p>
 </div>
@@ -429,14 +446,14 @@ anyone on the project can click merge if needed.</p>
 <ol class="arabic simple">
 <li>Click the green merge button show on the conversation tab.</li>
 </ol>
-<div class="figure" id="id7">
+<div class="figure" id="id8">
 <img alt="Merge button." src="_images/merge-button.png" />
 <p class="caption"><span class="caption-text">Merge button.</span></p>
 </div>
 <ol class="arabic simple" start="2">
 <li>Click the green confirm button</li>
 </ol>
-<div class="figure" id="id8">
+<div class="figure" id="id9">
 <img alt="Confirm button." src="_images/confirm-merge-button.png" />
 <p class="caption"><span class="caption-text">Confirm button.</span></p>
 </div>
@@ -446,7 +463,7 @@ anyone on the project can click merge if needed.</p>
 </ul>
 </li>
 </ol>
-<div class="figure" id="id9">
+<div class="figure" id="id10">
 <img alt="Delete branch button." src="_images/delete-branch.png" />
 <p class="caption"><span class="caption-text">Delete branch button.</span></p>
 </div>

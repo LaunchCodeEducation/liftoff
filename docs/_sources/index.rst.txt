@@ -6,6 +6,7 @@ Liftoff
 .. toctree::
    :maxdepth: 2
 
+   git-setup
    git-refresher
    git-workflow
 
