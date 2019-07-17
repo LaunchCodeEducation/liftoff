@@ -1,0 +1,21 @@
+Class 2
+=======
+
+Objectives
+----------
+
+Project Module
+^^^^^^^^^^^^^^
+
+-  Understand the general flow from idea to code.
+-  Understand Wireframes how they are tied to user stories, and how you
+   can use them to plan your project.
+-  Ability to create Wireframes, and to couple them with User Stories.
+-  Understand user story refining, prioritization, and estimation.
+-  Utilize project management tools to document and plan project work
+-  Describe the basic components of a sprint: planning, kickoff,
+   retrospective
+-  Estimate user stories as a means of predicting the work that can be
+   carried out in a sprint
+-  Utilize wireframes to plan the structure of views and user
+   interactions

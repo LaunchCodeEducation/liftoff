@@ -1,0 +1,18 @@
+Class 3
+=======
+
+Objectives
+----------
+
+Project Module
+^^^^^^^^^^^^^^
+
+-  Understand intellectual property & software licensing
+-  Know how to include a license
+
+Career Module
+^^^^^^^^^^^^^
+
+-  Know what makes a good technical resume
+-  Utilize LinkedIn to network with other professionals
+-  Know how to use your GitHub account to showcase projects

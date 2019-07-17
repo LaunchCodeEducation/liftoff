@@ -1,0 +1,53 @@
+Class 1: Class Overview, Project Planning
+=========================================
+
+Objectives
+----------
+
+Project Module
+^^^^^^^^^^^^^^
+
+-  Understand the goal of creating a capstone project
+-  Explain the key components of a meaningful project
+-  Generate an idea for a project that meets the provided criteria
+-  Describe Story Mapping, Epics, and User Stories.
+-  Create user stories that clearly identify the targeted user and
+   describe a single use-case or action
+
+Prep Work
+---------
+
+To hit the ground running in class one we need to cover a lot of ground!
+We need to:
+
+* Set up a GitHub repository so we can upload our assignments
+* Understand what makes a *good* capstone project
+* Learn about **user stories**. 
+
+We want to handle as much setup and logistical work as possible now so the
+remaining weeks of the class we can focus on making progress on our
+projects!
+
+Tasks
+^^^^^
+
+Before class, complete these modules:
+
+* :ref:`liftoff-overview`
+* :ref:`setup`
+* :ref:`user-stories`
+
+We will spend time in class talking about project ideas in small groups.
+**Come to class with 1-2 ideas for projects you might want to work on.**
+
+.. todo:: Add demo project links to tip
+
+.. tip:: 
+
+   If you are struggling to come up with ideas check out the `project demo videos <https://www.youtube.com/watch?v=_8LRJHkTqsg&list=PLs5n5nYB22fIdV_HMkekxx7Yt06lXUptT>`__
+
+In Class
+--------
+
+Assignment
+----------

@@ -1,0 +1,13 @@
+Class 5
+=======
+
+Objectives
+----------
+
+Career Module
+^^^^^^^^^^^^^
+
+-  Know where to find additional live coding practice problems
+-  Know how to work through the steps of a live coding session
+-  Be able to work with other beginners to continue building live coding
+   experiences

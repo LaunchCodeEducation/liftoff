@@ -1,26 +1,18 @@
-Liftoff
+.. _main-index:
+
+Classes
 =======
 
-.. note:: This is the new home for the Liftoff curriculum, and is a work in progress. The `original site is still up, at a new location <https://education.launchcode.org/liftoff-OLD/classes/>`_.
-
-Project Modules
-===============
-
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
+   :glob:
 
-   project/planning
-
-Career Modules
-==============
-
-.. toctree::
-   :maxdepth: 1
-
-
+   classes/*
 
 .. toctree::
    :hidden:
 
    todos
+   modules/index
 
+:ref:`View Contents by Module <modules-index>`

@@ -162,10 +162,11 @@ html_static_path = ['_static']
 # 'searchbox.html']``.
 #
 html_sidebars = {
-    '**': ['localtoc.html'],
+    'classes/**': ['localtoc.html'],
     'index': [],
     'search': [],
-    'about': []
+    'modules/index': [],
+    'modules/**': [],
 }
 
 

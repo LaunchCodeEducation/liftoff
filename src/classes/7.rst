@@ -1,0 +1,21 @@
+Class 7
+=======
+
+Objectives
+----------
+
+Project Module
+^^^^^^^^^^^^^^
+
+-  Understand how to talk about your project in a presentation
+
+Career Module
+^^^^^^^^^^^^^
+
+-  Understand the parts of an interview: Behavioral and Technical
+-  Understand what they may encounter in a technical interview
+-  Can prepare for and practice answering technical questions
+-  Can respond correctly when asked a technical question they don’t know
+   how to answer
+-  Can incorporate their project experiences and class experiences into
+   technical questions
