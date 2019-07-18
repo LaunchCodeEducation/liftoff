@@ -5,7 +5,6 @@ Liftoff
 
 Project Modules
 ===============
-
 .. toctree::
    :maxdepth: 1
 
@@ -13,11 +12,17 @@ Project Modules
 
 Career Modules
 ==============
-
 .. toctree::
    :maxdepth: 1
 
+Git Stuff
+=========
+.. toctree::
+   :maxdepth: 2
 
+   git-setup
+   git-refresher
+   git-workflow
 
 .. toctree::
    :hidden:
