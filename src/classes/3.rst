@@ -1,5 +1,5 @@
-Class 3
-=======
+Class 3: Project Setup, Online Profiles
+=======================================
 
 Objectives
 ----------
