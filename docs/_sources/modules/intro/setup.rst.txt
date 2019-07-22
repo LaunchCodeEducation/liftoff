@@ -16,7 +16,11 @@ Trello
 
 Create a free `Trello <https://trello.com/>`_ account. Trello is a project management tool. You will use it to document and organize tasks while working on your project. 
 
-After creating your account, create a new board for your project. A single board typically contains all of the information and tasks for a specific project.
+After creating your account, create a new board for your project. A single board typically contains all of the information and tasks for a specific project. On your new board, create 3 lists. From left to right, name these:
+
+- Next
+- In Progress
+- Done
 
 Git Refresher
 -------------

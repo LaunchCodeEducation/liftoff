@@ -19,7 +19,9 @@ Project Modules
    :maxdepth: 1
 
    project/user-stories
-   project/planning
+   project/wireframes
+   project/git
+   project/licensing
    demo-projects/index
 
 Career Modules
@@ -37,8 +39,11 @@ Assignments
    :maxdepth: 1
    :glob:
 
-   assignments/*
-
+   assignments/project-outline
+   assignments/project-planning
+   assignments/project-setup
+   assignments/online-profiles
+   
 Git 
 ---
 
@@ -48,5 +53,6 @@ Git
    git/git-setup
    git/git-refresher
    git/git-workflow
+   git/git-commits
 
 :ref:`View Contents by Class <main-index>`

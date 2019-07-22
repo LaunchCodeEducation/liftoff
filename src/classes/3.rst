@@ -16,3 +16,52 @@ Career Module
 -  Know what makes a good technical resume
 -  Utilize LinkedIn to network with other professionals
 -  Know how to use your GitHub account to showcase projects
+
+Prep Work
+---------
+
+Before coming to class, cover all of the material in the following modules:
+
+- :ref:`git-for-projects`
+- :ref:`licensing`
+- :ref:`online-profiles`
+
+In Class
+--------
+
+Lecture: Software Licensing
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+We’ll discuss what your rights are when it comes to software licensing,
+how to choose a license, and how to get started contributing to open
+source.
+
+Lecture: Resumes
+^^^^^^^^^^^^^^^^
+
+In lecture, we’ll cover a few more points about what makes a good resume
+and share some examples.
+
+Lecture: Online Profiles
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+We will talk about popular online profiles, like LinkedIn and Github.
+We’ll also discuss why online profiles are necessary, and how they
+should be presented. We will have examples, and take questions.
+
+Activity: Resume Workshop
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You will have time to work on your resume, GitHub profile, and LinkedIn.
+If you haven’t started a technical resume yet, you’ll be able to start
+based on some example shared in the prep work. If you have an existing
+resume, you can pair up with a partner or your mentor to get feedback.
+
+
+Assignment
+----------
+
+Before coming to class next week, complete both of these tasks:
+
+- :ref:`assignment-project-setup`
+- :ref:`assignment-online-profiles`

@@ -7,9 +7,19 @@ Objectives
 Project Module
 ^^^^^^^^^^^^^^
 
--  Understand deployment process
+-  Understand the deployment process
 
 Career Module
 ^^^^^^^^^^^^^
 
 -  Understand how to continue learning on your own
+
+
+Prep Work
+---------
+
+In Class
+--------
+
+Assignment
+----------
