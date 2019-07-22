@@ -72,7 +72,6 @@ Regardless of the project you tackle, you should:
 * **Build an application entirely yourself**, or nearly so. If you use “starter code”, you need to go well beyond what was provided or worked on by others. You should be able to clearly articulate what you built yourself versus what was built by others.
 * **Include 3-5 significant features.** Each feature should add a new component to your project, but not be so small as to be trivial. It's difficult to define with a "significant feature" is, but we'll help you understand as you go. Adding a new button to your web project? Probably not significant enough. Creating a discussion forum? That’s too big. Adding user authentication? Yep, that’s great!
 
-To help you get some ideas about the size and scope of your project, review
-some `project demo
-videos <https://www.youtube.com/watch?v=_8LRJHkTqsg&list=PLs5n5nYB22fIdV_HMkekxx7Yt06lXUptT>`__
-by past LaunchCode graduates.
+.. tip:: 
+
+   To give you an idea of what a good project idea looks like, check out our :ref:`demo-projects`, as well as `project demo videos made by previous students <https://www.youtube.com/watch?v=_8LRJHkTqsg&list=PLs5n5nYB22fIdV_HMkekxx7Yt06lXUptT>`__

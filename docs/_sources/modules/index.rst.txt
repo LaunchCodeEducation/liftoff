@@ -20,6 +20,7 @@ Project Modules
 
    project/user-stories
    project/planning
+   demo-projects/index
 
 Career Modules
 --------------
@@ -29,13 +30,23 @@ Career Modules
 
    career/online-profiles
 
-Demo Projects
--------------
+Assignments
+-----------
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   assignments/*
+
+Git 
+---
 
 .. toctree::
    :maxdepth: 1
 
-   demo-projects/event-log/index
-   demo-projects/expense-tracker/index
+   git/git-setup
+   git/git-refresher
+   git/git-workflow
 
 :ref:`View Contents by Class <main-index>`

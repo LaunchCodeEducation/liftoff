@@ -21,4 +21,4 @@ After creating your account, create a new board for your project. A single board
 Git Refresher
 -------------
 
-.. todo:: link to Blake's content
+You will be using Git extensively throughout this course. Read our :ref:`git-refresher`, and if you plan on working on a group project, also read the :ref:`git-workflow`.

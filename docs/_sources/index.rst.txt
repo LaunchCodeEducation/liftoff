@@ -1,17 +1,25 @@
 .. _main-index:
 
-Classes
 =======
+Liftoff
+=======
+
+Classes
+-------
 
 .. toctree::
    :maxdepth: 2
    :glob:
 
-   classes/*
+   classes/1
+   classes/2
+   classes/3
 
 .. toctree::
    :hidden:
+   :glob:
 
+   classes/*
    todos
    modules/index
 
