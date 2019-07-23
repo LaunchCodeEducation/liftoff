@@ -14,7 +14,7 @@ Overview
 --------
 
 For his Liftoff project, Chris has decided to work on an application
-movitivated by a need expressed by a nonprofit organization. This page
+motivated by a need expressed by a nonprofit organization. This page
 will outline the steps that he follows in developing his project,
 completing each of the Liftoff assignments along with completing user
 stories and participating in the weekly agile ceremonies like stand-ups
@@ -28,9 +28,9 @@ Week 1
 Sprint 1 Kickoff
 ^^^^^^^^^^^^^^^^
 
-Most sprint kickoffs will consist of planning estimating, and committing
+Most sprint kickoffs will consist of planning, estimating, and committing
 to user stories to complete during the sprint. Since there are not user
-stories created yet (we’ll do that in week 2) this kickoff is a litle
+stories created yet (we’ll do that in week 2) this kickoff is a little
 different.
 
 We discussed our project ideas–Chris’ for an event log and Paul’s for an
