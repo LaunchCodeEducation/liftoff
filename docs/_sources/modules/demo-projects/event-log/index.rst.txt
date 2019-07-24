@@ -203,10 +203,10 @@ for ``event-log`` as of the sprint 2 standup.
 
 **Screenshots:**
 
--  `Event Log Registration <figures/event-log-register.png>`__
--  `Event Log Login <figures/event-log-login.png>`__
--  `Event Log Welcome <figures/event-log-welcome.png>`__
--  `Event Log Logout <figures/event-log-logout.png>`__
+-  `Event Log Registration <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/event-log/figures/event-log-register.png>`__
+-  `Event Log Login <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/event-log/figures/event-log-login.png>`__
+-  `Event Log Welcome <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/event-log/figures/event-log-welcome.png>`__
+-  `Event Log Logout <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/event-log/figures/event-log-logout.png>`__
 
 **What is planned next:** Next, Chris will work on building out the
 event model classes, along with associated controllers and views. He has
@@ -247,8 +247,8 @@ user stories:
 
 **Screenshots:**
 
--  `Create Event View <figures/create_event_form.png>`__
--  `Event Details View <figures/event_details_view.png>`__
+-  `Create Event View <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/event-log/figures/create_event_form.png>`__
+-  `Event Details View <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/event-log/figures/event_details_view.png>`__
 
 He had estimated another story and moved it to the **Current Iteration**
 panel (“As a logged-in user, I can view all upcoming events…”) but he
@@ -371,8 +371,8 @@ Sprint 3 Standup
 **What was accomplished:** In the first week of sprint 3, Chris
 completed two user stories:
 
--  As a logged-in user, I can view all upcoming events immediately upon logging in, so I can quickly get a view of upcoming events. (`screenshot <figures/event_listing_view.png>`__)
--  As a logged-in user, when I try to view an event with an ID that doesn’t exist, I see a helpful error message. (`screenshot <figures/event_error_message.png>`__)
+-  As a logged-in user, I can view all upcoming events immediately upon logging in, so I can quickly get a view of upcoming events. (`screenshot <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/event-log/figures/event_listing_view.png>`__)
+-  As a logged-in user, when I try to view an event with an ID that doesn’t exist, I see a helpful error message. (`screenshot <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/event-log/figures/event_error_message.png>`__)
 
 He did not meet his stretch goal of implementing event editing. That
 will be the focus of the rest of the sprint.
@@ -435,9 +435,9 @@ additional character.
 Check out some screenshots of the new work, as well as the refactored
 views with the new theme:
 
--  `Event Listing View <figures/event_listing_view_new.png>`__
--  `Event Details View <figures/event_details_view_new.png>`__
--  `Create Event Form <figures/create_event_form_new.png>`__
+-  `Event Listing View <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/event-log/figures/event_listing_view_new.png>`__
+-  `Event Details View <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/event-log/figures/event_details_view_new.png>`__
+-  `Create Event Form <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/event-log/figures/create_event_form_new.png>`__
 
 There were quite a few commits for this week’s work, since many of the
 changes were small, atomic refactoring tasks:
