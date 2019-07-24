@@ -20,7 +20,7 @@
     <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Group Project Git Workflow" href="git-workflow.html" />
+    <link rel="next" title="GitHub Issues" href="github-issues.html" />
     <link rel="prev" title="Group Project Git Setup" href="git-setup.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -78,63 +78,63 @@
       
   <div class="section" id="git-refresher">
 <span id="id1"></span><h1>Git Refresher<a class="headerlink" href="#git-refresher" title="Permalink to this headline">¶</a></h1>
-<p>Git is a powerful tool that can be overwhelming to use at times. This guide is a reminder of git basics
+<p>Git is a powerful tool that can be overwhelming to use at times. This guide is a reminder of Git basics
 and some best practices.</p>
 <div class="section" id="read-the-git-messages">
 <h2>Read the Git Messages!<a class="headerlink" href="#read-the-git-messages" title="Permalink to this headline">¶</a></h2>
-<p>When using git in a terminal, git tries to help you out by giving detailed messages. Read those messages
-carefully. If a command isn’t working as expected, take your time and see what git is telling you.
-Sometimes those messages will tell you exactly how to fix your issues. If the git message doesn’t solve
+<p>When using Git in a terminal, Git tries to help you out by giving detailed messages. Read those messages
+carefully. If a command isn’t working as expected, take your time and see what Git is telling you.
+Sometimes those messages will tell you exactly how to fix your issues. If the Git message doesn’t solve
 your issue, it can help you know what terms to search for when looking for help.</p>
 </div>
 <div class="section" id="cloning-the-repository">
 <h2>Cloning the Repository<a class="headerlink" href="#cloning-the-repository" title="Permalink to this headline">¶</a></h2>
-<p>When starting on the project you will first need to clone the remote repository to your computer.
-You will clone the repository by going to the repository page on github and clicking the clone button.
-The clone menu will provide two options. For the group project we suggest using SSH, however cloning
-with HTTPS will also work. <a class="reference external" href="https://help.github.com/en/articles/connecting-to-github-with-ssh" target="_blank">Instructions for using SSH<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
-<p>Both options will create a git repository on your local computer with all the files, branches, and commits
+<p>When starting on the project, you will first need to clone the remote repository to your computer.
+You will clone the repository by going to the repository page on Github and clicking the clone button.
+The clone menu will provide two options. For the group project, we suggest using SSH, however cloning
+with HTTPS will also work.</p>
+<p>Both options will create a Git repository on your local computer with all the files, branches, and commits
 that are present in the remote repository.</p>
 <p>Cloning Options:</p>
 <ol class="arabic simple">
 <li>SSH<ul>
-<li>Uses SSH to clone the repository<ul>
+<li>Uses SSH to clone the repository.<ul>
 <li>Example: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">git&#64;github.com:LaunchCodeEducation/liftoff.git</span></code></li>
 </ul>
 </li>
-<li>Requires a file to be created and uploaded to github</li>
-<li>You do NOT have to enter your password when pushing commits to a remote repository</li>
+<li>Requires a file to be created and uploaded to Github.</li>
+<li>You do NOT have to enter your password when pushing commits to a remote repository.</li>
 <li><a class="reference external" href="https://help.github.com/en/articles/connecting-to-github-with-ssh" target="_blank">Instructions for using SSH<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
 </ul>
 </li>
 <li>HTTPS<ul>
-<li>Uses an HTTPS url for the repository<ul>
+<li>Uses an HTTPS url for the repository.<ul>
 <li>Example: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/LaunchCodeEducation/liftoff.git</span></code></li>
 </ul>
 </li>
-<li>Requires that you enter your password pushing commits to a remote repository</li>
+<li>Requires that you enter your password pushing commits to a remote repository.</li>
 </ul>
 </li>
 </ol>
 </div>
 <div class="section" id="keeping-local-repository-up-to-date">
 <h2>Keeping Local Repository Up to Date<a class="headerlink" href="#keeping-local-repository-up-to-date" title="Permalink to this headline">¶</a></h2>
-<p>Right after you clone the remote repository, your local copy will be up to date. However as the project
+<p>Right after you clone the remote repository, your local copy will be up to date. However, as the project
 progresses new branches and commits will be pushed to the remote repository. Your local repository
 will NOT automatically update itself.</p>
 <div class="section" id="git-fetch">
 <h3><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">fetch</span></code><a class="headerlink" href="#git-fetch" title="Permalink to this headline">¶</a></h3>
 <p>The fetch command makes your local repository aware of all the new commits and branches on the remote repository.
-Git fetch DOES NOT update any of your local branches, it brings your local git repository’s data about the
+Git fetch does NOT update any of your local branches, it brings your local Git repository’s data about the
 available branches and commits up to date.</p>
 </div>
 <div class="section" id="git-pull">
 <h3><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code><a class="headerlink" href="#git-pull" title="Permalink to this headline">¶</a></h3>
 <p>The pull command is used to update your current branch with new commits that have been pushed to that branch on
-the remote repository. The pull command is a combination of two other git commands. Firs a <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">fetch</span></code> is ran
-to make sure you local repository is aware of all the new data on the remote repository. Second a <code class="docutils literal notranslate"><span class="pre">get</span> <span class="pre">merge</span></code>
-is ran to merge in any new commits for tne current branch.</p>
-<p>Remember that git does NOT keep your local branches up to date. For group projects, you will need to pull in the commits and branches
+the remote repository. The pull command is a combination of two other Git commands. First, a <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">fetch</span></code> runs
+to make sure you local repository is aware of all the new data on the remote repository. Second, a <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">merge</span></code>
+runs to merge in any new commits for tne current branch.</p>
+<p>Remember that Git does NOT keep your local branches up to date. For group projects, you will need to pull in the commits and branches
 being created by your group members.</p>
 </div>
 </div>
@@ -145,58 +145,57 @@ are working on. This allows features to be developed in isolation, to avoid disr
 being worked on.</p>
 <p>Creating a new branch:</p>
 <ol class="arabic simple">
-<li>Use <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> to make sure you are on the base branch you want, the base branch is usually master.<ul>
-<li>WARNING: if you have uncommitted changes you can:<ol class="arabic">
-<li>Stash them</li>
-<li>Commit them to the current branch</li>
-<li>Leave them and commit them on the new branch</li>
+<li>Use <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> to make sure you are on the base branch you want. The base branch is usually master.<ul>
+<li>WARNING: if you have uncommitted changes, you can:<ol class="arabic">
+<li>Stash them.</li>
+<li>Commit them to the current branch.</li>
+<li>Leave them and commit them on the new branch.</li>
 </ol>
 </li>
 </ul>
 </li>
-<li>Use <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">-b</span> <span class="pre">feature-branch-name</span></code> to create and switch to the new branch</li>
-<li>You can now make commits and push this branch to the remote repository</li>
+<li>Use <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">-b</span> <span class="pre">feature-branch-name</span></code> to create and switch to the new branch.</li>
+<li>You can now make commits and push this branch to the remote repository.</li>
 </ol>
 </div>
 <div class="section" id="committing-your-work">
 <h2>Committing Your Work<a class="headerlink" href="#committing-your-work" title="Permalink to this headline">¶</a></h2>
 <p>You need to have <em>write</em> access to the remote repository. If working on a group project, this is setup by the group mentor. After you have write
-access you can push up commits to the remote repository. However you can only push commits, if git has
-authenticated that your account has rights to push commits.</p>
+access, you can push up commits to the remote repository.</p>
 <ol class="arabic simple">
 <li>Run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> to verify the changes you made show up as not staged or untracked.<ul>
-<li>It’s also a good idea to double check you are on the correct branch</li>
+<li>It’s also a good idea to double check you are on the correct branch.</li>
 </ul>
 </li>
-<li>Run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">.</span></code> to stage all files for commit<ul>
+<li>Run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">.</span></code> to stage all files for commit.<ul>
 <li>It’s best to run this command from the root folder of the repository</li>
-<li>The <code class="docutils literal notranslate"><span class="pre">.</span></code> refers to the current directly</li>
-<li>You can stage one file at a time if you need to commit only certain files<ul>
-<li>In that case replace the <code class="docutils literal notranslate"><span class="pre">.</span></code> with a file name or path</li>
+<li>The <code class="docutils literal notranslate"><span class="pre">.</span></code> refers to the current directory.</li>
+<li>You can stage one file at a time if you need to commit only certain files.<ul>
+<li>In that case, replace the <code class="docutils literal notranslate"><span class="pre">.</span></code> with a file name or path.</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> to verify that the changes have been staged</li>
-<li>Run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;short</span> <span class="pre">description&quot;</span></code> to make a commit containing all staged changes</li>
-<li>Run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> to verify that there are no uncommitted changes</li>
+<li>Run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> to verify that the changes have been staged.</li>
+<li>Run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;short</span> <span class="pre">description&quot;</span></code> to make a commit containing all staged changes.</li>
+<li>Run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> to verify that there are no uncommitted changes.</li>
 </ol>
 </div>
 <div class="section" id="pushing-to-remote-repository">
 <h2>Pushing to Remote Repository<a class="headerlink" href="#pushing-to-remote-repository" title="Permalink to this headline">¶</a></h2>
-<p>When you a new branch or new commits you can push them to the remote repository so that
+<p>When you make a new branch or new commits, you can push them to the remote repository so that
 other people can access them.</p>
 <ol class="arabic simple">
-<li>Run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> to verify your branch and all changes have been committed<ul>
+<li>Run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> to verify your branch and all changes have been committed.<ul>
 <li>Are you noticing a pattern of using <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code>?</li>
 </ul>
 </li>
-<li>Run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code><ul>
-<li>This defaults to pushing to <code class="docutils literal notranslate"><span class="pre">origin</span> <span class="pre">master</span></code> which is the remote repository</li>
+<li>Run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code>.<ul>
+<li>This defaults to pushing to <code class="docutils literal notranslate"><span class="pre">origin</span> <span class="pre">master</span></code> which is the remote repository.</li>
 </ul>
 </li>
-<li>Review the git message to see if the push worked<ul>
-<li>Git may need you to to do a <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code> before pushing</li>
+<li>Review the Git message to see if the push worked.<ul>
+<li>Git may need you to to do a <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code> before pushing.</li>
 </ul>
 </li>
 </ol>
@@ -213,7 +212,7 @@ other people can access them.</p>
 </div>
 <div class="section" id="stashing-instead-of-committing">
 <h2>Stashing Instead of Committing<a class="headerlink" href="#stashing-instead-of-committing" title="Permalink to this headline">¶</a></h2>
-<p>It may happen that you go to start a new branch, but the results from <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> show that you have
+<p>It may happen that you go to start a new branch but the results from <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> show that you have
 uncommitted changes. Even worse, you may not remember what these changes were for. Instead of committing
 the changes to the current branch, you can use <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">stash</span></code> to store those changes for future review.</p>
 <p>Read this
@@ -222,7 +221,7 @@ for how to use stash.</p>
 </div>
 <div class="section" id="git-commands">
 <h2>Git Commands<a class="headerlink" href="#git-commands" title="Permalink to this headline">¶</a></h2>
-<p>For a full list of git commands and more detailed examples, see the resources section below.</p>
+<p>For a full list of Git commands and more detailed examples, see the resources section below.</p>
 <table border="1" class="colwidths-auto docutils">
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Command</th>
@@ -263,11 +262,11 @@ for how to use stash.</p>
 <tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">fetch</span></code></td>
 <td>Makes your local repository aware of new branches and commits on the remote repository. Does NOT update any local branches, only makes your local aware of new commits.</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code></td>
-<td>does more things…</td>
-</tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">merge</span> <span class="pre">BRANCH-NAME</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">merge</span> <span class="pre">BRANCH-NAME</span></code></td>
 <td>Merges the commits from BRANCH-NAME into your current branch</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code></td>
+<td>Runs a <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">fetch</span></code> and <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">merge</span></code></td>
 </tr>
 <tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">stash</span></code></td>
 <td>A way of keeping changes without committing them to your branch.</td>
@@ -284,10 +283,10 @@ for how to use stash.</p>
 <div class="section" id="additional-resources">
 <h2>Additional Resources<a class="headerlink" href="#additional-resources" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><a class="reference external" href="https://git-scm.com/docs" target="_blank">Official Git Reference<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> - A git command reference from the creators of git.</li>
+<li><a class="reference external" href="https://git-scm.com/docs" target="_blank">Official Git Reference<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> - A Git command reference from the creators of Git.</li>
 <li><a class="reference external" href="https://git-scm.com/book/en/v2" target="_blank">Pro Git Book<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> - A reference book covering Git in depth.</li>
-<li><a class="reference external" href="https://github.com/k88hudson/git-flight-rules" target="_blank">Flight Rules for Git<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> - A “How to” guide for git</li>
-<li><a class="reference external" href="https://try.github.io" target="_blank">Interactive GitHub Sandbox<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> - A place to practice git without fear of messing anything up.</li>
+<li><a class="reference external" href="https://github.com/k88hudson/git-flight-rules" target="_blank">Flight Rules for Git<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> - A “How to” guide for Git.</li>
+<li><a class="reference external" href="https://try.github.io" target="_blank">Interactive GitHub Sandbox<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> - A place to practice Git without fear of messing anything up.</li>
 <li><a class="reference external" href="https://help.github.com/articles/connecting-to-github-with-ssh/" target="_blank">Connecting to GitHub with SSH<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
 </ul>
 </div>

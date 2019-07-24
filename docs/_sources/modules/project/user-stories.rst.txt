@@ -3,7 +3,7 @@
 User Stories
 ============
 
-Any large project must be broken down into smaller tasks. This is particularly true for software projects. Furthermore, *how* we break down and define smaller tasks has a large impact on how successful we are in create good, useful software. 
+Any large project must be broken down into smaller tasks. This is particularly true for software projects. Furthermore, *how* we break down and define smaller tasks has a large impact on how successful we are in creating good, useful software. 
 
 .. index:: user story !
 

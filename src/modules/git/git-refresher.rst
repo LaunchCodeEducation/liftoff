@@ -3,69 +3,69 @@
 Git Refresher
 =============
 
-Git is a powerful tool that can be overwhelming to use at times. This guide is a reminder of git basics
+Git is a powerful tool that can be overwhelming to use at times. This guide is a reminder of Git basics
 and some best practices.
 
 
 Read the Git Messages!
 ----------------------
-When using git in a terminal, git tries to help you out by giving detailed messages. Read those messages
-carefully. If a command isn't working as expected, take your time and see what git is telling you.
-Sometimes those messages will tell you exactly how to fix your issues. If the git message doesn't solve
+When using Git in a terminal, Git tries to help you out by giving detailed messages. Read those messages
+carefully. If a command isn't working as expected, take your time and see what Git is telling you.
+Sometimes those messages will tell you exactly how to fix your issues. If the Git message doesn't solve
 your issue, it can help you know what terms to search for when looking for help.
 
 
 Cloning the Repository
-----------------------------
-When starting on the project you will first need to clone the remote repository to your computer.
-You will clone the repository by going to the repository page on github and clicking the clone button.
-The clone menu will provide two options. For the group project we suggest using SSH, however cloning
-with HTTPS will also work. `Instructions for using SSH <https://help.github.com/en/articles/connecting-to-github-with-ssh>`_.
+----------------------
+When starting on the project, you will first need to clone the remote repository to your computer.
+You will clone the repository by going to the repository page on Github and clicking the clone button.
+The clone menu will provide two options. For the group project, we suggest using SSH, however cloning
+with HTTPS will also work.
 
-Both options will create a git repository on your local computer with all the files, branches, and commits
+Both options will create a Git repository on your local computer with all the files, branches, and commits
 that are present in the remote repository.
 
 Cloning Options:
 
-1. SSH
+#. SSH
 
-   * Uses SSH to clone the repository
+   * Uses SSH to clone the repository.
 
      * Example: ``git clone git@github.com:LaunchCodeEducation/liftoff.git``
 
-   * Requires a file to be created and uploaded to github
-   * You do NOT have to enter your password when pushing commits to a remote repository
+   * Requires a file to be created and uploaded to Github.
+   * You do NOT have to enter your password when pushing commits to a remote repository.
    * `Instructions for using SSH <https://help.github.com/en/articles/connecting-to-github-with-ssh>`_
 
-2. HTTPS
+#. HTTPS
 
-   * Uses an HTTPS url for the repository
+   * Uses an HTTPS url for the repository.
 
      * Example: ``git clone https://github.com/LaunchCodeEducation/liftoff.git``
 
-   * Requires that you enter your password pushing commits to a remote repository
+   * Requires that you enter your password pushing commits to a remote repository.
 
 
 Keeping Local Repository Up to Date
 -----------------------------------
-Right after you clone the remote repository, your local copy will be up to date. However as the project
+Right after you clone the remote repository, your local copy will be up to date. However, as the project
 progresses new branches and commits will be pushed to the remote repository. Your local repository
 will NOT automatically update itself.
 
 ``git fetch``
 ^^^^^^^^^^^^^
 The fetch command makes your local repository aware of all the new commits and branches on the remote repository.
-Git fetch DOES NOT update any of your local branches, it brings your local git repository's data about the
+Git fetch does NOT update any of your local branches, it brings your local Git repository's data about the
 available branches and commits up to date.
 
 ``git pull``
 ^^^^^^^^^^^^
 The pull command is used to update your current branch with new commits that have been pushed to that branch on
-the remote repository. The pull command is a combination of two other git commands. Firs a ``git fetch`` is ran
-to make sure you local repository is aware of all the new data on the remote repository. Second a ``get merge``
-is ran to merge in any new commits for tne current branch.
+the remote repository. The pull command is a combination of two other Git commands. First, a ``git fetch`` runs
+to make sure you local repository is aware of all the new data on the remote repository. Second, a ``git merge``
+runs to merge in any new commits for tne current branch.
 
-Remember that git does NOT keep your local branches up to date. For group projects, you will need to pull in the commits and branches
+Remember that Git does NOT keep your local branches up to date. For group projects, you will need to pull in the commits and branches
 being created by your group members.
 
 
@@ -77,57 +77,56 @@ being worked on.
 
 Creating a new branch:
 
-1. Use ``git status`` to make sure you are on the base branch you want, the base branch is usually master.
+#. Use ``git status`` to make sure you are on the base branch you want. The base branch is usually master.
 
-   * WARNING: if you have uncommitted changes you can:
+   * WARNING: if you have uncommitted changes, you can:
 
-     1. Stash them
-     2. Commit them to the current branch
-     3. Leave them and commit them on the new branch
+     #. Stash them.
+     #. Commit them to the current branch.
+     #. Leave them and commit them on the new branch.
 
-2. Use ``git checkout -b feature-branch-name`` to create and switch to the new branch
-3. You can now make commits and push this branch to the remote repository
+#. Use ``git checkout -b feature-branch-name`` to create and switch to the new branch.
+#. You can now make commits and push this branch to the remote repository.
 
 
 Committing Your Work
 --------------------
 You need to have *write* access to the remote repository. If working on a group project, this is setup by the group mentor. After you have write
-access you can push up commits to the remote repository. However you can only push commits, if git has
-authenticated that your account has rights to push commits.
+access, you can push up commits to the remote repository. 
 
-1. Run ``git status`` to verify the changes you made show up as not staged or untracked.
+#. Run ``git status`` to verify the changes you made show up as not staged or untracked.
 
-   * It's also a good idea to double check you are on the correct branch
+   * It's also a good idea to double check you are on the correct branch.
 
-2. Run ``git add .`` to stage all files for commit
+#. Run ``git add .`` to stage all files for commit.
 
    * It's best to run this command from the root folder of the repository
-   * The ``.`` refers to the current directly
-   * You can stage one file at a time if you need to commit only certain files
+   * The ``.`` refers to the current directory.
+   * You can stage one file at a time if you need to commit only certain files.
 
-     * In that case replace the ``.`` with a file name or path
+     * In that case, replace the ``.`` with a file name or path.
 
-3. Run ``git status`` to verify that the changes have been staged
-4. Run ``git commit -m "short description"`` to make a commit containing all staged changes
-5. Run ``git status`` to verify that there are no uncommitted changes
+#. Run ``git status`` to verify that the changes have been staged.
+#. Run ``git commit -m "short description"`` to make a commit containing all staged changes.
+#. Run ``git status`` to verify that there are no uncommitted changes.
 
 
 Pushing to Remote Repository
 ----------------------------
-When you a new branch or new commits you can push them to the remote repository so that
+When you make a new branch or new commits, you can push them to the remote repository so that
 other people can access them.
 
-1. Run ``git status`` to verify your branch and all changes have been committed
+1. Run ``git status`` to verify your branch and all changes have been committed.
 
    * Are you noticing a pattern of using ``git status``?
 
-2. Run ``git push``
+2. Run ``git push``.
 
-   * This defaults to pushing to ``origin master`` which is the remote repository
+   * This defaults to pushing to ``origin master`` which is the remote repository.
 
-3. Review the git message to see if the push worked
+3. Review the Git message to see if the push worked.
   
-   * Git may need you to to do a ``git pull`` before pushing
+   * Git may need you to to do a ``git pull`` before pushing.
 
 
 Cheat Sheet for Committing and Pushing
@@ -142,7 +141,7 @@ Remember these steps when you need to commit and push your code:
 
 Stashing Instead of Committing
 ------------------------------
-It may happen that you go to start a new branch, but the results from ``git status`` show that you have
+It may happen that you go to start a new branch but the results from ``git status`` show that you have
 uncommitted changes. Even worse, you may not remember what these changes were for. Instead of committing
 the changes to the current branch, you can use ``git stash`` to store those changes for future review.
 
@@ -153,7 +152,7 @@ for how to use stash.
 
 Git Commands
 ------------
-For a full list of git commands and more detailed examples, see the resources section below.
+For a full list of Git commands and more detailed examples, see the resources section below.
 
 .. list-table::
    :widths: auto
@@ -183,10 +182,10 @@ For a full list of git commands and more detailed examples, see the resources se
      - Pushes local commits to the remote repository. Then the commits can be pulled down by other team members
    * - ``git fetch``
      - Makes your local repository aware of new branches and commits on the remote repository. Does NOT update any local branches, only makes your local aware of new commits.
-   * - ``git pull``
-     - does more things...
    * - ``git merge BRANCH-NAME``
      - Merges the commits from BRANCH-NAME into your current branch
+   * - ``git pull``
+     - Runs a ``git fetch`` and ``git merge``
    * - ``git stash``
      - A way of keeping changes without committing them to your branch.
    * - ``git log``
@@ -197,8 +196,8 @@ For a full list of git commands and more detailed examples, see the resources se
 
 Additional Resources
 --------------------
-* `Official Git Reference <https://git-scm.com/docs>`_ - A git command reference from the creators of git.
+* `Official Git Reference <https://git-scm.com/docs>`_ - A Git command reference from the creators of Git.
 * `Pro Git Book <https://git-scm.com/book/en/v2>`_ - A reference book covering Git in depth.
-* `Flight Rules for Git <https://github.com/k88hudson/git-flight-rules>`_ - A "How to" guide for git
-* `Interactive GitHub Sandbox <https://try.github.io>`_ - A place to practice git without fear of messing anything up.
+* `Flight Rules for Git <https://github.com/k88hudson/git-flight-rules>`_ - A "How to" guide for Git.
+* `Interactive GitHub Sandbox <https://try.github.io>`_ - A place to practice Git without fear of messing anything up.
 * `Connecting to GitHub with SSH <https://help.github.com/articles/connecting-to-github-with-ssh/>`_
