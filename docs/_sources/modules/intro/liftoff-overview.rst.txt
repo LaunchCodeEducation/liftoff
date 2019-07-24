@@ -5,7 +5,7 @@ Liftoff Overview
 
 Liftoff is an 8 week class with two objectives:
 
-#. Complete a significant amount of work towards aproject.
+#. Complete a significant amount of work towards a project.
 #. Be prepared for the job interview process.
 
 Class time will be similar to LC101. You will complete prep work before each

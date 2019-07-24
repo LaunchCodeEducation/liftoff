@@ -8,10 +8,10 @@ This guide is for mentors and students in Liftoff. Using this Git workflow will 
 
 What is a Git Workflow?
 -----------------------
-A git workflow is a strategy for using git. Git is a powerful tool that can be used many ways.
-Having a common strategy for using git makes it's easier and more efficient for teams to collaborate.
-The are many git workflows that can be adopted by a team. For this course we suggest the
-Feature Branch workflow. Details about other git workflows can be found in this
+A git workflow is a strategy for using git. Git is a powerful tool that can be used in many ways.
+Having a common strategy for using git makes it easier and more efficient for teams to collaborate.
+There are many git workflows that can be adopted by a team. For this course, we suggest the
+**feature branch workflow**. Details about other git workflows can be found in this
 `comparison git workflows <https://www.atlassian.com/git/tutorials/comparing-workflows>`_.
 
 
@@ -37,7 +37,7 @@ Master branch facts
 
 .. note::
 
-   Avoid committing directly to master. Instead create a feature branch and merge the branch
+   Avoid committing directly to master. Instead, create a feature branch and merge the branch
    into master using a pull request. Pull requests will be discussed soon.
 
 What is a Feature?
@@ -116,7 +116,7 @@ merging those changes into the master branch.
 .. note::
 
    Pull requests can be created to merge a branch into any other branch. For the majority
-   of this project your pull requests will merge a feature branch into the master branch.
+   of this project, your pull requests will merge a feature branch into the master branch.
 
 
 How to Create a Pull Request
@@ -151,14 +151,14 @@ until you are done coding and you have verified that the feature works.
 
       Create pull request form with branches highlighted.
 
-   6. Click the create pull request button.
+   6. Click the Create pull request button.
 
-      * URL is changed to a unique address for the new PR. https://github.com/LaunchCodeEducation/example-pull-request/pull/1
-      * This URL change shared with teammates.
-      * You can also see open PRs by going to the list of pull requests for your repository on github.
+      * Your URL will be changed to a unique address for the new PR. https://github.com/LaunchCodeEducation/example-pull-request/pull/1
+      * You can share this with teammates.
+      * You can also see open PRs by going to the list of pull requests for your repository on Github.
 
-   After these steps you will have an open pull request. An open pull request can be merged or closed. Closing
-   will cancel the pull request. Merging will merge the feature branch into master. Before merging the code
+   After these steps, you will have an open pull request. An open pull request can be merged or closed. Closing
+   will cancel the pull request. Merging will merge the feature branch into master. Before merging, the code
    needs to be reviewed.
 
 Requesting a Review
@@ -171,15 +171,15 @@ there. This allows a reviewer to see what was changed and if it meets team and l
 
    Assign code reviewer for Add login page pull request.
 
-   1. Go to the pull request on github
+   1. Go to the pull request on Github
    2. Click the gear in the Assignees section
 
-      * There is also a Reviewer section as well, the main difference is that the Assignee has been officially assigned to review this PR.
+      * There is also a Reviewer section. The main difference is that the Assignee has been officially assigned to review this PR.
 
-   3. Find and click on team member that you want to assign to review the PR.
+   3. Find and click on a team member that you want to assign to review the PR.
 
       * You can assign multiple people, but you only need one.
-      * The assignee will be notified by github, but it's also a good idea to remind them directly that they need to review the PR.
+      * The assignee will be notified by Github, but it's also a good idea to remind them directly that they need to review the PR.
 
    .. figure:: figures/assign-pr.png
       :alt: Pull request with assignee selected.
@@ -207,7 +207,7 @@ Benefits of code reviews:
 
 How to Review Code
 ^^^^^^^^^^^^^^^^^^
-When reviewing code, don't be picky just to be picky. Only provide feedback you have a question,
+When reviewing code, don't be picky just to be picky. Only provide feedback if you have a question,
 or you feel strongly that the there is an issue with the code. Code reviews can be a place
 to have a conversation about a requirement or the code itself. The comments will stay on the PR
 and could serve as documentation in the future.
@@ -220,25 +220,25 @@ Focus on these topics when reviewing code:
 
 * Security concerns
 
-  * Don't commit passwords to github!
+  * Don't commit passwords to Github!
   * Don't use risky third party code that hasn't been verified.
   * Look out for SQL injection attacks.
 
 * Non ideal code
  
-  * Repeated code that could be turned into a function
-  * Unnecessary complexity, maybe a class was created that isn't needed
+  * Repeated code that could be turned into a function.
+  * Unnecessary complexity, maybe a class was created that isn't needed.
 
 * Does the code work?
 
-  * Test out the feature to see if it works
+  * Test out the feature to see if it works.
   * Are there unit tests? If so are they passing?
 
 .. admonition:: Example
 
   In this example we will review and eventually approve the "Add login page" PR.
 
-  1. Go to the pull request on github
+  1. Go to the pull request on Github
   2. Go to the "Files changed" tab
 
      * This tab lists all files that were edited, added, or removed.
@@ -266,7 +266,7 @@ Focus on these topics when reviewing code:
      * As soon as the push happens, the new commit appears on the pull request page.
 
   7. The "Conversation Tab" is where you can reply to previous comments.
-  8. Notice the reply comment, that says the issue has been fixed.
+  8. Notice the reply comment that says the issue has been fixed.
 
   .. figure:: figures/reply-after-fixing-code.png
     :alt: Conversation tab showing comment and reply.
@@ -294,14 +294,14 @@ Focus on these topics when reviewing code:
 Merging Into Master
 -------------------
 After a pull request has been approved by a reviewer, it can be merged. Normally the
-developer or person that opened the PR should click the big green merge button. However
+developer or person that opened the PR should click the big green merge button. However,
 anyone on the project can click merge if needed.
 
 .. admonition:: Example
 
    Let's merge ``add-login-page`` into master by clicking the merge button.
 
-   1. Click the green merge button show on the conversation tab.
+   1. Click the green merge button shown on the conversation tab.
 
    .. figure:: figures/merge-button.png
       :alt: Merge button.
@@ -336,12 +336,12 @@ anyone on the project can click merge if needed.
 
    How to update feature branch with master:
 
-   1. Checkout the master branch ``git checkout master``
-   2. Git pull to update master ``git pull``
-   3. Checkout the feature branch ``git checkout add-login-page``
-   4. Merge master into the feature branch ``git merge master``
-   5. Resolve and conflicts
-   6. Commit and push to origin
+   1. Checkout the master branch ``git checkout master``.
+   2. Git pull to update master ``git pull``.
+   3. Checkout the feature branch ``git checkout add-login-page``.
+   4. Merge master into the feature branch ``git merge master``.
+   5. Resolve conflicts.
+   6. Commit and push to origin.
 
 
 Additional Resources

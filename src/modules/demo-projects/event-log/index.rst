@@ -33,8 +33,8 @@ to user stories to complete during the sprint. Since there are not user
 stories created yet (we’ll do that in week 2) this kickoff is a little
 different.
 
-We discussed our project ideas–Chris’ for an event log and Paul’s for an
-expense tracker–and got some feedback on how big each project might be
+We discussed our project ideas – Chris’ for an event log and Paul’s for an
+expense tracker – and got some feedback on how big each project might be
 to be doable. We also discussed the particular technologies that we’ll
 be using to build our projects.
 
