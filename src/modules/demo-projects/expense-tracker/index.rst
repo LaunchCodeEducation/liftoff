@@ -456,8 +456,7 @@ Assignment: Project Presentation
 Although Paul’s project isn’t completely done yet he still needs to
 complete his Project Presentation assignment.
 
-:download:`Expense Tracker
-Presentation <Expense_Tracker_Presentation.pdf>`
+Expense Tracker Presentation :download:`PDF <Expense_Tracker_Presentation.pdf>`
 
 Paul found that in working on this assignment he completed much more
 than he was giving himself credit for! He has mutliple screens to show,

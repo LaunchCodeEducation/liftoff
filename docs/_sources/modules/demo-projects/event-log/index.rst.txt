@@ -555,4 +555,4 @@ made just for this purpose.
 Assignment: Project Presentation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-:download:`View Chris' Project Presentation <project-presentation.pdf>`
+View Chris' Project Presentation: :download:`PDF <project-presentation.pdf>`
