@@ -8,11 +8,10 @@ This guide is for mentors and students in Liftoff. Using this Git workflow will 
 
 What is a Git Workflow?
 -----------------------
-A git workflow is a strategy for using git. Git is a powerful tool that can be used in many ways.
-Having a common strategy for using git makes it easier and more efficient for teams to collaborate.
-There are many git workflows that can be adopted by a team. For this course, we suggest the
-**feature branch workflow**. Details about other git workflows can be found in this
-`comparison git workflows <https://www.atlassian.com/git/tutorials/comparing-workflows>`_.
+A Git workflow is a strategy for using Git. Git is a powerful tool that can be used in many ways.
+Having a common strategy for using Git makes it easier and more efficient for teams to collaborate.
+There are many Git workflows that can be adopted by a team. For this course, we suggest the
+**feature branch workflow**. Read about `other Git workflows <https://www.atlassian.com/git/tutorials/comparing-workflows>`_.
 
 
 Feature Branch Workflow
@@ -80,7 +79,7 @@ Most of the time you will branch off of the master branch.
 
      git checkout -b fix-change-password-bug
 
-   4. Check your git status to make sure you are on the right branch
+   4. Check your status to make sure you are on the right branch.
 
    ::
 
@@ -109,7 +108,7 @@ the branch visible on origin.
 Pull Requests
 -------------
 A pull request (PR) represents the process of merging (or pulling) a feature branch into master.
-A pull request is created and managed on your repository page on github.com. Pull requests
+A pull request is created and managed on your repository page on Github. Pull requests
 provide a user interface for reviewing files that were changed, approving the changes, and finally
 merging those changes into the master branch.
 
@@ -346,5 +345,5 @@ anyone on the project can click merge if needed.
 
 Additional Resources
 --------------------
-* `Atlassian article comparing git workflows <https://www.atlassian.com/git/tutorials/comparing-workflows>`_
+* `Atlassian article comparing Git workflows <https://www.atlassian.com/git/tutorials/comparing-workflows>`_
 * `Github pull request reference <https://help.github.com/en/articles/about-pull-requests>`_
