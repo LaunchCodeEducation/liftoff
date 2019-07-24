@@ -56,6 +56,7 @@ Git
 
    git/git-setup
    git/git-refresher
+   git/github-issues
    git/git-workflow
    git/git-commits
 
