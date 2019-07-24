@@ -50,9 +50,7 @@ place for you. Flesh out your project outline by providing:
    describe a problem that you have identified that you don’t currently
    know how to solve.
 
-5. **Project Tracker**: We talked about various project tracking tools
-   Pivotal, Trello, and GitHub Projects. Whichever you commit to using
-   link here.
+5. **Project Tracker**: Link to your Trello board here.
 
 6. **Enable GitHub Issues**: If you haven’t already enabled `GitHub
    Issues <../../articles/github-issues/>`__ do so before submitting
