@@ -22,5 +22,3 @@ Classes
    classes/*
    todos
    modules/index
-
-:ref:`View Contents by Module <modules-index>`

@@ -1,7 +1,11 @@
 .. _modules-index:
 
-Modules
+Liftoff
 =======
+
+Modules
+^^^^^^^
+
 
 Introduction
 ------------
@@ -55,4 +59,3 @@ Git
    git/git-workflow
    git/git-commits
 
-:ref:`View Contents by Class <main-index>`

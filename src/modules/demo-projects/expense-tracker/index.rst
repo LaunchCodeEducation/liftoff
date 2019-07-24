@@ -191,8 +191,8 @@ for ``expense-tracker`` as of the end of sprint 2.
 
 **Screenshots:** 
 
-- `Expense Tracker Registration <figures/expense-tracker-register.png>`__ 
-- `Expense Tracker Login <figures/expense-tracker-login.png>`__
+- `Expense Tracker Registration <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/expense-tracker/figures/expense-tracker-register.png>`__ 
+- `Expense Tracker Login <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/expense-tracker/figures/expense-tracker-login.png>`__
 
 **What is planned next:** Next, Paul will work on a landing page after a
 user logs in, flash messaging, and the category model. He has created,
@@ -367,10 +367,10 @@ for ``expense-tracker`` as of the middle of sprint 3.
 
 **Screenshots:** 
 
-- `Expense Tracker Create Category <figures/expense-tracker-create-category-1.png>`__ 
-- `Expense Tracker View Categories <figures/expense-tracker-view-categories.png>`__
-- `Expense Tracker Create Expense <figures/expense-tracker-create-expense.png>`__ 
-- `Expense Tracker View Expenses <figures/expense-tracker-view-expenses.png>`__
+- `Expense Tracker Create Category <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/expense-tracker/figures/expense-tracker-create-category-1.png>`__ 
+- `Expense Tracker View Categories <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/expense-tracker/figures/expense-tracker-view-categories.png>`__
+- `Expense Tracker Create Expense <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/expense-tracker/figures/expense-tracker-create-expense.png>`__ 
+- `Expense Tracker View Expenses <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/expense-tracker/figures/expense-tracker-view-expenses.png>`__
 
 **What is planned next:** Next, Paul will continue working on Expenses.
 He is currently using a timestamp in his database, but is having trouble
@@ -456,8 +456,7 @@ Assignment: Project Presentation
 Although Paul’s project isn’t completely done yet he still needs to
 complete his Project Presentation assignment.
 
-:download:`Expense Tracker
-Presentation <Expense_Tracker_Presentation.pdf>`
+Expense Tracker Presentation :download:`PDF <Expense_Tracker_Presentation.pdf>`
 
 Paul found that in working on this assignment he completed much more
 than he was giving himself credit for! He has mutliple screens to show,
@@ -492,16 +491,16 @@ codebase <https://github.com/pdmxdd/expense_tracker/tree/3f9cc99656c3ad2a55fd3f3
 
 **Screenshots:** 
 
-- `Expense Tracker Edit Expense 1 <figures/expense-tracker-edit-expense1.png>`__ 
-- `Expense Tracker Edit Expense 2 <figures/expense-tracker-edit-expense2.png>`__ 
-- `Expense Tracker Delete Expense 1 <figures/expense-tracker-delete-expense-1.png>`__ 
-- `Expense Tracker Delete Expense 2 <figures/expense-tracker-delete-expense-2.png>`__ 
-- `Expense Tracker Archive Category <figures/expense-tracker-archive-category.png>`__ 
-- `Expense Tracker Unarchive Category <figures/expense-tracker-unarchive-category.png>`__ 
-- `Expense Tracker Change Email 1 <figures/expense-tracker-change-email-1.png>`__ 
-- `Expense Tracker Change Email 2 <figures/expense-tracker-change-email-2.png>`__ 
-- `Expense Tracker Change Password 1 <figures/expense-tracker-change-password-1.png>`__ 
-- `Expense Tracker Change Password 2 <figures/expense-tracker-change-password-2.png>`__
+- `Expense Tracker Edit Expense 1 <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/expense-tracker/figures/expense-tracker-edit-expense1.png>`__ 
+- `Expense Tracker Edit Expense 2 <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/expense-tracker/figures/expense-tracker-edit-expense-2.png>`__ 
+- `Expense Tracker Delete Expense 1 <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/expense-tracker/figures/expense-tracker-delete-expense-1.png>`__ 
+- `Expense Tracker Delete Expense 2 <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/expense-tracker/figures/expense-tracker-delete-expense-2.png>`__ 
+- `Expense Tracker Archive Category <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/expense-tracker/figures/expense-tracker-archive-category.png>`__ 
+- `Expense Tracker Unarchive Category <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/expense-tracker/figures/expense-tracker-unarchive-category.png>`__ 
+- `Expense Tracker Change Email 1 <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/expense-tracker/figures/expense-tracker-change-email-1.png>`__ 
+- `Expense Tracker Change Email 2 <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/expense-tracker/figures/expense-tracker-change-email-2.png>`__ 
+- `Expense Tracker Change Password 1 <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/expense-tracker/figures/expense-tracker-change-password-1.png>`__ 
+- `Expense Tracker Change Password 2 <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/expense-tracker/figures/expense-tracker-change-password-2.png>`__
 
 **What is planned next:** 
 
