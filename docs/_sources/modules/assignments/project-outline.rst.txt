@@ -52,8 +52,8 @@ place for you. Flesh out your project outline by providing:
 
 5. **Project Tracker**: Link to your Trello board here.
 
-6. **Enable GitHub Issues**: If you haven’t already enabled `GitHub
-   Issues <../../articles/github-issues/>`__ do so before submitting
+6. **Enable GitHub Issues**: If you haven’t already enabled :ref:`GitHub
+   Issues <github-issues>` do so before submitting
    this assignment. If you haven’t enabled GitHub Issues yet your mentor
    will not be able to give you feedback on your project!
 
