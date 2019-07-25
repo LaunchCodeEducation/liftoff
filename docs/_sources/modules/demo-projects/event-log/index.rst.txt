@@ -59,11 +59,11 @@ Sprint 1 Standup
 ^^^^^^^^^^^^^^^^
 
 During our sprint 1 standup, we discussed our completed project outlines
-and upcoming work. Here are Chris’ items.
+and upcoming work. Here are Chris’ items:
 
-**What was accomplished:** The Event Log project outline was completed,
+**What was accomplished:** The Event Log project outline was completed
 with a few features laid out. Some questions were raised about how to
-approach different things (e.g. user login) that we’ll have to be
+approach different things (e.g. user login) that will have to be
 figured out along the way.
 
 **What is planned next:** Next, wireframes and initial user stories will
@@ -78,13 +78,13 @@ potential challenge.
 Assignment: Project Planning
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The `Project
-Planning <https://github.com/chrisbay/liftoff-assignments/blob/master/P3-Project_Planning/>`__
+Chris' `Project
+Planning submission <https://github.com/chrisbay/liftoff-assignments/blob/master/P3-Project_Planning/>`__
 includes 3 initial wireframes for the Event Log app, along with a link
 to the Pivotal Tracker project that has been populated with some user
 stories.
 
-Here’s a screenshot of the tracker with initial user stories.
+Here’s a screenshot of the project tracker app with initial user stories:
 
 .. figure:: figures/sprint_1_stories.png
    :alt: Sprint 1 Stories

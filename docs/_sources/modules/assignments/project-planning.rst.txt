@@ -3,7 +3,7 @@
 Assignment: Project Planning
 =============================
 
-For this assignment, you’ll create some initial plans for your project,
+For this assignment, you’ll create some initial plans for your project
 and create your project’s repo.
 
 Getting Started
