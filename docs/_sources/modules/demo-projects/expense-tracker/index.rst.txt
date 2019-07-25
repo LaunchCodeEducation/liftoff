@@ -80,7 +80,7 @@ Paul's `Project
 Planning submission <https://github.com/pdmxdd/liftoff-assignments/blob/master/P3-Project_Planning/>`__
 includes 4 wireframes for the Expense Tracking application. A link to
 the Pivotal Tracker project that contains user stories for the current
-sprint, and upcoming stories in the icebox.
+sprint and upcoming stories in the icebox.
 
 Here is a screenshot of the tracker with initial user stories.
 
