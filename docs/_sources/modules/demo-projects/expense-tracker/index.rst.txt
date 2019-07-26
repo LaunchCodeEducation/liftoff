@@ -59,28 +59,28 @@ Sprint 1 Standup
 ^^^^^^^^^^^^^^^^
 
 During our sprint 1 standup, we discussed our completed project outlines
-and upcoming work. Here are Paul’s items.
+and upcoming work. Here are Paul’s items:
 
 **What was accomplished:** The Expense Tracker project outline was
-completed, and the preliminary features have been set. Concerns about
-Rocket’s non-existant user authentication were discussed, and ultimately
-it was determined that Paul will build his own User Authentication.
+completed and the preliminary features have been set. Concerns about
+Rocket’s nonexistent user authentication were discussed and ultimately
+it was determined that Paul will build his own user authentication.
 
-**What is planned next:** User stories will be written, prioritized, and
-wireframes will be created.
+**What is planned next:** User stories will be written and prioritized. 
+Wireframes will be created.
 
-**Blockers:** No blockers have been identified so far, however user
-authentication will be hand created, and Diesel, an ORM for Rust and
+**Blockers:** No blockers have been identified yet. However, user
+authentication will be hand created and Diesel, an ORM for Rust and
 Postgres, will need to be researched.
 
 Assignment: Project Planning
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The `Project
-Planning <https://github.com/pdmxdd/liftoff-assignments/blob/master/P3-Project_Planning/>`__
+Paul's `Project
+Planning submission <https://github.com/pdmxdd/liftoff-assignments/blob/master/P3-Project_Planning/>`__
 includes 4 wireframes for the Expense Tracking application. A link to
 the Pivotal Tracker project that contains user stories for the current
-sprint, and upcoming stories in the icebox.
+sprint and upcoming stories in the icebox.
 
 Here is a screenshot of the tracker with initial user stories.
 

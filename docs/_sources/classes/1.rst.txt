@@ -106,7 +106,7 @@ Regroup: Instructor Overview, and Questions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The instructor should have a few additional user stories for the example
-Attendance Application idea and will show you what they have to do to
+Attendance application idea and will show you what they have to do to
 complete the user story!
 
 

@@ -8,17 +8,17 @@ Project Module
 ^^^^^^^^^^^^^^
 
 -  Understand the general flow from idea to code.
--  Understand Wireframes how they are tied to user stories, and how you
+-  Understand wireframes, how they are tied to user stories, and how you
    can use them to plan your project.
--  Ability to create Wireframes, and to couple them with User Stories.
+-  Ability to create wireframes and to couple them with user stories.
 -  Understand user story refining, prioritization, and estimation.
--  Utilize project management tools to document and plan project work
+-  Utilize project management tools to document and plan project work.
 -  Describe the basic components of a sprint: planning, kickoff,
-   retrospective
+   retrospective.
 -  Estimate user stories as a means of predicting the work that can be
-   carried out in a sprint
+   carried out in a sprint.
 -  Utilize wireframes to plan the structure of views and user
-   interactions
+   interactions.
 
 Prep Work
 ---------
@@ -32,42 +32,42 @@ Lecture: How do you visualize a user story?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In class, we will have a lecture and discussion on how to visualize
-a user story. The intended user for application will more than likely be
+a user story. The intended user for your application will more than likely be
 expecting something on their screen to interact with. How can we
 plan/design what their screens will look like?
 
-Before lecture today please take a few minutes to think about what your
+Before lecture today, please take a few minutes to think about what your
 project looks like to an end user. What do they need to see to use your
 application?
 
 Activity: Design your wireframes!
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Take this time to draw wireframes for your project check in with your
-mentor, talk about your wireframes with other people in your group, you
+Take this time to draw wireframes for your project check-in with your
+mentor. Talk about your wireframes with other people in your group. You
 might find that some of your wireframes look similar!
 
-Lecture: How do you take a user story, and wireframe and turn it into code?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Lecture: How do you turn user stories and wireframes into code?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The Instructor will give a brief presentation on a Most Viable Product
-(MVP), and will give a live demonstration of completing a user story and
+The instructor will give a brief presentation on a minimum viable product
+(MVP) and will give a live demonstration of completing a user story and
 wireframe.
 
-Activity: Plan you MVP and check in with your Mentor!
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Activity: Plan your MVP and check in with your mentor!
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Use this time in class to polish your user stories, and wireframes so
-you have an MVP. Share your plans with your Mentor. You should be able
+Use this time in class to polish your user stories and wireframes so
+you have an MVP. Share your plans with your mentor. You should be able
 to walk them through how a user interacts with your application by
-talking through the user stories, and showing the wireframes.
+talking through the user stories and showing the wireframes.
 
-Regroup: Instructor Demo, and Questions
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Regroup: Instructor Demo and Questions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The Instructor has an MVP for the example Attendance application let’s
-watch them work through a user story, wireframe to creating the code and
-seeing the final results.
+The instructor has an MVP for the example Attendance application. Let’s
+watch them develop a user story and wireframe and then create
+the code to see the final results.
 
 Assignment
 ----------
