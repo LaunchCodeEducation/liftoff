@@ -99,17 +99,17 @@ Week 3
 Sprint 1 Review and Retrospective
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-For the sprint review/retro Chris and Paul discussed the work completed
-during the first. Both completed initial project planning and setup.
+For the review/retro Chris and Paul discussed the work completed
+during the first sprint. Both completed initial project planning and setup.
 Working through some details such as wireframes and user stories helped
 clarify the initial work to be done, which will begin in earnest this
 week as the second sprint kicks off.
 
-During the retrospective portion of the discussion, the discussed how in
+During the retrospective portion of the discussion, they discussed how in
 some ways it didn’t feel like much had gotten done since there wasn’t
 much, if any, code written. Paul made the point that while little code
 was written, the planning that was done should help the initial coding
-phase of the project go more quickly than it otherwise would. He noted
+phase of the project go more quickly than it otherwise would have. He noted
 that if a programmer just jumps into a project without designing and
 planning the work to be done, a lot of time can be wasted in doing
 things inefficiently, reworking portions of the app, and generally
@@ -119,12 +119,11 @@ should make things go more smoothly from now on!
 Assignment: Project Setup
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-`Assignment submission in
-``liftoff-assignments`` <https://github.com/chrisbay/liftoff-assignments/tree/master/P4-Project_Setup>`__
+`Submission in liftoff-assignments <https://github.com/chrisbay/liftoff-assignments/tree/master/P4-Project_Setup>`__
 
 The project’s `GitHub
 repository <https://github.com/chrisbay/event-log>`__ was set up.
-Initial commits created a basic “Hello world” Spring Boot app obtained
+Initial commits created a basic “Hello, world!” Spring Boot app obtained
 via `start.spring.io <http://start.spring.io/>`__. They also add some
 basic dependencies in the
 `build.gradle <https://github.com/chrisbay/event-log/blob/3f91742a0527a65e64678c477d50f26a98b87f3e/build.gradle>`__
@@ -142,7 +141,7 @@ For the second sprint, Chris plans on working through the initial user
 stories, which are each focused on one aspect of user registration and
 authentication. He has reviewed the `spring-filter-based-auth
 example <https://github.com/LaunchCodeEducation/spring-filter-based-auth>`__
-provided by LaunchCode, and may use that approach. However, he has been
+provided by LaunchCode, and may use that approach. However, he has also been
 learning about Spring Security and wants to see if he can use that
 framework for setting up registration and login.
 
@@ -150,7 +149,7 @@ He hasn’t used Spring Security before, and it looks like it could be
 complicated to set up. To get started, he’s going to refer to the
 `Spring Security Series <http://www.baeldung.com/security-spring>`__ of
 articles at `baeldung.com <http://www.baeldung.com/>`__, which seem
-well-written and thorough. The only challange may be in modifying the
+well-written and thorough. The only challenge may be in modifying the
 complex examples for his more straightforward situation.
 
 He has estimated the user stories that he feels confident he can
@@ -164,8 +163,8 @@ column of Pivotal Tracker.
 
 The first story he’ll work on will be, “As a user, I can create an
 account so that I can access the app.” The other stories are focused on
-logging in and out, and one can’t log in or out without and existing
-account, so it makes sense to start this one first. To verify that
+logging in and out, and one can’t log in or out without an existing
+account. It therefore makes sense to start this one first. To verify that
 account registration works, he’ll be able to check the database.
 
 Setting up account registration will require him to set up his first
@@ -174,7 +173,7 @@ other initial, one-time work–such as creating some shared template
 fragments–will also need to be done.
 
 If he completes all of these, there are more stories ready to estimate
-and begin in the **Backlog**.
+and begin working on in the **Backlog**.
 
 .. _el-week-4:
 

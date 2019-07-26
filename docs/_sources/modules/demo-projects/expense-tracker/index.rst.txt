@@ -97,17 +97,17 @@ Week 3
 Sprint 1 Review and Retrospective
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-For the sprint review/retro Chris and Paul discussed the work completed
-during the first. Both completed initial project planning and setup.
+For the review/retro Chris and Paul discussed the work completed
+during the first sprint. Both completed initial project planning and setup.
 Working through some details such as wireframes and user stories helped
 clarify the initial work to be done, which will begin in earnest this
 week as the second sprint kicks off.
 
-During the retrospective portion of the discussion, the discussed how in
-some ways it didn’t feel like much had gotten done since there wasn’t
+During the retrospective portion of the discussion, they discussed how in
+some ways, it didn’t feel like much had gotten done since there wasn’t
 much, if any, code written. Paul made the point that while little code
 was written, the planning that was done should help the initial coding
-phase of the project go more quickly than it otherwise would. He noted
+phase of the project go more quickly than it otherwise would have. He noted
 that if a programmer just jumps into a project without designing and
 planning the work to be done, a lot of time can be wasted in doing
 things inefficiently, reworking portions of the app, and generally
@@ -117,12 +117,12 @@ should make things go more smoothly from now on!
 Assignment: Project Setup
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-`Assignment submission in
+`Submission in
 liftoff-assignments <https://github.com/pdmxdd/liftoff-assignments/tree/master/P4-Project_Setup>`__
 
 The project’s `GitHub
-repository <https://github.com/pdmxdd/expense-tracker>`__ was set up.
-Initial commits created a basic “Hello world” Rocket application via the
+repository <https://github.com/pdmxdd/expense_tracker>`__ was set up.
+Initial commits created a basic “Hello, world!” Rocket application via the
 `Rocket Quickstart <https://rocket.rs/guide/quickstart/>`__.
 
 .. figure:: figures/expense-tracker-initial-commit.png
@@ -134,10 +134,10 @@ Sprint 2 Kickoff
 ^^^^^^^^^^^^^^^^
 
 For the second sprint, Paul plans on working through the initial user
-stories, which are focused on basic user management (registration,
+stories. These are focused on basic user management (registration,
 login, logout). He couldn’t find any good external crates in Rust to
-help with user authentication. He will be forced to create user
-authentication on his own, and plans to use the same concpets we learned
+help with user authentication. He will need to create user
+authentication on his own, and plans to use the same concepts we learned
 in Unit 2 – `Password Hashing &
 Salting <https://education.launchcode.org/web-fundamentals/class-prep/13/>`__.
 
@@ -146,19 +146,19 @@ Salting <https://education.launchcode.org/web-fundamentals/class-prep/13/>`__.
 
    Sprint 2 user stories
 
-As an overview: 
+Here's an overview: 
 
 - As a prospective user, I can create an account. 
 - As a user, I can login to my account. 
 - As a user, I can logout.
 
-In order to complete these stories he will have to create a ``User``
+In order to complete these stories, he will have to create a ``User``
 model, and setup the project’s database. He will have to start learning
-about Diesel (an ORM for Rust, and Postgres) in order to close down this
+about Diesel (an ORM for Rust and Postgres) in order to close down this
 batch of user stories.
 
 If he completes these three stories, there are more stories planned for
-future sprints, and stories in the backlog.
+future sprints and stories in the backlog.
 
 .. _et-week-4:
 

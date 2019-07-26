@@ -18,7 +18,7 @@ your issue, it can help you know what terms to search for when looking for help.
 Cloning the Repository
 ----------------------
 When starting on the project, you will first need to clone the remote repository to your computer.
-You will clone the repository by going to the repository page on Github and clicking the clone button.
+You will clone the repository by going to the repository page on GitHub and clicking the clone button.
 The clone menu will provide two options. For the group project, we suggest using SSH, however cloning
 with HTTPS will also work.
 
@@ -33,7 +33,7 @@ Cloning Options:
 
      * Example: ``git clone git@github.com:LaunchCodeEducation/liftoff.git``
 
-   * Requires a file to be created and uploaded to Github.
+   * Requires a file to be created and uploaded to GitHub.
    * You do NOT have to enter your password when pushing commits to a remote repository.
    * `Instructions for using SSH <https://help.github.com/en/articles/connecting-to-github-with-ssh>`_
 

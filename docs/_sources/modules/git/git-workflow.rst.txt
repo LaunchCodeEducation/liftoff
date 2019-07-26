@@ -108,7 +108,7 @@ the branch visible on origin.
 Pull Requests
 -------------
 A pull request (PR) represents the process of merging (or pulling) a feature branch into master.
-A pull request is created and managed on your repository page on Github. Pull requests
+A pull request is created and managed on your repository page on GitHub. Pull requests
 provide a user interface for reviewing files that were changed, approving the changes, and finally
 merging those changes into the master branch.
 
@@ -132,7 +132,7 @@ until you are done coding and you have verified that the feature works.
    3. Click on the New pull request button for the feature branch.
 
    .. figure:: figures/create-pr-from-branch.png
-      :alt: List of branches on Github showing New pull request button.
+      :alt: List of branches on GitHub showing New pull request button.
 
       New pull request button showing for feature branch.
 
@@ -154,7 +154,7 @@ until you are done coding and you have verified that the feature works.
 
       * Your URL will be changed to a unique address for the new PR. https://github.com/LaunchCodeEducation/example-pull-request/pull/1
       * You can share this with teammates.
-      * You can also see open PRs by going to the list of pull requests for your repository on Github.
+      * You can also see open PRs by going to the list of pull requests for your repository on GitHub.
 
    After these steps, you will have an open pull request. An open pull request can be merged or closed. Closing
    will cancel the pull request. Merging will merge the feature branch into master. Before merging, the code
@@ -170,7 +170,7 @@ there. This allows a reviewer to see what was changed and if it meets team and l
 
    Assign code reviewer for Add login page pull request.
 
-   1. Go to the pull request on Github
+   1. Go to the pull request on GitHub
    2. Click the gear in the Assignees section
 
       * There is also a Reviewer section. The main difference is that the Assignee has been officially assigned to review this PR.
@@ -178,7 +178,7 @@ there. This allows a reviewer to see what was changed and if it meets team and l
    3. Find and click on a team member that you want to assign to review the PR.
 
       * You can assign multiple people, but you only need one.
-      * The assignee will be notified by Github, but it's also a good idea to remind them directly that they need to review the PR.
+      * The assignee will be notified by GitHub, but it's also a good idea to remind them directly that they need to review the PR.
 
    .. figure:: figures/assign-pr.png
       :alt: Pull request with assignee selected.
@@ -219,7 +219,7 @@ Focus on these topics when reviewing code:
 
 * Security concerns
 
-  * Don't commit passwords to Github!
+  * Don't commit passwords to GitHub!
   * Don't use risky third party code that hasn't been verified.
   * Look out for SQL injection attacks.
 
@@ -237,7 +237,7 @@ Focus on these topics when reviewing code:
 
   In this example we will review and eventually approve the "Add login page" PR.
 
-  1. Go to the pull request on Github
+  1. Go to the pull request on GitHub
   2. Go to the "Files changed" tab
 
      * This tab lists all files that were edited, added, or removed.
@@ -346,4 +346,4 @@ anyone on the project can click merge if needed.
 Additional Resources
 --------------------
 * `Atlassian article comparing Git workflows <https://www.atlassian.com/git/tutorials/comparing-workflows>`_
-* `Github pull request reference <https://help.github.com/en/articles/about-pull-requests>`_
+* `GitHub pull request reference <https://help.github.com/en/articles/about-pull-requests>`_

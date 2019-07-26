@@ -45,7 +45,7 @@ and share some examples.
 Lecture: Online Profiles
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-We will talk about popular online profiles, like LinkedIn and Github.
+We will talk about popular online profiles, like LinkedIn and GitHub.
 We’ll also discuss why online profiles are necessary and how they
 should be presented. We will have examples and take questions.
 
