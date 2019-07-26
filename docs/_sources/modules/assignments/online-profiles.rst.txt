@@ -15,16 +15,16 @@ Within your ``liftoff-assignments`` repository, open up
 
 -  a .PDF of your resume
 -  a link to your GitHub profile
--  A link to your LinkedIn profile.
+-  a link to your LinkedIn profile.
 
-Commit your changes and push them to your GitHub repository. Your Mentor
+Commit your changes and push them to your GitHub repository. Your mentor
 will then be able to provide you with feedback via GitHub issues.
 
 Alternate Submissions
 ---------------------
 
-If you are unwilling to upload your resume to GitHub you will still be
-responsible for getting your resume to your Mentor to grade. Talk to
+If you are unwilling to upload your resume to GitHub, you will still be
+responsible for getting your resume to your mentor to grade. Talk to
 them in class about the best way to get them your resume. They may have
 you print out a physical copy, or email/slack them a digital copy, or
 they may want to see your resume during class.

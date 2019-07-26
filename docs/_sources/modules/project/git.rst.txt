@@ -3,8 +3,8 @@
 Git for Projects
 ================
 
-You’ve become comfortable with using Git for version control on your
-projects and assignments; however, you likely haven’t used the same Git
+You’ve become comfortable using Git for version control on your
+projects and assignments. However, you likely haven’t used the same Git
 repository to collaborate with others. It should come as no surprise to
 you that in the professional tech world, developers are working in the
 same code base all the time!

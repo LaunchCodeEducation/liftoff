@@ -6,17 +6,17 @@ Online Profiles
 This career module focuses on the profiles companies will view
 before and during the interview process. We will manipulate these
 profiles in a way that will assist you during your job search. For
-prep-work we will examine the following: a resume, a GitHub profile, and
+prep work, we will examine the following: a resume, a GitHub profile, and
 a LinkedIn profile. We will go over what makes the profile good and
 highlight where the profile can be improved. This will give us a list of
-things to include as well as things to leave out of each profile.
+things to include, as well as things to leave out of each profile.
 
 Technical Resumes
 -----------------
 
 
 A resume is a **crucial** part of your job search. We’re not going to
-ramble on explaining what a resume is, because it’s a part of the hiring
+ramble on explaining what a resume is - it’s a part of the hiring
 process for most industries. What we will focus on instead is how to
 create a technical resume that will highlight the skills you bring to a
 technical position.
@@ -34,12 +34,12 @@ typically include with a resume.
 
 The clearly outlined sections of a technical resume:
 
-1. Personal Information
-2. Summary of Technical Skills
-3. Technical Experience
-4. Technical Education
-5. Other Experience
-6. Other Education
+#. Personal Information
+#. Summary of Technical Skills
+#. Technical Experience
+#. Technical Education
+#. Other Experience
+#. Other Education
 
 Personal Information
 ^^^^^^^^^^^^^^^^^^^^
@@ -47,24 +47,26 @@ Personal Information
 You must include your first and last name, a phone number where you can
 be reached, and a professional email address*.
 
-You should also include a link to your Github profile, a link to your
+.. note::
+
+    A professional email address is some variation of your name.
+    a.lovelace@gmail.com gives a much more professional feeling than
+    fluffytoes32@yahoo.com. If you don’t have an email account for
+    professional communication, you should create one. We personally
+    recommend gmail.
+
+You should also include a link to your GitHub profile, a link to your
 LinkedIn, a physical address, and a link to your personal website (if
 you have one).
-
-A professional email address is some variation of your name.
-a.lovelace@gmail.com gives a much more professional feeling than
-fluffytoes32@yahoo.com. If you don’t have an email account for
-professional communication you should create one, we personally
-recommend gmail.
 
 Summary of Technical Skills
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 After clearly marking your personal information at the top of the page,
-the next section is to quickly outline your Technical Skills. You should
+the next section should briefly outline your technical skills. You should
 prioritize programming languages, frameworks, and major libraries over
-operating systems, and software. You should order your skills from most
-familiar to least familiar. As a final note you should also consider the
+operating systems and software. You should order your skills from most
+familiar to least familiar. As a final note, you should also consider the
 type of job you are looking for.
 
 For example: I am looking for a Java back end development job.
@@ -75,17 +77,17 @@ For example: I am looking for a Java back end development job.
 
    Java, Spring, Hibernate, Thymeleaf, MySQL, Python, Flask, HTML, CSS, JavaScript, and jQuery.
 
-This selection, and order of skills shows my interviewer that I feel
+This selection and order of skills shows my interviewer that I feel
 strongest with Java, Spring, and MySQL, then I have less familiarity
-with Python, and Flask (another back end skill set), and finally that
-have done a little with front end, and am comfortable using those tools
+with Python, and Flask (another back end skill set), and finally that I 
+have done a little with front end and am comfortable using those tools
 – but would need a ramp up to do them exclusively.
 
 .. tip:: 
 
    You should not include every language or technology you’ve heard of. You
    should only include skills you would feel comfortable using to build a
-   project today. You’ve learned the skill, and have some practical
+   project today. You’ve learned the skill and have some practical
    experience with the skill. This will usually mean an entry level
    developer will include fewer than 10 skills on their resume.
 
@@ -95,11 +97,11 @@ Technical Experience
 
 After listing the skills you have, you need to back up your skills with
 some experience you have gained with those skills. You can do this by
-mentioning **Projects** you have completed, or by outlining
-**Professional Experience** that required the use of those skills. Most
+mentioning **projects** you have completed, or by outlining
+**professional experience** that required the use of those skills. Most
 of you do not have professional experience yet, but you have completed
 projects. You will want to include projects that used the skills you
-mentioned in your Technical Skills section.
+mentioned in your technical skills section.
 
 ::
 
@@ -113,17 +115,18 @@ mentioned in your Technical Skills section.
    Blogz
    A school project completed in LC101, it allows users to signup, create, and read blog posts.
        - Python, Flask, SQLAlchemy, Jinja, MySQL, and HTML
-       - Beyond the assigned tasks, I included a feature that allows users to delete, or edit their owned blog posts
+       - Beyond the assigned tasks, I included a feature that allows users to write, edit, or delete their own blog posts
        - github.com/mygithubaccount/blogz
 
    Personal Portfolio -- myportfolio.com
-   A portfolio I am currently building. It will eventually contain links to my other projects, and document what I am currently learning.
+   A portfolio I am currently building. It will eventually contain links to my other projects, 
+   and document what I am currently learning.
        - React, JavaScript, HTML, CSS, and Bootstrap
        - I am currently learning React to incorporate into this project
        - github.com/mygithubaccount/portfolio
 
 You need to include: - The project name - A brief description of the
-project - Skills used in the project - A key feature of your project -
+project - Skills/Technologies used in the project - A key feature of your project -
 github repo link
 
 You should include a live link to your project, if it is online.
@@ -150,9 +153,9 @@ part of, books you have worked through, and MOOC’s you have completed.
        - Built multiple in class projects
 
    TeamTreeHouse.com
-       - Worked through the Java, Spring curriculum of TeamTreeHouse.com
+       - Worked through the Java and Spring curriculum of TeamTreeHouse.com
        - Skills: Java, Eclipse, Spring, Spring Security, Hibernate, and JDBC.
-       - Videos to cover concepts, and projects to practice concepts
+       - Videos to cover concepts and projects to practice concepts
 
    CS Courses from UMSL
        - Completed 4 CS courses from UMSL
@@ -161,7 +164,7 @@ part of, books you have worked through, and MOOC’s you have completed.
 Other Experience
 ^^^^^^^^^^^^^^^^
 
-After covering your technical experiences you still need to include your
+After covering your technical experiences, you still need to include your
 non-technical work experience.
 
 ::
@@ -169,12 +172,12 @@ non-technical work experience.
    Work Experience:
    Assistant Manager, Upper Limits
        - Day to day operations of a rock climbing gym, tending register, performing safety inspections, assisting customers, cleaning
-       - Worked with Managers to plan, and run special events including Birthday Parties, Corporate Team Building, Climbing Competitions
-       - Taught Rock Gym 101 - teaching novice climbers about top rope climbing, both how to, and necessary safety precautions
+       - Worked with managers to plan and run special events including birthday parties, corporate team building, and climbing competitions
+       - Taught Rock Gym 101 - teaching novice climbers about top rope climbing, both how to and necessary safety precautions
 
    Manager/Technical Support, Cellular Communication
        - Provide technical support & information about mobile devices
-       - Troubleshoot hardware / software problems for customers, and in house computers
+       - Troubleshoot hardware / software problems for customers and in house computers
 
 This section can be quite long, depending on the jobs you have had so
 far. You should try to include as much of it as possible, but focusing
@@ -185,7 +188,7 @@ Other Education
 ^^^^^^^^^^^^^^^
 
 If you have any other formal education you didn’t include in the
-Technical Education section, you still need to include as it provides
+technical education section, you still need to include it as it provides
 invaluable information about you.
 
 ::
@@ -217,7 +220,7 @@ Your GitHub profile can be an immensely powerful tool in showing other
 people projects you have completed, how often you work on projects, how
 long you’ve been a programmer, and the different languages and
 technologies you have worked with. Also, the more you use GitHub, the
-more comfortable you will be with using any form of Version Control.
+more comfortable you will be with using any form of version control.
 
 After signing into your GitHub profile, you can click on the picture.
 This will take you to your account settings and will allow you to update
@@ -248,8 +251,13 @@ shot of your face for your GitHub profile.
 
 This would be a great GitHub profile picture for Alan Turing:
 
+.. figure:: figures/alan_turing_profile_picture.jpg
+   :alt: Alan Turing Profile Picture
+
+   Alan Turing Profile Picture
+
 Take note that *your GitHub profile is public facing!* If you do not
-wish to upload a picture of yourself to GitHub you can still pass the
+wish to upload a picture of yourself to GitHub, you can still pass the
 assignment. Notify your mentor if you are not comfortable uploading a
 picture of yourself to your GitHub profile.
 
@@ -282,45 +290,51 @@ presentations I gave throughout the class, and finally a repo called
 gmail_example which is a small Flask project I created to show how to
 connect to Gmail’s API and to send emails from a web app!
 
+.. figure:: figures/github_pinned_repo.png
+   :alt: GitHub Pinned Repositories
+
+   GitHub Pinned Repositories
+
 Anyone that comes to my main profile page will find these 4 repositories
 before anything else!
 
 .. tip:: 
 
-   You can set your pinned repositories by clicking the “customize your
-   pinned repositories” text you see in the top right corner of the image.
+   You can set your pinned repositories by clicking the *Customize your
+   pinned repositories* text you see in the top right corner of the image.
 
-Project Readme
+Project README
 ^^^^^^^^^^^^^^
 
 The final aspect that makes for a great GitHub profile is a specific
-project readme file.
+project README file.
 
-A readme file is a markdown file that is displayed at the bottom of the
+A README file is a markdown file that is displayed at the bottom of the
 repository. This is where you can include the requirements of your
-project, if someone wants to clone and run your project, and a brief
-description of what your project does. As you are searching for jobs,
-you should have a project readme file for every project you want to
-share with a potential employer.
+project and a brief description of what your project does. If someone 
+wants to clone and run your project, this is where they will learn what 
+is needed to do so. As you are searching for jobs, you should have a project 
+README file for every project you want to share with a potential employer.
 
-The readme gives me an ability to explain to the interviewer what my
+The README gives me an ability to explain to the interviewer what my
 project does, what skills I used in my project, and what I am going to
 do with this project in the future.
 
 You can add in a requirements section that shows what dependencies and
 environment they will need to use to run the project.
 
-You can also include images in your markdown file that may include
+You can also include images in your Markdown file that may include
 screenshots of wireframes, actual views, or model diagrams of your
-project. That way, you can show more than the actual project itself.
+project. That way, you can show off what you are planning for the 
+future of the project.
 
 GitHub is public
 ^^^^^^^^^^^^^^^^
 
-As a final reminder your GitHub profile is public. Anyone can search for
-it, and view any of the information on your profile. If you have any
-issues with uploading personal information to your GitHub profile please
-talk with your Mentor about acceptable usernames, pictures, and bios.
+As a final reminder, your GitHub profile is public. Anyone can search for
+it and view any of the information on your profile. If you have any
+issues with uploading personal information to your GitHub profile, please
+talk with your mentor about acceptable usernames, pictures, and bios.
 You will still be required to use GitHub, but we do not want you sharing
 any information you are not comfortable with sharing.
 
@@ -337,7 +351,7 @@ profile should be geared towards the HR department, giving you a chance
 to further explain things about yourself.
 
 Much like your GitHub profile, you want to associate a professional
-email address with your LinkedIn account as well as have a nice looking
+email address with your LinkedIn account and have a nice looking
 headshot to include as a picture.
 
 Contact Information
@@ -357,8 +371,8 @@ Core Skills
 ^^^^^^^^^^^
 
 LinkedIn has a section dedicated to skills. This is the area where you
-may like to include some of the hard technical skills you are searching
-for, and other soft skills you have accumulated from non-tech education
+may like to include some of the technical skills you have recently learned,
+as well as other soft skills you have accumulated from non-tech education
 or experience.
 
 History

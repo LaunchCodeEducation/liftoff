@@ -34,7 +34,7 @@ Lecture: Software Licensing
 
 We’ll discuss what your rights are when it comes to software licensing,
 how to choose a license, and how to get started contributing to open
-source.
+source projects.
 
 Lecture: Resumes
 ^^^^^^^^^^^^^^^^
@@ -45,16 +45,16 @@ and share some examples.
 Lecture: Online Profiles
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-We will talk about popular online profiles, like LinkedIn and Github.
-We’ll also discuss why online profiles are necessary, and how they
-should be presented. We will have examples, and take questions.
+We will talk about popular online profiles, like LinkedIn and GitHub.
+We’ll also discuss why online profiles are necessary and how they
+should be presented. We will have examples and take questions.
 
 Activity: Resume Workshop
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You will have time to work on your resume, GitHub profile, and LinkedIn.
 If you haven’t started a technical resume yet, you’ll be able to start
-based on some example shared in the prep work. If you have an existing
+based on some examples shared in the prep work. If you have an existing
 resume, you can pair up with a partner or your mentor to get feedback.
 
 

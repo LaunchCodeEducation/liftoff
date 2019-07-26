@@ -19,7 +19,7 @@ The objectives for this assignment are simple to state:
 
 There are some situation-specific tips below. If you have questions
 about getting started on your project that are not covered here, talk to
-your mentor or an instructor.
+your mentor or the instructor.
 
 Pre-existing Projects
 ^^^^^^^^^^^^^^^^^^^^^
@@ -35,7 +35,7 @@ Java / Spring Boot Project Tips
 Revisit `lesson
 videos <http://education.launchcode.org/skills-back-end-java/videos/>`__
 from the Java / Spring Boot skill track as needed. In particular, if
-you’re starting from scratch you’ll find these useful:
+you’re starting from scratch, you’ll find these useful:
 
 -  `Intro to Spring Boot:
    Controllers <http://education.launchcode.org/skills-back-end-java/videos/intro-to-spring-boot-controllers/>`__
