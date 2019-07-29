@@ -4,8 +4,8 @@ Expense Tracker
 Quick Links
 -----------
 
-- `Assignment Repository for Expense Tracker <https://github.com/pdmxdd/liftoff-assignments>`__
-- `Expense Tracker GitHub Repository <https://github.com/pdmxdd/expense_tracker>`__
+- `Assignment Repository for Expense Tracker <https://github.com/LaunchCodeEducation/liftoff-assignments-paul>`__
+- `Expense Tracker GitHub Repository <https://github.com/LaunchCodeEducation/expense_tracker>`__
 - Jump to week: :ref:`1 <et-week-1>` \| :ref:`2 <et-week-2>` \| :ref:`3 <et-week-3>` \| :ref:`4 <et-week-4>` \| :ref:`5 <et-week-5>` \| :ref:`6 <et-week-6>` \| :ref:`7 <et-week-7>` \| :ref:`8 <et-week-8>`
 
 Overview
@@ -47,7 +47,7 @@ Assignment: Project Outline
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The `project
-outline <https://github.com/pdmxdd/liftoff-assignments/tree/master/P2-Project_Outline>`__
+outline <https://github.com/LaunchCodeEducation/liftoff-assignments-paul/tree/master/P2-Project_Outline>`__
 for Expense Tracker gives an overview of the desired functionality.
 
 .. _et-week-2:
@@ -77,7 +77,7 @@ Assignment: Project Planning
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Paul's `Project
-Planning submission <https://github.com/pdmxdd/liftoff-assignments/blob/master/P3-Project_Planning/>`__
+Planning submission <https://github.com/LaunchCodeEducation/liftoff-assignments-paul/blob/master/P3-Project_Planning/>`__
 includes 4 wireframes for the Expense Tracking application. A link to
 the Pivotal Tracker project that contains user stories for the current
 sprint and upcoming stories in the icebox.
@@ -118,10 +118,10 @@ Assignment: Project Setup
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 `Submission in
-liftoff-assignments <https://github.com/pdmxdd/liftoff-assignments/tree/master/P4-Project_Setup>`__
+liftoff-assignments <https://github.com/LaunchCodeEducation/liftoff-assignments-paul/tree/master/P4-Project_Setup>`__
 
 The project’s `GitHub
-repository <https://github.com/pdmxdd/expense_tracker>`__ was set up.
+repository <https://github.com/LaunchCodeEducation/expense_tracker>`__ was set up.
 Initial commits created a basic “Hello, world!” Rocket application via the
 `Rocket Quickstart <https://rocket.rs/guide/quickstart/>`__.
 
@@ -186,7 +186,7 @@ completing user stories.
    Sprint 2 Commits
 
 `View the
-codebase <https://github.com/pdmxdd/expense_tracker/tree/535465868eded761b93fd8ff0d805c5505d02861>`__
+codebase <https://github.com/LaunchCodeEducation/expense_tracker/tree/535465868eded761b93fd8ff0d805c5505d02861>`__
 for ``expense-tracker`` as of the end of sprint 2.
 
 **Screenshots:** 
@@ -312,7 +312,7 @@ Sprint 2 Commit Log
    Sprint 2 final commits
 
 `View the
-codebase <https://github.com/pdmxdd/expense_tracker/tree/bdcb3301235ce092a72818bdafc891dfdf628bee>`__
+codebase <https://github.com/LaunchCodeEducation/expense_tracker/tree/bdcb3301235ce092a72818bdafc891dfdf628bee>`__
 
 Sprint 3 Kickoff
 ^^^^^^^^^^^^^^^^
@@ -362,7 +362,7 @@ and view categories. User can create and view Expenses.
    Sprint 3 Commits
 
 `View the
-codebase <https://github.com/pdmxdd/expense_tracker/tree/c9eed625271a6e152710b379ce74a11cbcb710fb>`__
+codebase <https://github.com/LaunchCodeEducation/expense_tracker/tree/c9eed625271a6e152710b379ce74a11cbcb710fb>`__
 for ``expense-tracker`` as of the middle of sprint 3.
 
 **Screenshots:** 
@@ -428,7 +428,7 @@ Sprint 3 Commit Log
    Sprint 3 final commits
 
 `View the
-codebase <https://github.com/pdmxdd/expense_tracker/tree/c47e467935f58fd0cb62073f9504591d813a60eb>`__
+codebase <https://github.com/LaunchCodeEducation/expense_tracker/tree/c47e467935f58fd0cb62073f9504591d813a60eb>`__
 
 Sprint 4 Kickoff
 ^^^^^^^^^^^^^^^^
@@ -487,7 +487,7 @@ of all of their expenses.
    Sprint 4 commits
 
 `View the
-codebase <https://github.com/pdmxdd/expense_tracker/tree/3f9cc99656c3ad2a55fd3f3684e32e11b61cc436>`__
+codebase <https://github.com/LaunchCodeEducation/expense_tracker/tree/3f9cc99656c3ad2a55fd3f3684e32e11b61cc436>`__
 
 **Screenshots:** 
 

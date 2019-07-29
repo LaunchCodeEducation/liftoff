@@ -6,8 +6,8 @@ Event Log
 Quick Links
 -----------
 
-- `Assignment Repository for Event Log <https://github.com/chrisbay/liftoff-assignments>`__
-- `Event Log GitHub Repository <https://github.com/chrisbay/event-log>`__
+- `Assignment Repository for Event Log <https://github.com/LaunchCodeEducation/liftoff-assignments-chris>`__
+- `Event Log GitHub Repository <https://github.com/LaunchCodeEducation/event-log>`__
 - Jump to week: :ref:`1 <el-week-1>` \| :ref:`2 <el-week-2>` \| :ref:`3 <el-week-3>` \| :ref:`4 <el-week-4>` \| :ref:`5 <el-week-5>` \| :ref:`6 <el-week-6>` \| :ref:`7 <el-week-7>` \| :ref:`8 <el-week-8>`
 
 Overview
@@ -47,7 +47,7 @@ Assignment: Project Outline
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The `project
-outline <https://github.com/chrisbay/liftoff-assignments/blob/master/P2-Project_Outline/>`__
+outline <https://github.com/LaunchCodeEducation/liftoff-assignments-chris/blob/master/P2-Project_Outline/>`__
 for Event Log gives an overview of the desired functionality.
 
 .. _el-week-2:
@@ -79,7 +79,7 @@ Assignment: Project Planning
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Chris' `Project
-Planning submission <https://github.com/chrisbay/liftoff-assignments/blob/master/P3-Project_Planning/>`__
+Planning submission <https://github.com/LaunchCodeEducation/liftoff-assignments-chris/blob/master/P3-Project_Planning/>`__
 includes 3 initial wireframes for the Event Log app, along with a link
 to the Pivotal Tracker project that has been populated with some user
 stories.
@@ -119,14 +119,14 @@ should make things go more smoothly from now on!
 Assignment: Project Setup
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-`Submission in liftoff-assignments <https://github.com/chrisbay/liftoff-assignments/tree/master/P4-Project_Setup>`__
+`Submission in liftoff-assignments <https://github.com/LaunchCodeEducation/liftoff-assignments-chris/tree/master/P4-Project_Setup>`__
 
 The project’s `GitHub
-repository <https://github.com/chrisbay/event-log>`__ was set up.
+repository <https://github.com/LaunchCodeEducation/event-log>`__ was set up.
 Initial commits created a basic “Hello, world!” Spring Boot app obtained
 via `start.spring.io <http://start.spring.io/>`__. They also add some
 basic dependencies in the
-`build.gradle <https://github.com/chrisbay/event-log/blob/3f91742a0527a65e64678c477d50f26a98b87f3e/build.gradle>`__
+`build.gradle <https://github.com/LaunchCodeEducation/event-log/blob/3f91742a0527a65e64678c477d50f26a98b87f3e/build.gradle>`__
 file for jQuery and Bootstrap (from the ``org.webjars`` group).
 
 .. figure:: figures/initial-commits.png
@@ -197,7 +197,7 @@ the desired features implemented.
    Sprint 2 Commits
 
 `View the
-codebase <https://github.com/chrisbay/event-log/tree/189caaa1e1e8e8cae0f4a57bec71f41911d486ee>`__
+codebase <https://github.com/LaunchCodeEducation/event-log/tree/189caaa1e1e8e8cae0f4a57bec71f41911d486ee>`__
 for ``event-log`` as of the sprint 2 standup.
 
 **Screenshots:**
@@ -385,7 +385,7 @@ including some refactoring, clean up, and a bug fix:
    Sprint 3 Commits
 
 `View the
-codebase <https://github.com/chrisbay/event-log/tree/323240db297918fc5d2053c173186d868b096f34>`__
+codebase <https://github.com/LaunchCodeEducation/event-log/tree/323240db297918fc5d2053c173186d868b096f34>`__
 for ``event-log`` as of the sprint 3 standup.
 
 **What is planned next:** For the rest of the sprint, Chris will focus
@@ -447,7 +447,7 @@ changes were small, atomic refactoring tasks:
    More Sprint 3 Commits
 
 `View the
-codebase <https://github.com/chrisbay/event-log/tree/38256230b30e5bb7f0d9325e69f41c8bf68c3e2b>`__
+codebase <https://github.com/LaunchCodeEducation/event-log/tree/38256230b30e5bb7f0d9325e69f41c8bf68c3e2b>`__
 for ``event-log`` as of the end of sprint 3.
 
 Sprint 4 Kickoff
@@ -492,7 +492,7 @@ stories at the same time.
    Sprint 4 Commits
 
 `View the
-codebase <https://github.com/chrisbay/event-log/tree/edd52171e49ea49fb8c2812698b2e10ed5ed5275>`__
+codebase <https://github.com/LaunchCodeEducation/event-log/tree/edd52171e49ea49fb8c2812698b2e10ed5ed5275>`__
 for ``event-log`` as of the sprint 4 standup.
 
 **What is planned next:** For the next sprint, Chris will focus on some
