@@ -16,13 +16,13 @@ Career Module
 Prep Work
 ---------
 
-Class 4 is an important class. We will start shifting our in class focus
+Class 4 is an important class. We will start shifting our in-class focus
 from your project to career readiness. You will still be expected to
 work on your project outside of class.
 
 You will have a project review with your mentor. They will be checking
 in on the progress of your project. Your mentor knows it’s a work in
-progress, and doesn’t expect everything to be perfect, or even
+progress and doesn’t expect everything to be perfect, or even
 completed. Your mentor wants to see what you have completed so far. 
 
 Tasks
@@ -37,21 +37,21 @@ Tasks
 Project Review Prep
 ^^^^^^^^^^^^^^^^^^^
 
-The Project Review is very important, you need to make constant progress
+The project review is very important. You need to make constant progress
 on your project to show employers you are ready for a job. We want to
-ensure you are making progress, and will do so with a Project Review.
+ensure you are making progress, and will do so with a review of your project.
 
-In your class 4 Project Review *your application should have the
+In your Class 4 project review, *your application should have the
 following in order to remain enrolled in the class*: 1. A working
-landing page 2. At least one functioning and complete user story
+landing page 2. At least one complete user story.
 
-You are more than welcome to show off multiple completed user stories,
-and multiple pages, but you must have at least a working landing page,
-and one function and complete user story to pass this assignment, and to
+You are more than welcome to show off multiple completed user stories 
+and multiple pages, but you must have at least a working landing page
+and one completed user story to pass this assignment and
 stay enrolled in the class.
 
 *The best way to prepare for this meeting is to spend a lot of time
-working on your project*, so you will have no extra prep work outside of
+working on your project*. As such, you will have no extra prep work outside of
 the Live Coding prep work listed below.
 
 In Class
@@ -60,48 +60,48 @@ In Class
 Your focus for the project module this week, and going forward, should
 be on making as much progress on your project as possible each week. If
 you reach a point where you have finished all of your pending user
-stories you should write more.
+stories, you should write more.
 
 Lecture: How do I show my technical skills in a live coding setting?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Live coding has been used in technical interviews for years. We will
-have a brief lecture, and example of what a Live Coding instance is
+have a brief lecture and an example of what a live coding instance is
 like.
 
 Lecture: How do I give and receive code review feedback?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In class today we will discuss how to best address and give code review
+In class today, we will discuss how to best address and give code review
 feedback when working with others.
 
 Activity: Standup
 ^^^^^^^^^^^^^^^^^
 
-Before having your one on one project review, you should conduct your
+Before having your one-on-one project review, you should conduct your
 standup. Each person should go around and state what tasks they got done
-this week, and what they are working on next week.
+this week and what they are working on next week.
 
 Activity: Live Coding
 ^^^^^^^^^^^^^^^^^^^^^
 
 Pair up with another student. Take turns playing the interviewer and
 interviewee. This is your chance to practice before the assignment next
-week. If you have questions feel free to talk the problem over with your
+week. If you have questions, feel free to talk the problem over with your
 partner, or pull in one of your mentors.
 
 Activity: Project Review
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-You will sit down with your mentor one on one and demo what progress you
-have made so far. You might not feel like you’ve made much progress so
-far, but you still need to show your mentor what you’ve done, and what
-you plan on doing next.
+You will sit down with your mentor one-on-one and demo what progress you
+have made so far. You might not feel like you’ve made much progress, but 
+you still need to show your mentor what you’ve done, and what you plan on 
+doing next.
 
-To pass this assignment you must have: 
+To pass this assignment, you must have: 
 
 #. A working landing page 
-#. At least one functioning and complete user story
+#. At least one functioning and completed user story
 
 
 Assignment

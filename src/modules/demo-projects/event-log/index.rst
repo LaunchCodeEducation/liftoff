@@ -180,8 +180,7 @@ and begin working on in the **Backlog**.
 Week 4
 ------
 
-Since there wasn’t a Project Module assignment for week 4, the focus was
-on completing user stories and gaining momentum.
+This week, the focus was on completing user stories and gaining momentum.
 
 Sprint 2 Standup
 ^^^^^^^^^^^^^^^^
