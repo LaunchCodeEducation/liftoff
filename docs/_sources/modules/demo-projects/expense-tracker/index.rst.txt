@@ -165,14 +165,13 @@ future sprints and stories in the backlog.
 Week 4
 ------
 
-Since there wasn’t a Project Module assignment for week 4, the focus was
-on completing user stories, and gaining momentum.
+This week, the focus was on completing user stories and gaining momentum.
 
 Sprint 2 Standup
 ^^^^^^^^^^^^^^^^
 
-**What was accomplised:** User Registration, User Login, and User Logout
-stories were all complete. (See associated commits, and screenshots
+**What was accomplished:** User registration, login, and logout
+stories were all complete. (See associated commits and screenshots
 below.) Paul wanted to make more progress than he did, but ended up
 sinking a lot of time into the aspects of his project he didn’t
 understand well. He had to build smaller tutorial projects to understand
@@ -195,9 +194,9 @@ for ``expense-tracker`` as of the end of sprint 2.
 - `Expense Tracker Login <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/expense-tracker/figures/expense-tracker-login.png>`__
 
 **What is planned next:** Next, Paul will work on a landing page after a
-user logs in, flash messaging, and the category model. He has created,
+user logs in, flash messaging, and the category model. He has created
 and estimated new stories for the remainder of this sprint and moved
-them into **Current Iteration** column (see Pivotal Tracker screenshot
+them into the **Current Iteration** column (see Pivotal Tracker screenshot
 below).
 
 .. figure:: figures/sprint_2_stories_2.png
@@ -205,12 +204,12 @@ below).
 
    More Sprint 2 Stories
 
-**Blockers:** Currently Paul is blocked by flash messaging. He
+**Blockers:** Currently, Paul is blocked by flash messaging. He
 understands the concept, but has never implemented flash messaging in a
 Rust/Rocket project. He will have to learn more about flash messaging in
 Rocket by referring to the `Rocket Documentation for a Flash
 Response <https://api.rocket.rs/rocket/response/struct.Flash.html>`__.
-He has a lot of reading, and trial projects to complete before he can
+He has a lot of reading and trial projects to complete before he can
 successfully implement flash messaging in his project, which is his next
 user story.
 
