@@ -35,6 +35,7 @@ Career Modules
    :maxdepth: 1
 
    career/online-profiles
+   career/live-coding
 
 Assignments
 -----------
@@ -47,6 +48,7 @@ Assignments
    assignments/project-planning
    assignments/project-setup
    assignments/online-profiles
+   assignments/project-review
    
 Git 
 ---

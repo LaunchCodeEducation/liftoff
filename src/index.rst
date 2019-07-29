@@ -14,6 +14,7 @@ Classes
    classes/1
    classes/2
    classes/3
+   classes/4
 
 .. toctree::
    :hidden:

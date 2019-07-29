@@ -25,6 +25,7 @@ Before coming to class, cover all of the material in the following modules:
 - :ref:`git-for-projects`
 - :ref:`licensing`
 - :ref:`online-profiles`
+- Review week 3 of the demo projects: :ref:`Event List Week 3 <el-week-3>` | :ref:`Expense Tracker Week 3 <et-week-3>`
 
 In Class
 --------

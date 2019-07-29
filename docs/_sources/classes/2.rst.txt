@@ -23,7 +23,10 @@ Project Module
 Prep Work
 ---------
 
-Before coming to class, go through all of the material in the :ref:`Wireframes module <wireframes>`.
+Before coming to class, coplete the following:
+
+- :ref:`wireframes`
+- Review week 2 of the demo projects: :ref:`Event List Week 2 <el-week-2>` | :ref:`Expense Tracker Week 2 <et-week-2>`
 
 In Class
 --------
