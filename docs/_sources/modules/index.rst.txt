@@ -49,6 +49,7 @@ Assignments
    assignments/project-setup
    assignments/online-profiles
    assignments/project-review
+   assignments/live-coding
    
 Git 
 ---
