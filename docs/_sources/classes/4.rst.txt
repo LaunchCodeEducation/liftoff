@@ -32,6 +32,12 @@ Tasks
 - Complete the module :ref:`live-coding`
 - Review week 4 of the demo projects: :ref:`Event List Week 4 <el-week-4>` | :ref:`Expense Tracker Week 4 <et-week-4>`
 
+.. note:: 
+
+   You'll notice, the timeline of Chris and Paul's projects is a bit different than
+   your own from now on.
+
+
 .. _project-review-prep:
 
 Project Review Prep

@@ -227,10 +227,10 @@ so there are no obvious rough spots ahead for the current tasks.
 Week 5
 ------
 
-For week 5, the focus was on continuing to complete user stories, while
+This week, the focus was on continuing to complete user stories, while
 also getting a code review from a mentor. With a few stories having been
-completed, and a solid base of code in place, it’s a good time to get
-review the project with a more experienced developer to get some
+completed, and a solid base of code in place, it’s a good time to 
+review the project with a more experienced developer for some
 feedback. If there are better ways to approach things, or to structure
 your code, it will be easier to refactor now than it will be later!
 
@@ -269,7 +269,7 @@ types of refactoring tasks carried out this past week on the project:
 -  Adding overrides to ``equals`` and ``hashCode`` where it makes sense to do so.
 -  Removing a class property when it becomes clear that it is not currently used or needed.
 
-Looking back at the full sprint, a lot was accomplished on two weeks.
+Looking back at the full sprint, a lot was accomplished in two weeks.
 User authentication was added, and the first non-user model class was
 implemented, making the app usable at a basic level. There will be
 additional model classes to add in future sprints, including some that
@@ -301,10 +301,10 @@ UI improvements
 ^^^^^^^^^^^^^^^
 
 He also noted that for some of the newer features, while they work well,
-the UI and template work is sloppy. There is no way to click on a link
-and go to the Create Event form. The main event listing at ``/`` shows
-event titles and dates, but the dates aren’t formatted very nicely.
-Additionally, users should be able to click on an event and go to the
+the UI and template work could use some improvements. There is no way to 
+click on a link and go to the ``Create Event`` form. The main event listing 
+at ``/`` shows event titles and dates, but the dates aren’t formatted very 
+nicely. Additionally, users should be able to click on an event and go to the
 details page for that event.
 
 Organization support
@@ -316,7 +316,7 @@ organization is using it, and so events don’t “belong to” any type of
 organization. This is somewhat limiting.
 
 Chris commented that he’d like to add support for multiple organizations
-in the future, but for he wants to focus on building out core
+in the future, but for now he wants to focus on building out core
 functionality for working with events. Paul agreed that this is a good
 short-term strategy, and the app could always be modified in the future
 to support use by multiple organizations. Trying to add that
@@ -332,7 +332,7 @@ Sprint 3 Kickoff
 ^^^^^^^^^^^^^^^^
 
 The focus of sprint 3 will be adding additional functionality around
-viewing and editing events. The stories for the first week of the spring
+viewing and editing events. The stories for the first week of the sprint
 have been estimated and moved to the **Current Iteration** column:
 
 .. figure:: figures/sprint_3_stories_1.png
@@ -340,10 +340,10 @@ have been estimated and moved to the **Current Iteration** column:
 
    Sprint 3 Stories
 
-The first two stories–viewing a listing of events, and adding a
-user-friendly message for bad event IDs–are medium and small in size.
-The third story–enabling editing of events after they have been
-created–is larger and is a stretch goal. Chris may get to it, or he may
+The first two stories – viewing a listing of events, and adding a
+user-friendly message for bad event IDs – are medium and small in size.
+The third story – enabling editing of events after they have been
+created – is larger and is a stretch goal. Chris may get to it, or he may
 not, but putting it in the **Current Iteration** column gives him
 something ambitious to shoot for.
 
