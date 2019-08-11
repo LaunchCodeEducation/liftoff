@@ -18,11 +18,11 @@ Classes
    classes/5
    classes/6
    classes/7
+   classes/8
 
 .. toctree::
    :hidden:
    :glob:
 
-   classes/*
    todos
    modules/index

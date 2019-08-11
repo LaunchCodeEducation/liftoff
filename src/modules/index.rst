@@ -25,6 +25,8 @@ Project Modules
    project/wireframes
    project/git
    project/licensing
+   project/deploying-java-apps
+   project/logging-java-apps
    demo-projects/index
 
 Career Modules
@@ -52,6 +54,7 @@ Assignments
    assignments/live-coding
    assignments/mock-interview
    assignments/project-presentation
+   assignments/deployment
    
 Git 
 ---
