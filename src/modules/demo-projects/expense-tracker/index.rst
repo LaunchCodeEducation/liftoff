@@ -221,8 +221,8 @@ Week 5
 Project Review
 ^^^^^^^^^^^^^^
 
-The fifth weeks project assignment is a Project Review. Following is a
-summed up version of what Chris, and Paul discussed during Paul’s
+This week's project assignment is a Project Review. Following is a
+summarized version of what Chris and Paul discussed during Paul’s
 project review.
 
 What stories have you been working on recently?
@@ -234,14 +234,14 @@ Messaging, and Tera Templates with Foundation CSS.
 What code design decisions have you made so far and why?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-I am very comfortable with MVC, and have been designing my project to
+I am very comfortable with MVC and have been designing my project to
 follow this pattern. I have created 3 models: User, Category, and
 Expense. My ORM Diesel, requires that I also write a Schema for my
-database which has been completed. To use Diesel I built a
-database_manager.rs file that manages the Database connection, and acts
+database which has been completed. To use Diesel, I built a
+``database_manager.rs`` file that manages the database connection and acts
 as the controller for this project. To be completely honest, I don’t
 have a great understanding on how to separate my Rust files and to call
-one file from another file. If you look into my database_manager.rs file
+one file from another file. If you look into my ``database_manager.rs`` file,
 it actually contains the Models, the Schema Diesel requires, and the
 Controller logic. Ideally, I would like to break this into three
 separate files: a database connection manager, the models, and the
@@ -255,10 +255,10 @@ project. I have been using Rust for a while, but have never worked with
 Rocket, Diesel, or Tera Templates. Tera’s documentation isn’t very good,
 but it is very similar to Jinja2 which I have lots of familiarity with.
 Rocket has great documentation, but handles things a little differently
-than other web back ends I have worked with. Diesel has great
+than other web back-ends I have worked with. Diesel has great
 documentation, and multiple guides. Rust and Rocket are not used by a
-huge number of people, so when I run into a problem I can’t find any
-good stackoverflow posts that help me through the issue. So I am forced
+huge number of people. So when I run into a problem, I can’t find any
+good Stack Overflow posts that help me through the issue. I am trying
 to read the documentation myself, which is ultimately a great thing, but
 drastically increases the time it takes me to write code.
 
@@ -271,9 +271,9 @@ currently difficult to work with because I don’t know how to separate my
 files and call them from each other correctly in Rust. So my next step
 is to refactor my codebase. I won’t be changing any logic, or code, with
 the exception of the import statements. I will simply break apart my
-large and cumbersome database_manager.rs file into a model, controller,
-schema, and database_manager files. This way working with my code will
-become much easier. I need to do this before categories, or expenses or
+large and cumbersome ``database_manager.rs`` file into ``model``, ``controller``,
+``schema``, and ``database_manager`` files. This way, working with my code will
+become much easier. I need to do this before the category feature or expenses, or
 else the amount of refactoring I will have to do will be massive.
 
 Project Reviewer Feedback:
@@ -293,13 +293,13 @@ During the retrospective portion of the discussion, Paul remarked that
 he can’t believe how fast these sprints are going. There are only four
 sprints in the duration of this course, and we have already completed
 half of them! Paul feels like he is behind on his project, but knows if
-he can clean up his project so that it’s in an MVC pattern he should be
-able to make quick progress. He still needs to implement categories, and
-expenses before his project is done. Having already gone through the
-steps for users, both of his remaining sections should be much easier,
-because he should be able to build off of what he has already
-accomplished. He is running low on User Stories, and may have to write
-more user stories, and possible draw more wireframes before he can
+he can clean up his project so that it’s in an MVC pattern, he should be
+able to make quick progress. He still needs to implement the categories and
+expenses features before his project is done. Having already gone through the
+steps for users, both of his remaining sections should be much easier.
+He should be able to build off of what he has already
+accomplished. He is running low on user stories and may have to write
+more. He may also possibly need to draw more wireframes before he can
 continue with the next sprint.
 
 Sprint 2 Commit Log
@@ -317,25 +317,25 @@ Sprint 3 Kickoff
 ^^^^^^^^^^^^^^^^
 
 For the third sprint, Paul plans on working on categories, and hopefully
-expenses. For users he has built create_user, and get_user functions
-that work with Diesel. However, he has not yet worked with Update, or
-Delete in Diesel, and he will need to work with both of them to
-successfully build out categories, and expenses. He will be referring to
+expenses. For users he has built ``create_user``, and ``get_user`` functions
+that work with Diesel. However, he has not yet worked with *Update*, or
+*Delete* in Diesel, and he will need to work with both of them to
+successfully build out categories and expenses. He will be referring to
 the `Diesel Documentation <http://docs.diesel.rs/diesel/index.html>`__
 to learn how to update and delete with this ORM.
 
 .. figure:: figures/sprint_3_stories_1.png
    :alt: Sprint three user stories
 
-   Sprint three user stories
+   Sprint 3 user stories
 
 
 .. tip:: 
 
    You will notice Paul added a chore to the top of his current iteration.
    While refactoring is a task that he needs to complete this week, it
-   doesn’t change anything from the user’s perspective so calling it a
-   story would be incorrect. Since it’s not a user story he isn’t
+   doesn’t change anything from the user’s perspective. Thus, calling it a
+   story would be incorrect. Since it’s not a user story, he isn’t
    estimating it. Completing this chore will make his future user stories
    easier to accomplish! Paul thinks it will take him around 2 hours to
    complete this task.

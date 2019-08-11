@@ -1,5 +1,5 @@
-Class 5
-=======
+Class 5: Live Coding, Project Work
+==================================
 
 Objectives
 ----------
@@ -16,8 +16,78 @@ Career Module
 Prep Work
 ---------
 
+In class during week 5, we will be having our live coding assignment. In preparation, 
+this week you should continue practicing live coding problems. You can find practice 
+problems on many websites:
+
+- `hackerrank.com <https://www.hackerrank.com/>`_
+- `codewars.com <https://www.codewars.com/>`_
+- `exercism.io <https://exercism.io/>`_
+- `leetcode.com <https://leetcode.com/>`_
+
+As with last week, your focus this week should also be on making progress on
+your project. It's critical at this juncture for you to gain some
+momentum and to leverage your mentor to get unstuck when things become
+difficult.
+
+The articles below provide some good perspective and tips on being a
+budding developer, getting help, and working with a mentor. *Your main
+focus should be on working as much as possible on your project!*
+
+Tasks
+^^^^^
+
+- Review the :ref:`live-coding` module again, in preparation for your live coding assignment in class this week.
+- Read `How To Be A Good Mentee <https://thegirlpowercode.com/2017/05/02/how-to-be-a-good-mentee/>`_
+- Read `How I Learned to Code in my 30s <https://medium.com/udacity/how-i-learned-to-code-in-my-30s-61ad21180208>`_
+- Review week 5 of the demo projects: :ref:`Event List Week 5 <el-week-5>` | :ref:`Expense Tracker Week 5 <et-week-5>`
+
 In Class
 --------
 
+Your focus for the project module this week, and going forward, should
+be on making as much progress on your project as possible. If
+you reach a point where you have finished all of your pending user
+stories, you should write more.
+
+Activity: Standup
+^^^^^^^^^^^^^^^^^
+
+Before jumping into the Live Coding assignment we have scheduled for
+class today, have your standup meeting. Everyone should each state what
+you completed last week and what you are working on this coming week.
+
+Remember that to be marked present on attendance, you must be able to
+show *at least one user story you completed* this previous week
+
+Regroup: Live Coding Setup
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+For our live coding assignment, you have been randomly assigned to a
+different mentor, instructor, or volunteer who will administer your live
+coding assignment.
+
+The instructor will introduce the activity, tell you where everyone is
+working, and share the list of live coding evaluators and students.
+
+Activity: Live Coding Assignment
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+After the instructor introduction, the evaluators will begin calling
+names of people they are working with. Keep an ear out for your name to
+keep things moving along smoothly.
+
+This assignment will take the majority of class time, however you will
+only spend 10-15 minutes performing your individual live coding
+assignment. Use the rest of your class time to work on your project, or
+other assignments.
+
+You will have a chance to make up this assignment if you don’t pass
+today. We want to make sure you are comfortable with this process so you
+can retake this assignment as many times as you need. Remember, practice
+makes perfect!
+
 Assignment
 ----------
+
+In class, you will take part in :ref:`assignment-live-coding`.
