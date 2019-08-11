@@ -50,6 +50,8 @@ Assignments
    assignments/online-profiles
    assignments/project-review
    assignments/live-coding
+   assignments/mock-interview
+   assignments/project-presentation
    
 Git 
 ---

@@ -17,6 +17,11 @@ Career Module
 Prep Work
 ---------
 
+As always continue to work on your project, completing one or more user stories before the next class.
+
+Tasks
+^^^^^
+
 - Complete the :ref:`interviewing` module.
 - Review week 6 of the demo projects: :ref:`Event List Week 6 <el-week-6>` | :ref:`Expense Tracker Week 6 <et-week-6>`.
 

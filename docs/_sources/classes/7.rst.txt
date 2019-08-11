@@ -1,5 +1,5 @@
-Class 7
-=======
+Class 7: Mock Interview, Project Presentation
+=============================================
 
 Objectives
 ----------
@@ -20,12 +20,47 @@ Career Module
 -  Can incorporate their project experiences and class experiences into
    technical questions
 
-
 Prep Work
 ---------
+
+As always continue to work on your project, completing one or more user stories before the next class.
+
+Tasks
+^^^^^
+
+- Review the :ref:`interviewing` module again, in preparation for your interview assignment in class this week.
+- Review week 7 of the demo projects: :ref:`Event List Week 7 <el-week-7>` | :ref:`Expense Tracker Week 7 <et-week-7>`.
 
 In Class
 --------
 
-Assignment
-----------
+Activity: Standup
+^^^^^^^^^^^^^^^^^
+
+Before we get started with today’s assignment take a few minutes to have
+your standup. Go around the group each person should talk about the user
+stories they got completed this week, and the user stories they will be
+working on next week.
+
+Regroup: Mock Interview Setup
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Similar to the live coding assignment day your instructor will provide
+you with instructions on where you will be interviewing, and who you
+will be interviewing with.
+
+Activity: Mock Interview Assignment
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Things may be a little hectic, so please pay attention to announcements
+so you know when you will be interviewing. Your Mock interview should
+only take 10-15 minutes, so with the remainder of your time work on your
+project!
+
+
+Assignments
+-----------
+
+You will complete :ref:`assignment-mock-interview` in class.
+
+You should complete :ref:`assignment-project-presentation` before the next class.
