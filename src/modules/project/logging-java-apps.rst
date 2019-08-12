@@ -8,6 +8,7 @@ your logging output, how to write your own logging statements, and how
 to view your logs in production.
 
 .. contents:: Contents
+   :local:
    :depth: 2
 
 Introduction
@@ -18,7 +19,7 @@ Requirements
 
 This tutorial assumes you have the following installed:
 
--  `Spring Boot <http://projects.spring.io/spring-boot/>`__
+-  `Spring Boot <https://spring.io/projects/spring-boot>`__
 -  `Java 8 <http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html>`__
 -  `Gradle <https://gradle.org/install/>`__
 
@@ -33,7 +34,7 @@ Considerations
 ^^^^^^^^^^^^^^
 
 -  Don’t log sensitive information, such as passwords, PII (personally identifiable information), or credit card numbers.
--  Too much logging is hard to sort through. Too little logging won’t provide insight into critical issues. We’ll talk about a few techniques to manage the “signal to noise” ratio inherent in getting this right.
+-  Too much logging is hard to sort through. Too little logging won’t provide insight into critical issues. We’ll talk about a few techniques to manage the *signal to noise* ratio inherent in getting this right.
 
 Setup
 -----
@@ -46,8 +47,8 @@ provided by `Logback <https://logback.qos.ch/>`__.
 
 This tutorial will be based off of the
 `cheese-mvc <https://github.com/LaunchCodeEducation/cheese-mvc/tree/video-validation-end>`__
-project. Clone this project and check out the ‘video-validation-end’
-branch as a new branch called ``logging`` (``git checkout -b logging``
+project. Clone this project and check out the ``video-validation-end``
+branch. Create a new branch from here called ``logging`` (``git checkout -b logging``
 from the ``video-validation-end`` branch). If you’d like to keep the
 changes we’ll be making, first fork the project to your own GitHub
 account.
@@ -125,7 +126,7 @@ Within ``application.properties``, all properties are prepended with
 ``logging.level``, followed by the package name and a log level. Spring
 scans the file for such properties on application startup.
 
-For example, if you want to log every event at a specific level use:
+For example, if you want to log every event at a specific level, use:
 
 ::
 
@@ -165,12 +166,12 @@ debugging:
    logging.level.org.hibernate.type=TRACE
 
    # Consuming REST apis via RestTemplate:
-   logging.level.org.springframework.web.client.RestTemplate = debug
-   logging.level.org.apache.http = debug
+   logging.level.org.springframework.web.client.RestTemplate = DEBUG
+   logging.level.org.apache.http = DEBUG
 
 .. note:: 
 
-   Some loggers also provide a ``FATAL`` level, but logback treats this the same as an ``ERROR``.
+   Some loggers also provide a ``FATAL`` level, but Logback treats this the same as an ``ERROR``.
 
 
 Adding a Logger
@@ -233,7 +234,7 @@ If you’ve deployed your app via Cloud Foundry, you can view your logs by
 using the ``cf logs`` command. For example, if your app was named
 ``cheese-mvc`` you’d type ``cf logs cheese-mvc``. This will display your
 logs in real time. If you want to view recent logs, add the ``--recent``
-flag like so ``cf logs cheese-mvc --recent`` and the most recent logs
+flag like so, ``cf logs cheese-mvc --recent``, and the most recent logs
 will be displayed.
 
 Reading Logs in Pivotal Web Services
@@ -241,8 +242,8 @@ Reading Logs in Pivotal Web Services
 
 If you’ve hosted your app using Pivotal Web Services, you can also view
 your logs by logging into your `PWS
-console <console.run.pivotal.io/>`__. Navigate to your space, then your
-application, and there should be a tab for “Logs”. From there, you can
+console <https://console.run.pivotal.io/>`__. Navigate to your space and then your
+application. There should be a tab for *Logs*. From there, you can
 view old logs, as well as monitor them in real time.
 
 Additional Resources

@@ -1,7 +1,7 @@
 .. _deploying-java-apps:
 
 Deploying Java Applications
----------------------------
+===========================
 
 In this article, we’ll walk through deploying a Spring Boot application
 to Pivotal Web Services using Cloud Foundry. Along the way, we’ll
@@ -10,6 +10,7 @@ database hosting and migration, password management, and network
 routing.
 
 .. contents:: Contents
+   :local:
    :depth: 2
 
 Requirements
@@ -20,7 +21,7 @@ This article assumes you have the following installed:
 -  `Java  8 <http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html>`__
 -  `Gradle <https://gradle.org/install/>`__
 -  `MAMP <https://www.mamp.info/en/>`__
--  Cloud Foundry CLI (below)
+-  :ref:`Cloud Foundry CLI <cloud-foundry-setup>`
 
 Pivotal Web Services Setup
 --------------------------
@@ -31,8 +32,8 @@ Azure, etc), but we’ll be using Pivotal because it has a lot of support
 for deploying Spring Boot applications and is relatively inexpensive.
 
 Create a `Pivotal Account <https://pivotal.io/platform>`__. You will
-need to provide a credit card number, and a phone number to verify.
-Later in this chapter, we’ll cover how to make sure everything is
+need to provide a credit card number and a phone number to verify your account.
+Later in this guide, we’ll cover how to make sure everything is
 un-deployed so you don’t incur any nasty hosting fees.
 
 Once an account has been created, you will want to create a space.
@@ -40,6 +41,8 @@ Developers typically use spaces to create segments to their
 environments, and may have one for production, development, testing, and
 so on. You should have an empty dashboard with a card present to ‘+ Add
 a Space’. Do so, and create a space named "Production".
+
+.. _cloud-foundry-setup:
 
 Cloud Foundry Setup
 -------------------
@@ -70,14 +73,14 @@ This article will be based off of the
 `cheese-mvc <https://github.com/LaunchCodeEducation/cheese-mvc>`__
 project used in the LC101 Java Track.
 
-.. note:: text
+.. note::
 
    While we have to choose a specific project for the purposes of illustration, any Spring Boot project could be deployed using the same steps used in this guide.
 
-Clone this project and checkout the ``video-one2many-end`` branch. Check
-this out as a new branch called ‘deployment’. If you’d like to keep the
+Clone this project and checkout the ``video-one2many-end`` branch. Base a new branch 
+off of this called ``deploy``. If you’d like to keep the
 changes we’ll be making, first fork the project to your own repository,
-and continue based on the new git repository url.
+and continue based on the new Git repository url.
 
 Here are the Git commands to carry out these steps.
 
@@ -85,25 +88,25 @@ Here are the Git commands to carry out these steps.
 
    $ git clone https://github.com/LaunchCodeEducation/cheese-mvc.git
    $ git checkout --track origin/video-one2many-end
-   $ git checkout -b develop
+   $ git checkout -b deploy
 
 .. tip:: 
 
-   It’s a best practice to create a Git branch solely for the purpose of deploying your application. In this case, we’ll use the ``deploy`` branch for this purpose. This will allow for separate configurations to be stored for local development and remote deployment.
+   It’s a best practice to create a Git branch solely for the purpose of deploying your application. We’ll use the ``deploy`` branch for this purpose. This will allow for separate configurations to be stored for local development and remote deployment.
 
    Whenever you want to deploy a new version of your application, you’ll need to merge changes from your main branch (likely ``master``) into ``deploy`` before deploying.
 
 
-If you don’t have a database user for this project already–you may have
-created one when going through unit 3–you should create one now. Create
+If you don’t have a database user for this project already – you may have
+created one when going through unit 3 – you should create one now. Create
 a new database user called ``cheese-mvc`` (along with the corresponding
-database). You should now be able to start the application using
+database.) You should now be able to start the application using
 ``gradle bootRun`` at the command line, from the project root.
 
 Java Artifacts
 ^^^^^^^^^^^^^^
 
-Typically when we’re working on our projects, we’re building and running
+Typically, when we’re working on our projects, we’re building and running
 them locally. We have tools like Gradle and our IntelliJ that help us.
 These tools make compiling and running our application simple. We won’t
 have those tools in production, however, so we’ll need to package up our
@@ -117,8 +120,8 @@ the dependencies (for instance, Spring) at runtime in order to use them.
 We’ll need to build our JAR file using Gradle so that these dependencies
 are packaged up alongside the compiled Java code that we wrote.
 
-Spring Boot adds a plugin to Gradle that allows us to package up both
-our source code, alongside any dependencies, creating a "Fat JAR" that
+Spring Boot adds a plugin to Gradle that allows us to package up
+our source code alongside any dependencies, creating a **fat JAR** that
 contains compiled versions of our code and all of its dependencies. This
 JAR file can then be deployed to our server, and run anywhere that has
 the `JVM <https://en.wikipedia.org/wiki/Java_virtual_machine>`__
@@ -142,7 +145,7 @@ Creating your manifest
 ^^^^^^^^^^^^^^^^^^^^^^
 
 In order to deploy an application with Cloud Foundry, you first must
-define what your application is, and how it should be run. Cloud Foundry
+define what your application is and how it should be run. Cloud Foundry
 uses a ``manifest.yml`` file to manage this configuration. Create a file
 at the root of the project named ``manifest.yml``. And add the following
 lines.
@@ -203,7 +206,7 @@ following.
 
 The first property is ``spring.jpa.hibernate.ddl-auto``, which we’ll
 change to ``none``. Previously, we let Hibernate manage our
-database–create and update tables as our model classes change. This is
+database - creating and updating tables as our model classes change. This is
 great for testing, as it allows us to add and change our database schema
 on the fly. But in the real world, we have to be careful to maintain our
 data in production and be very intentional in the changes that we make
@@ -225,7 +228,7 @@ Flyway is a tool that uses SQL scripts to create, change, and migrate
 database schemas and data. These SQL scripts will live alongside our
 project and will provide a way for us to easily recreate the structure
 of our database, as well as make additional changes in the future.
-Flyway tracks scripts that have been executed, and detects new scripts
+Flyway tracks scripts that have been executed and detects new scripts
 and runs them at startup.
 
 First, we add the following dependency to our ``build.gradle`` file, in
@@ -235,7 +238,7 @@ the ``dependencies`` section.
 
    compile('org.flywaydb:flyway-core')
 
-Spring Boot will detect this dependency, and automatically start using
+Spring Boot will detect this dependency and automatically start using
 Flyway. We will also need to provide our application with SQL scripts
 that specify *how* Flyway should manage our database.
 
@@ -245,7 +248,7 @@ directory named ``V1__initialize.sql``. Note that this file name:
 
 -  Starts with a capital V followed by the migration #. Your second migration would start with V2.
 -  Has two underscores between the version and the rest of the file name.
--  Has a descriptive "tail" that makes it easy to tell what this migration includes. For example, you might name your second migration something like ``V2__add_user_profile.sql``
+-  Has a descriptive *tail* that makes it easy to tell what this migration includes. For example, you might name your second migration something like ``V2__add_user_profile.sql``
 
 Flyway will load these alphabetically and apply our changes. Since
 Flyway keeps track of which migrations it has performed previously, it
@@ -254,7 +257,7 @@ change to your database, create a new file using the naming conventions
 above (e.g. ``V2__my_new_change.sql``).
 
 The easiest way to create our initialization script is to export our
-existing ``cheese-mvc`` schema. To do this, open PhpMyAdmin, select your
+existing ``cheese-mvc`` schema. To do this, open PhpMyAdmin, select our
 database, and choose the export tab. We then hit *OK* and copy the
 generated SQL and add it to our ``V1__initialize.sql`` file. This will
 include any test data you have already created, so you may want to clean
@@ -344,7 +347,7 @@ database. Cloud Foundry considers anything that isn’t an application to
 be a service, and can provide pre-configured services to help speed up
 deployment. In this case, we want to create a MySQL database service for
 our application. Pivotal has a database called ``cleardb``, a flavor of
-MySQL designed for cloud hosting. The ‘spark’ instance size is free and
+MySQL designed for cloud hosting. The *spark* instance size is free and
 will be fine for almost all student projects. Creating a service in
 Cloud Foundry will also manage passwords and inject them into the
 application. This means that we do not need to check in our database
@@ -369,7 +372,7 @@ Service binding
 ^^^^^^^^^^^^^^^
 
 Now you need to attach our application to your service. Cloud Foundry
-calls this "service binding" and provides a network connection between
+calls this **service binding** and provides a network connection between
 the application and the service. This also removes the need for us to
 manually define and configure our database URLs.
 
@@ -411,9 +414,9 @@ deploy your app again:
 
 We should see a message that our application has started. Open up the
 `Pivotal Control panel <https://console.run.pivotal.io/>`__, select your
-space, and find your application. Click the *Route* Tab to see find the
+space, and find your application. Click the *Route* Tab to see the
 public URL of your application. In my case, it was
-``https://cheese-mvc.cfapps.io``, but yours may be something else, since
+``https://cheese-mvc.cfapps.io``. But yours may be something else, since
 these must be unique and are generated for you. Be sure to append
 ``/cheese`` onto the end of the url (i.e.
 ``https://cheese-mvc.cfapps.io/cheese``, and try out your newly deployed
@@ -439,7 +442,7 @@ And when you’re ready to use it again
 
    $ cf start cheese-mvc
 
-Since the Spark instance of our database is free, we can leave it
+Since the *spark* instance of our database is free, we can leave it
 running. This way we can always have some test data in our application
 to demo. However, if you like, you can remove the database service as
 well.
@@ -466,7 +469,7 @@ And then you can delete your application entirely:
 Scripting
 ---------
 
-Once you start making changes to your own applications you are going to
+Once you start making changes to your own applications, you are going to
 want to be able to easily deploy your application. It may be helpful to
 build some helper scripts, so that you don’t have to remember all the
 right commands. Here is an example of a deployment script you can use:
@@ -519,7 +522,7 @@ associated information, so be careful with them!
 Further Learning
 ----------------
 
-**How can we keep a set of properties for local development to connect
+**How can I keep a set of properties for local development to connect
 to my database?** Using spring profiles, and two sets of property files,
 you can create properties for both local and deployment. `Read more
 about profiles in
