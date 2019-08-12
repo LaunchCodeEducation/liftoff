@@ -345,15 +345,15 @@ to learn how to update and delete with this ORM.
 Week 6
 ------
 
-There is no project module assignment for Week 6, Paul focused on
+There is no project module assignment for Week 6, so Paul focused on
 completing user stories.
 
 Sprint 3 Standup
 ^^^^^^^^^^^^^^^^
 
-**What was accomplised:** Refactor project to follow MVC. Implemented
-Request Guards to authorize users for all given paths. User can create,
-and view categories. User can create and view Expenses.
+**What was accomplished:** Paul refactored his project to follow MVC. He implemented
+Request Guards to authorize users for all given paths. Users can now create
+and view categories and expenses. 
 
 .. figure:: figures/sprint_3_commits_1.png
    :alt: Sprint 3 Commits
@@ -371,10 +371,10 @@ for ``expense-tracker`` as of the middle of sprint 3.
 - `Expense Tracker Create Expense <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/expense-tracker/figures/expense-tracker-create-expense.png>`__ 
 - `Expense Tracker View Expenses <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/expense-tracker/figures/expense-tracker-view-expenses.png>`__
 
-**What is planned next:** Next, Paul will continue working on Expenses.
-He is currently using a timestamp in his database, but is having trouble
-reading the timestamp back in Rust. After he has finished that he will
-need to build in the edit, and delete functions for both expenses, and
+**What is planned:** Next, Paul will continue working on the expenses feature.
+He is currently using a timestamp in his database but is having trouble
+reading the timestamp back in Rust. After he finishes that, he will
+need to build in the edit and delete functions for both expenses and
 categories.
 
 .. figure:: figures/sprint_3_stories_2.png

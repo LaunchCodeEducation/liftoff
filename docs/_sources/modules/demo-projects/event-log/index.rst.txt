@@ -375,7 +375,7 @@ completed two user stories:
 He did not meet his stretch goal of implementing event editing. That
 will be the focus of the rest of the sprint.
 
-Even though only two stories were finished there were several commits,
+Even though only two stories were finished, there were several commits - 
 including some refactoring, clean up, and a bug fix:
 
 .. figure:: figures/sprint_3_commits_1.png
@@ -399,7 +399,7 @@ Here’s the current status of the **Current Iteration** tasks:
 
    More Sprint 3 Stories
 
-**Blockers:** Chris doesn’t have any blockers at this point.
+**Blockers:** Chris doesn’t have any blockers at this point, so full steam ahead.
 
 .. _el-week-7:
 
