@@ -12,18 +12,18 @@ Project Module
 Career Module
 ^^^^^^^^^^^^^
 
--  Understand the parts of an interview: Behavioral and Technical
--  Understand what they may encounter in a technical interview
+-  Understand the parts of an interview: behavioral and technical
+-  Understand what you may encounter in a technical interview
 -  Can prepare for and practice answering technical questions
--  Can respond correctly when asked a technical question they don’t know
+-  Can respond correctly when asked a technical question you don’t know
    how to answer
--  Can incorporate their project experiences and class experiences into
+-  Can incorporate project experiences and class experiences into
    technical questions
 
 Prep Work
 ---------
 
-As always continue to work on your project, completing one or more user stories before the next class.
+As always, continue to work on your project. Aim to complete one or more user stories before the next class.
 
 Tasks
 ^^^^^
@@ -37,16 +37,16 @@ In Class
 Activity: Standup
 ^^^^^^^^^^^^^^^^^
 
-Before we get started with today’s assignment take a few minutes to have
-your standup. Go around the group each person should talk about the user
-stories they got completed this week, and the user stories they will be
+Before we get started with today’s assignment, take a few minutes to have
+your standup. Go around the group and allow time for each person to talk 
+about the user stories they completed this week, and the user stories they will be
 working on next week.
 
 Regroup: Mock Interview Setup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Similar to the live coding assignment day your instructor will provide
-you with instructions on where you will be interviewing, and who you
+Similar to the live coding assignment day, your instructor will provide
+you with instructions on where you will be interviewing and who you
 will be interviewing with.
 
 Activity: Mock Interview Assignment

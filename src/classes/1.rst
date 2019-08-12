@@ -10,7 +10,7 @@ Project Module
 -  Understand the goal of creating a capstone project
 -  Explain the key components of a meaningful project
 -  Generate an idea for a project that meets the provided criteria
--  Describe Story Mapping, Epics, and User Stories.
+-  Describe story mapping, epics, and user stories.
 -  Create user stories that clearly identify the targeted user and
    describe a single use-case or action
 
