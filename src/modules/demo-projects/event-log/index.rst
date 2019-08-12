@@ -375,7 +375,7 @@ completed two user stories:
 He did not meet his stretch goal of implementing event editing. That
 will be the focus of the rest of the sprint.
 
-Even though only two stories were finished there were several commits,
+Even though only two stories were finished, there were several commits - 
 including some refactoring, clean up, and a bug fix:
 
 .. figure:: figures/sprint_3_commits_1.png
@@ -399,7 +399,7 @@ Here’s the current status of the **Current Iteration** tasks:
 
    More Sprint 3 Stories
 
-**Blockers:** Chris doesn’t have any blockers at this point.
+**Blockers:** Chris doesn’t have any blockers at this point, so full steam ahead.
 
 .. _el-week-7:
 
@@ -412,18 +412,18 @@ Sprint 3 Review and Retrospective
 In the final week of sprint 3, Chris completed the following stories:
 
 -  As a logged-in user, I can edit event details so I can fix mistakes and add information after the event has been created.
--  As a logged-in user, when when viewing the main listing of events, I can click on an event row to see the event details.
--  Improve event listing view.
--  Improve event details view.
+-  As a logged-in user, when viewing the main listing of events, I can click on an event row to see the event details.
+-  Improve the event listing view.
+-  Improve the event details view.
 
-The last two “stories” aren’t actually written as user stories, as you
+The last two items above aren’t actually written as user stories, as you
 likely noticed. They also were given 0-point estimates. This is because
 they are refactoring tasks which don’t add any new features to the
 application.
 
 The stories completed include one additional story beyond what was
 planned as of the last standup. Chris finished the planned tasks and
-decided to tackle the story: “As a logged-in user, when when viewing the
+decided to tackle the story: “As a logged-in user, when viewing the
 main listing of events…”
 
 As part of the work improving views, he added a Bootstrap theme from the
@@ -437,8 +437,8 @@ views with the new theme:
 -  `Event Details View <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/event-log/figures/event_details_view_new.png>`__
 -  `Create Event Form <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/event-log/figures/create_event_form_new.png>`__
 
-There were quite a few commits for this week’s work, since many of the
-changes were small, atomic refactoring tasks:
+There were quite a few commits for this week’s work since many of the
+changes were small refactoring tasks:
 
 .. figure:: figures/sprint_3_commits_2.png
    :alt: More Sprint 3 Commits
@@ -452,9 +452,9 @@ for ``event-log`` as of the end of sprint 3.
 Sprint 4 Kickoff
 ^^^^^^^^^^^^^^^^
 
-To start spring 4, Chris will focus on adding volunteer tracking to the
-system. The goal is to allow users to create volunteers, and add
-multiple volunteers to an event. He’ll also make events deletable.
+To start sprint 4, Chris will focus on adding volunteer tracking to the
+system. The goal is to allow users to create volunteers and add
+multiple volunteers to an event. He’ll also make events able to be deleted.
 
 Here’s the current status of the **Current Iteration** tasks:
 
