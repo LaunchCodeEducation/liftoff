@@ -53,7 +53,7 @@ Activity: Mock Interview Assignment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Things may be a little hectic, so please pay attention to announcements
-so you know when you will be interviewing. Your Mock interview should
+so you know when you will be interviewing. Your mock interview should
 only take 10-15 minutes, so with the remainder of your time work on your
 project!
 
