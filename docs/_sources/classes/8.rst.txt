@@ -32,19 +32,12 @@ Activity: Standup
 
 Before we get started take a minute to have your standup meeting.
 
-Regroup: Intro to Continued Education Activity
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Activity: Continued Education
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 For our final class today we want to talk about continued education. You
 must continue learning on your own after this class, and you must
 continue learning on the job. We will talk about how to do this.
-
-Activity: Continued Education
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-We have done multiple things for this in the past, we have had panels of
-speakers, we have compiled lists of learning resources together, we have
-had space to work with our mentors to develop learning plans, etc.
 
 Regroup: Project Review
 ^^^^^^^^^^^^^^^^^^^^^^^
