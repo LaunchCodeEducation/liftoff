@@ -375,7 +375,7 @@ completed two user stories:
 He did not meet his stretch goal of implementing event editing. That
 will be the focus of the rest of the sprint.
 
-Even though only two stories were finished there were several commits,
+Even though only two stories were finished, there were several commits - 
 including some refactoring, clean up, and a bug fix:
 
 .. figure:: figures/sprint_3_commits_1.png
@@ -399,7 +399,7 @@ Here’s the current status of the **Current Iteration** tasks:
 
    More Sprint 3 Stories
 
-**Blockers:** Chris doesn’t have any blockers at this point.
+**Blockers:** Chris doesn’t have any blockers at this point, so full steam ahead.
 
 .. _el-week-7:
 
@@ -412,18 +412,18 @@ Sprint 3 Review and Retrospective
 In the final week of sprint 3, Chris completed the following stories:
 
 -  As a logged-in user, I can edit event details so I can fix mistakes and add information after the event has been created.
--  As a logged-in user, when when viewing the main listing of events, I can click on an event row to see the event details.
--  Improve event listing view.
--  Improve event details view.
+-  As a logged-in user, when viewing the main listing of events, I can click on an event row to see the event details.
+-  Improve the event listing view.
+-  Improve the event details view.
 
-The last two “stories” aren’t actually written as user stories, as you
+The last two items above aren’t actually written as user stories, as you
 likely noticed. They also were given 0-point estimates. This is because
 they are refactoring tasks which don’t add any new features to the
 application.
 
 The stories completed include one additional story beyond what was
 planned as of the last standup. Chris finished the planned tasks and
-decided to tackle the story: “As a logged-in user, when when viewing the
+decided to tackle the story: “As a logged-in user, when viewing the
 main listing of events…”
 
 As part of the work improving views, he added a Bootstrap theme from the
@@ -437,8 +437,8 @@ views with the new theme:
 -  `Event Details View <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/event-log/figures/event_details_view_new.png>`__
 -  `Create Event Form <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/event-log/figures/create_event_form_new.png>`__
 
-There were quite a few commits for this week’s work, since many of the
-changes were small, atomic refactoring tasks:
+There were quite a few commits for this week’s work since many of the
+changes were small refactoring tasks:
 
 .. figure:: figures/sprint_3_commits_2.png
    :alt: More Sprint 3 Commits
@@ -452,9 +452,9 @@ for ``event-log`` as of the end of sprint 3.
 Sprint 4 Kickoff
 ^^^^^^^^^^^^^^^^
 
-To start spring 4, Chris will focus on adding volunteer tracking to the
-system. The goal is to allow users to create volunteers, and add
-multiple volunteers to an event. He’ll also make events deletable.
+To start sprint 4, Chris will focus on adding volunteer tracking to the
+system. The goal is to allow users to create volunteers and add
+multiple volunteers to an event. He’ll also make events able to be deleted.
 
 Here’s the current status of the **Current Iteration** tasks:
 
@@ -482,7 +482,7 @@ The final story listed wasn’t planned at the beginning of the sprint,
 but in the course of implementing the ability to add volunteers to
 events, it made sense at the time to also make sure that removing
 volunteers (via the update event view) worked as well. In other words,
-based on the code being written it was just as easy to do those two
+based on the code being written, it was just as easy to do those two
 stories at the same time.
 
 .. figure:: figures/sprint_4_commits_1.png
@@ -515,7 +515,7 @@ for this sprint. He’s already identified `an
 article <http://www.baeldung.com/spring-data-repositories>`__ that gives
 a nice overview of the repository interface.
 
-Project review
+Project Review
 ^^^^^^^^^^^^^^
 
 For the last week of Liftoff, Paul and Chris conducted another project
@@ -523,7 +523,7 @@ review of the Event Log project. Since the last project review, Chris
 has done a lot of work to tighten up the look and functionality of the
 app.
 
-While all of that work was good, it has also made it apparent that there
+While all of that work was good, it has also been made apparent that there
 are a few basic behaviors that most users would expect the app to
 support. In particular, events are not sorted in the main listing. Most
 people would expect them to be sorted by date.
@@ -537,9 +537,9 @@ will be linked from the main navigation as well as from the main event
 listing.
 
 Finally, Paul brought up the fact that while the event listing looks
-good now, if there was a large number of events in the system (as would
-eventually happen in actual use) then it would be hard for the user to
-navigate the page. And each time that the user displayed the page a
+good now, if there were a large number of events in the system (as would
+eventually happen in actual use), it would be hard for the user to
+navigate the page. And each time that the user displayed the page, a
 large number of records would be returned from the database even if most
 wouldn’t be relevant to what the user wanted to see.
 

@@ -77,16 +77,15 @@
     <div class="col-md-12 content">
       
   <div class="section" id="deploying-java-applications">
-<span id="deploying-java-apps"></span><h1><a class="toc-backref" href="#id1">Deploying Java Applications</a><a class="headerlink" href="#deploying-java-applications" title="Permalink to this headline">¶</a></h1>
+<span id="deploying-java-apps"></span><h1>Deploying Java Applications<a class="headerlink" href="#deploying-java-applications" title="Permalink to this headline">¶</a></h1>
 <p>In this article, we’ll walk through deploying a Spring Boot application
 to Pivotal Web Services using Cloud Foundry. Along the way, we’ll
 address other topics to consider when deploying an application, such as
 database hosting and migration, password management, and network
 routing.</p>
-<div class="contents topic" id="contents">
+<div class="contents local topic" id="contents">
 <p class="topic-title first">Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="#deploying-java-applications" id="id1" target="_blank">Deploying Java Applications<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
 <li><a class="reference internal" href="#requirements" id="id2" target="_blank">Requirements<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
 <li><a class="reference internal" href="#pivotal-web-services-setup" id="id3" target="_blank">Pivotal Web Services Setup<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
 <li><a class="reference internal" href="#cloud-foundry-setup" id="id4" target="_blank">Cloud Foundry Setup<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
@@ -108,26 +107,25 @@ routing.</p>
 <li><a class="reference internal" href="#further-learning" id="id16" target="_blank">Further Learning<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
 </ul>
 </div>
-</div>
 <div class="section" id="requirements">
-<h1><a class="toc-backref" href="#id2">Requirements</a><a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h1>
+<h2><a class="toc-backref" href="#id2">Requirements</a><a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
 <p>This article assumes you have the following installed:</p>
 <ul class="simple">
 <li><a class="reference external" href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank">Java  8<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
 <li><a class="reference external" href="https://gradle.org/install/" target="_blank">Gradle<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
 <li><a class="reference external" href="https://www.mamp.info/en/" target="_blank">MAMP<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
-<li>Cloud Foundry CLI (below)</li>
+<li><a class="reference internal" href="#cloud-foundry-setup"><span class="std std-ref">Cloud Foundry CLI</span></a></li>
 </ul>
 </div>
 <div class="section" id="pivotal-web-services-setup">
-<h1><a class="toc-backref" href="#id3">Pivotal Web Services Setup</a><a class="headerlink" href="#pivotal-web-services-setup" title="Permalink to this headline">¶</a></h1>
+<h2><a class="toc-backref" href="#id3">Pivotal Web Services Setup</a><a class="headerlink" href="#pivotal-web-services-setup" title="Permalink to this headline">¶</a></h2>
 <p>Pivotal Web Services will be the cloud hosting provider for this
 article. There are many cloud hosts available to consider (Amazon,
 Azure, etc), but we’ll be using Pivotal because it has a lot of support
 for deploying Spring Boot applications and is relatively inexpensive.</p>
 <p>Create a <a class="reference external" href="https://pivotal.io/platform" target="_blank">Pivotal Account<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>. You will
-need to provide a credit card number, and a phone number to verify.
-Later in this chapter, we’ll cover how to make sure everything is
+need to provide a credit card number and a phone number to verify your account.
+Later in this guide, we’ll cover how to make sure everything is
 un-deployed so you don’t incur any nasty hosting fees.</p>
 <p>Once an account has been created, you will want to create a space.
 Developers typically use spaces to create segments to their
@@ -136,7 +134,7 @@ so on. You should have an empty dashboard with a card present to ‘+ Add
 a Space’. Do so, and create a space named “Production”.</p>
 </div>
 <div class="section" id="cloud-foundry-setup">
-<h1><a class="toc-backref" href="#id4">Cloud Foundry Setup</a><a class="headerlink" href="#cloud-foundry-setup" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h2><a class="toc-backref" href="#id4">Cloud Foundry Setup</a><a class="headerlink" href="#cloud-foundry-setup" title="Permalink to this headline">¶</a></h2>
 <p>We’ll be using a tool called Cloud Foundry to manage our deployment.
 Cloud Foundry is widely used in the industry to manage applications and
 services. It provides tools to package and deploy our code to production
@@ -153,36 +151,36 @@ deploy and manage our apps.</p>
 created on the confirmation message.</p>
 </div>
 <div class="section" id="preparing-your-project">
-<h1><a class="toc-backref" href="#id5">Preparing Your Project</a><a class="headerlink" href="#preparing-your-project" title="Permalink to this headline">¶</a></h1>
+<h2><a class="toc-backref" href="#id5">Preparing Your Project</a><a class="headerlink" href="#preparing-your-project" title="Permalink to this headline">¶</a></h2>
 <p>This article will be based off of the
 <a class="reference external" href="https://github.com/LaunchCodeEducation/cheese-mvc" target="_blank">cheese-mvc<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
 project used in the LC101 Java Track.</p>
 <div class="admonition">
 <p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
-<p class="last">text</p>
+<p class="last">While we have to choose a specific project for the purposes of illustration, any Spring Boot project could be deployed using the same steps used in this guide.</p>
 </div>
-<p>Clone this project and checkout the <code class="docutils literal notranslate"><span class="pre">video-one2many-end</span></code> branch. Check
-this out as a new branch called ‘deployment’. If you’d like to keep the
+<p>Clone this project and checkout the <code class="docutils literal notranslate"><span class="pre">video-one2many-end</span></code> branch. Base a new branch
+off of this called <code class="docutils literal notranslate"><span class="pre">deploy</span></code>. If you’d like to keep the
 changes we’ll be making, first fork the project to your own repository,
-and continue based on the new git repository url.</p>
+and continue based on the new Git repository url.</p>
 <p>Here are the Git commands to carry out these steps.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/LaunchCodeEducation/cheese-mvc.git
 $ git checkout --track origin/video-one2many-end
-$ git checkout -b develop
+$ git checkout -b deploy
 </pre></div>
 </div>
 <div class="admonition">
 <p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
-<p class="last">It’s a best practice to create a Git branch solely for the purpose of deploying your application. In this case, we’ll use the <code class="docutils literal notranslate"><span class="pre">deploy</span></code> branch for this purpose. This will allow for separate configurations to be stored for local development and remote deployment.</p>
+<p class="last">It’s a best practice to create a Git branch solely for the purpose of deploying your application. We’ll use the <code class="docutils literal notranslate"><span class="pre">deploy</span></code> branch for this purpose. This will allow for separate configurations to be stored for local development and remote deployment.</p>
 </div>
-<p>If you don’t have a database user for this project already–you may have
-created one when going through unit 3–you should create one now. Create
+<p>If you don’t have a database user for this project already – you may have
+created one when going through unit 3 – you should create one now. Create
 a new database user called <code class="docutils literal notranslate"><span class="pre">cheese-mvc</span></code> (along with the corresponding
-database). You should now be able to start the application using
+database.) You should now be able to start the application using
 <code class="docutils literal notranslate"><span class="pre">gradle</span> <span class="pre">bootRun</span></code> at the command line, from the project root.</p>
 <div class="section" id="java-artifacts">
-<h2><a class="toc-backref" href="#id6">Java Artifacts</a><a class="headerlink" href="#java-artifacts" title="Permalink to this headline">¶</a></h2>
-<p>Typically when we’re working on our projects, we’re building and running
+<h3><a class="toc-backref" href="#id6">Java Artifacts</a><a class="headerlink" href="#java-artifacts" title="Permalink to this headline">¶</a></h3>
+<p>Typically, when we’re working on our projects, we’re building and running
 them locally. We have tools like Gradle and our IntelliJ that help us.
 These tools make compiling and running our application simple. We won’t
 have those tools in production, however, so we’ll need to package up our
@@ -194,8 +192,8 @@ However, when the JAR is executed, it also needs to be able to find all
 the dependencies (for instance, Spring) at runtime in order to use them.
 We’ll need to build our JAR file using Gradle so that these dependencies
 are packaged up alongside the compiled Java code that we wrote.</p>
-<p>Spring Boot adds a plugin to Gradle that allows us to package up both
-our source code, alongside any dependencies, creating a “Fat JAR” that
+<p>Spring Boot adds a plugin to Gradle that allows us to package up
+our source code alongside any dependencies, creating a <strong>fat JAR</strong> that
 contains compiled versions of our code and all of its dependencies. This
 JAR file can then be deployed to our server, and run anywhere that has
 the <a class="reference external" href="https://en.wikipedia.org/wiki/Java_virtual_machine" target="_blank">JVM<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
@@ -212,9 +210,9 @@ command:</p>
 step is to prepare Cloud Foundry to host our application.</p>
 </div>
 <div class="section" id="creating-your-manifest">
-<h2><a class="toc-backref" href="#id7">Creating your manifest</a><a class="headerlink" href="#creating-your-manifest" title="Permalink to this headline">¶</a></h2>
+<h3><a class="toc-backref" href="#id7">Creating your manifest</a><a class="headerlink" href="#creating-your-manifest" title="Permalink to this headline">¶</a></h3>
 <p>In order to deploy an application with Cloud Foundry, you first must
-define what your application is, and how it should be run. Cloud Foundry
+define what your application is and how it should be run. Cloud Foundry
 uses a <code class="docutils literal notranslate"><span class="pre">manifest.yml</span></code> file to manage this configuration. Create a file
 at the root of the project named <code class="docutils literal notranslate"><span class="pre">manifest.yml</span></code>. And add the following
 lines.</p>
@@ -246,7 +244,7 @@ haven’t set up a remote database for our app.</p>
 </div>
 </div>
 <div class="section" id="configure-the-app-for-a-cloud-database">
-<h1><a class="toc-backref" href="#id8">Configure the App for a Cloud Database</a><a class="headerlink" href="#configure-the-app-for-a-cloud-database" title="Permalink to this headline">¶</a></h1>
+<h2><a class="toc-backref" href="#id8">Configure the App for a Cloud Database</a><a class="headerlink" href="#configure-the-app-for-a-cloud-database" title="Permalink to this headline">¶</a></h2>
 <p>If you had a project without any service dependencies (like a database),
 the above steps would be all you need to deploy your application. In our
 case, we want to also deploy a database. Luckily, Pivotal provides an
@@ -265,7 +263,7 @@ spring.datasource.tomcat.max-active = 4
 </div>
 <p>The first property is <code class="docutils literal notranslate"><span class="pre">spring.jpa.hibernate.ddl-auto</span></code>, which we’ll
 change to <code class="docutils literal notranslate"><span class="pre">none</span></code>. Previously, we let Hibernate manage our
-database–create and update tables as our model classes change. This is
+database - creating and updating tables as our model classes change. This is
 great for testing, as it allows us to add and change our database schema
 on the fly. But in the real world, we have to be careful to maintain our
 data in production and be very intentional in the changes that we make
@@ -279,19 +277,19 @@ sets reasonable defaults to the number of active connections, but the
 database service we will use (Pivotal’s Spark) only allows four
 connections at a time.</p>
 <div class="section" id="flyway-database-migration">
-<h2><a class="toc-backref" href="#id9">Flyway database migration</a><a class="headerlink" href="#flyway-database-migration" title="Permalink to this headline">¶</a></h2>
+<h3><a class="toc-backref" href="#id9">Flyway database migration</a><a class="headerlink" href="#flyway-database-migration" title="Permalink to this headline">¶</a></h3>
 <p>Flyway is a tool that uses SQL scripts to create, change, and migrate
 database schemas and data. These SQL scripts will live alongside our
 project and will provide a way for us to easily recreate the structure
 of our database, as well as make additional changes in the future.
-Flyway tracks scripts that have been executed, and detects new scripts
+Flyway tracks scripts that have been executed and detects new scripts
 and runs them at startup.</p>
 <p>First, we add the following dependency to our <code class="docutils literal notranslate"><span class="pre">build.gradle</span></code> file, in
 the <code class="docutils literal notranslate"><span class="pre">dependencies</span></code> section.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>compile(&#39;org.flywaydb:flyway-core&#39;)
 </pre></div>
 </div>
-<p>Spring Boot will detect this dependency, and automatically start using
+<p>Spring Boot will detect this dependency and automatically start using
 Flyway. We will also need to provide our application with SQL scripts
 that specify <em>how</em> Flyway should manage our database.</p>
 <p>Create a directory in your project called
@@ -300,7 +298,7 @@ directory named <code class="docutils literal notranslate"><span class="pre">V1_
 <ul class="simple">
 <li>Starts with a capital V followed by the migration #. Your second migration would start with V2.</li>
 <li>Has two underscores between the version and the rest of the file name.</li>
-<li>Has a descriptive “tail” that makes it easy to tell what this migration includes. For example, you might name your second migration something like <code class="docutils literal notranslate"><span class="pre">V2__add_user_profile.sql</span></code></li>
+<li>Has a descriptive <em>tail</em> that makes it easy to tell what this migration includes. For example, you might name your second migration something like <code class="docutils literal notranslate"><span class="pre">V2__add_user_profile.sql</span></code></li>
 </ul>
 <p>Flyway will load these alphabetically and apply our changes. Since
 Flyway keeps track of which migrations it has performed previously, it
@@ -308,7 +306,7 @@ is important to not change this file once deployed. Instead, to make a
 change to your database, create a new file using the naming conventions
 above (e.g. <code class="docutils literal notranslate"><span class="pre">V2__my_new_change.sql</span></code>).</p>
 <p>The easiest way to create our initialization script is to export our
-existing <code class="docutils literal notranslate"><span class="pre">cheese-mvc</span></code> schema. To do this, open PhpMyAdmin, select your
+existing <code class="docutils literal notranslate"><span class="pre">cheese-mvc</span></code> schema. To do this, open PhpMyAdmin, select our
 database, and choose the export tab. We then hit <em>OK</em> and copy the
 generated SQL and add it to our <code class="docutils literal notranslate"><span class="pre">V1__initialize.sql</span></code> file. This will
 include any test data you have already created, so you may want to clean
@@ -389,13 +387,13 @@ ALTER TABLE `cheese`
 </div>
 </div>
 <div class="section" id="creating-a-database-service">
-<h2><a class="toc-backref" href="#id10">Creating a database service</a><a class="headerlink" href="#creating-a-database-service" title="Permalink to this headline">¶</a></h2>
+<h3><a class="toc-backref" href="#id10">Creating a database service</a><a class="headerlink" href="#creating-a-database-service" title="Permalink to this headline">¶</a></h3>
 <p>Next, let’s configure a <strong>service</strong> inside Cloud Foundry for our
 database. Cloud Foundry considers anything that isn’t an application to
 be a service, and can provide pre-configured services to help speed up
 deployment. In this case, we want to create a MySQL database service for
 our application. Pivotal has a database called <code class="docutils literal notranslate"><span class="pre">cleardb</span></code>, a flavor of
-MySQL designed for cloud hosting. The ‘spark’ instance size is free and
+MySQL designed for cloud hosting. The <em>spark</em> instance size is free and
 will be fine for almost all student projects. Creating a service in
 Cloud Foundry will also manage passwords and inject them into the
 application. This means that we do not need to check in our database
@@ -412,9 +410,9 @@ credentials into version control (because we shouldn’t!).</p>
 tied to it.</p>
 </div>
 <div class="section" id="service-binding">
-<h2><a class="toc-backref" href="#id11">Service binding</a><a class="headerlink" href="#service-binding" title="Permalink to this headline">¶</a></h2>
+<h3><a class="toc-backref" href="#id11">Service binding</a><a class="headerlink" href="#service-binding" title="Permalink to this headline">¶</a></h3>
 <p>Now you need to attach our application to your service. Cloud Foundry
-calls this “service binding” and provides a network connection between
+calls this <strong>service binding</strong> and provides a network connection between
 the application and the service. This also removes the need for us to
 manually define and configure our database URLs.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ cf bind-service cheese-mvc cheese-mvc-db
@@ -426,7 +424,7 @@ again, and we should see our app name has been added.</p>
 redeploy.</p>
 </div>
 <div class="section" id="adding-a-service-to-the-manifest">
-<h2><a class="toc-backref" href="#id12">Adding a service to the manifest</a><a class="headerlink" href="#adding-a-service-to-the-manifest" title="Permalink to this headline">¶</a></h2>
+<h3><a class="toc-backref" href="#id12">Adding a service to the manifest</a><a class="headerlink" href="#adding-a-service-to-the-manifest" title="Permalink to this headline">¶</a></h3>
 <p>Above, we manually configured our service binding for our application.
 Alternatively, the <code class="docutils literal notranslate"><span class="pre">manifest.yml</span></code> can bind services as well. Update
 your <code class="docutils literal notranslate"><span class="pre">manifest.yml</span></code> to the following:</p>
@@ -441,7 +439,7 @@ your <code class="docutils literal notranslate"><span class="pre">manifest.yml</
 </div>
 </div>
 <div class="section" id="deploying-with-our-database">
-<h1><a class="toc-backref" href="#id13">Deploying With Our Database</a><a class="headerlink" href="#deploying-with-our-database" title="Permalink to this headline">¶</a></h1>
+<h2><a class="toc-backref" href="#id13">Deploying With Our Database</a><a class="headerlink" href="#deploying-with-our-database" title="Permalink to this headline">¶</a></h2>
 <p>Now that there is a database service, and matching service binding,
 deploy your app again:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ cf push
@@ -449,9 +447,9 @@ deploy your app again:</p>
 </div>
 <p>We should see a message that our application has started. Open up the
 <a class="reference external" href="https://console.run.pivotal.io/" target="_blank">Pivotal Control panel<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>, select your
-space, and find your application. Click the <em>Route</em> Tab to see find the
+space, and find your application. Click the <em>Route</em> Tab to see the
 public URL of your application. In my case, it was
-<code class="docutils literal notranslate"><span class="pre">https://cheese-mvc.cfapps.io</span></code>, but yours may be something else, since
+<code class="docutils literal notranslate"><span class="pre">https://cheese-mvc.cfapps.io</span></code>. But yours may be something else, since
 these must be unique and are generated for you. Be sure to append
 <code class="docutils literal notranslate"><span class="pre">/cheese</span></code> onto the end of the url (i.e.
 <code class="docutils literal notranslate"><span class="pre">https://cheese-mvc.cfapps.io/cheese</span></code>, and try out your newly deployed
@@ -459,7 +457,7 @@ app! Cloud Foundry has handled all of the network routing for us, so we
 don’t have to configure this ourselves.</p>
 </div>
 <div class="section" id="shut-it-down">
-<h1><a class="toc-backref" href="#id14">Shut It Down</a><a class="headerlink" href="#shut-it-down" title="Permalink to this headline">¶</a></h1>
+<h2><a class="toc-backref" href="#id14">Shut It Down</a><a class="headerlink" href="#shut-it-down" title="Permalink to this headline">¶</a></h2>
 <p>All good things must come to an end. Or, at the very least, will be
 billed hourly. When you’re not showing off your new application, it’s
 economical to stop the service.</p>
@@ -471,7 +469,7 @@ economical to stop the service.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ cf start cheese-mvc
 </pre></div>
 </div>
-<p>Since the Spark instance of our database is free, we can leave it
+<p>Since the <em>spark</em> instance of our database is free, we can leave it
 running. This way we can always have some test data in our application
 to demo. However, if you like, you can remove the database service as
 well.</p>
@@ -490,8 +488,8 @@ the application:</p>
 </div>
 </div>
 <div class="section" id="scripting">
-<h1><a class="toc-backref" href="#id15">Scripting</a><a class="headerlink" href="#scripting" title="Permalink to this headline">¶</a></h1>
-<p>Once you start making changes to your own applications you are going to
+<h2><a class="toc-backref" href="#id15">Scripting</a><a class="headerlink" href="#scripting" title="Permalink to this headline">¶</a></h2>
+<p>Once you start making changes to your own applications, you are going to
 want to be able to easily deploy your application. It may be helpful to
 build some helper scripts, so that you don’t have to remember all the
 right commands. Here is an example of a deployment script you can use:</p>
@@ -535,8 +533,8 @@ cf delete cheese-mvc -f
 </div>
 </div>
 <div class="section" id="further-learning">
-<h1><a class="toc-backref" href="#id16">Further Learning</a><a class="headerlink" href="#further-learning" title="Permalink to this headline">¶</a></h1>
-<p><strong>How can we keep a set of properties for local development to connect
+<h2><a class="toc-backref" href="#id16">Further Learning</a><a class="headerlink" href="#further-learning" title="Permalink to this headline">¶</a></h2>
+<p><strong>How can I keep a set of properties for local development to connect
 to my database?</strong> Using spring profiles, and two sets of property files,
 you can create properties for both local and deployment. <a class="reference external" href="https://docs.spring.io/spring-boot/docs/current/reference/html/howto-properties-and-configuration.html#howto-change-configuration-depending-on-the-environment" target="_blank">Read more
 about profiles in
@@ -545,6 +543,7 @@ Spring<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
 gives valuable info about your running application, including the
 potential sources of errors. <a class="reference internal" href="logging-java-apps.html#java-logging"><span class="std std-ref">Read more about logging in
 Java</span></a>.</p>
+</div>
 </div>
 
 
