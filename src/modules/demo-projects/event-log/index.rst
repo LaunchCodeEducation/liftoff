@@ -482,7 +482,7 @@ The final story listed wasn’t planned at the beginning of the sprint,
 but in the course of implementing the ability to add volunteers to
 events, it made sense at the time to also make sure that removing
 volunteers (via the update event view) worked as well. In other words,
-based on the code being written it was just as easy to do those two
+based on the code being written, it was just as easy to do those two
 stories at the same time.
 
 .. figure:: figures/sprint_4_commits_1.png
@@ -515,7 +515,7 @@ for this sprint. He’s already identified `an
 article <http://www.baeldung.com/spring-data-repositories>`__ that gives
 a nice overview of the repository interface.
 
-Project review
+Project Review
 ^^^^^^^^^^^^^^
 
 For the last week of Liftoff, Paul and Chris conducted another project
@@ -523,7 +523,7 @@ review of the Event Log project. Since the last project review, Chris
 has done a lot of work to tighten up the look and functionality of the
 app.
 
-While all of that work was good, it has also made it apparent that there
+While all of that work was good, it has also been made apparent that there
 are a few basic behaviors that most users would expect the app to
 support. In particular, events are not sorted in the main listing. Most
 people would expect them to be sorted by date.
@@ -537,9 +537,9 @@ will be linked from the main navigation as well as from the main event
 listing.
 
 Finally, Paul brought up the fact that while the event listing looks
-good now, if there was a large number of events in the system (as would
-eventually happen in actual use) then it would be hard for the user to
-navigate the page. And each time that the user displayed the page a
+good now, if there were a large number of events in the system (as would
+eventually happen in actual use), it would be hard for the user to
+navigate the page. And each time that the user displayed the page, a
 large number of records would be returned from the database even if most
 wouldn’t be relevant to what the user wanted to see.
 

@@ -475,8 +475,8 @@ Week 8
 Sprint 4 Standup
 ^^^^^^^^^^^^^^^^
 
-**What was accomplished:** Users can edit, and delete expenses. Users
-can edit, archive, and unarchive categories. Users can change their
+**What was accomplished:** Users can edit and delete expenses. Users
+can edit, archive, and un-archive categories. Users can change their
 email address. Users can change their passwords. Users can view a report
 of all of their expenses.
 
@@ -501,6 +501,10 @@ codebase <https://github.com/LaunchCodeEducation/expense_tracker/tree/3f9cc99656
 - `Expense Tracker Change Password 1 <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/expense-tracker/figures/expense-tracker-change-password-1.png>`__ 
 - `Expense Tracker Change Password 2 <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/expense-tracker/figures/expense-tracker-change-password-2.png>`__
 
+.. note::
+
+    He'll need to update the header on those last two pages!
+
 **What is planned next:** 
 
 This is the last class of Liftoff, and Paul
@@ -517,33 +521,38 @@ with Rust/Rocket, Tera, Diesel, and Postgres that allows users to:
 - Delete Expenses 
 - Generate Basic Reports
 
-He is proud of what he has accomplished so far, however being a
+He is proud of what he has accomplished so far. However, being a
 programmer, and working in technology means always learning. Paul is at
-an endpasse, he can continue working on this project – Expense Tracker
-by outling bugs, chores, or new features defined by user stories. Or,
+an impasse. He can continue working on this project – Expense Tracker - 
+by outlining bugs, chores, or new features defined by user stories. Or,
 Paul can start working on a new project.
 
-At this point in time he has a large enough project to talk about in
+At this point in time, he has a large enough project to talk about in
 interviews. He can talk about **what he learned** (Rust, Rocket, Diesel,
 Request Guards etc), what **challenges he overcame** (Rust’s standard
 time library doesn’t support string representations of time, Rust
-doesn’t have anything in the standard library for encrpyting and
+doesn’t have anything in the standard library for encrypting and
 decrypting passwords, etc), what **mistakes he made** (not using R2D2 to
 manage DB calls, not using MVC from the beginning, etc).
 
-Continuing with this project Paul would: 
+Continuing with this project, Paul would: 
 
 - Deploy his project 
 - Build out more reports 
-- Allow multiple categories be tagged to an expense 
-- Email funcitonality – reports can be emailed, users can reset password via email 
-- Redesigning the front end
+- Allow multiple categories to be tagged to an expense 
+- Build out email functionality – reports can be emailed, users can reset passwords via email 
+- Redesign the front end
 
-**Blockers:** Paul’s project is currently complete he has a working
-version that contains all the features he orginally wanted to include.
-His next step would be to deploy his project, he looked into multiple
+**Blockers:** Paul’s project can be considered complete. He has a working
+version that contains all the features he originally aimed to include.
+His next step would be to deploy his project. He looked into multiple
 services to host and deploy his project, however he is currently blocked
-by Rocket. In order for Rocket to run it uses a nightly build of Rust!
+by Rocket. In order for Rocket to run, it uses a nightly build of Rust!
 You could deploy a nightly build of rust to a server, however it would
 take Paul a large amount of time to figure everything out. So he is
 putting deploying his project on hold.
+
+Assignment: Project Presentation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+View Paul's Project Presentation: :download:`PDF <Expense_Tracker_Presentation.pdf>`
