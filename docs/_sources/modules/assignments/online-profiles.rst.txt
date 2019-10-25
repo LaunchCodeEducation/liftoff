@@ -17,6 +17,8 @@ Within your ``liftoff-assignments`` repository, open up
 -  a link to your GitHub profile
 -  a link to your LinkedIn profile.
 
+To build your resume, follow the steps outlined in the :ref:`online-profiles` module. 
+
 Commit your changes and push them to your GitHub repository. Your mentor
 will then be able to provide you with feedback via GitHub issues.
 

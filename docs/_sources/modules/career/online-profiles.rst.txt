@@ -14,9 +14,8 @@ things to include, as well as things to leave out of each profile.
 Technical Resumes
 -----------------
 
-
-A resume is a **crucial** part of your job search. We’re not going to
-ramble on explaining what a resume is - it’s a part of the hiring
+A resume is a *crucial* part of your job search. We're not going to
+ramble on explaining what a resume is; it's a part of the hiring
 process for most industries. What we will focus on instead is how to
 create a technical resume that will highlight the skills you bring to a
 technical position.
@@ -24,201 +23,59 @@ technical position.
 Technical Resume Format
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Let’s take a look at a resume we created at LaunchCode to show the
-format of an ideal technical resume.
+For the Apprenticeship Program, we require you to complete a resume using `our template guide <https://docs.google.com/document/d/1Xr0O_ZnNizlWlUsxxCUZHL483NZWV7mmTCbWUhNVm74/view>`_. We require resumes of this format in order to enter our Apprenticeship program. Companies appreciate the shared template and it makes it easier for you to focus on the content of your resume rather than the style
 
-When it comes to the format of your resume, you need to quickly
-summarize your skills, give evidence of those skills, outline your
-learning journey so far, and then include everything else you would
-typically include with a resume.
+Upon clicking the link above you will be brought to this page.
 
-The clearly outlined sections of a technical resume:
+.. figure:: figures/resume-guide.png
+   :width: 800px
 
-#. Personal Information
-#. Summary of Technical Skills
-#. Technical Experience
-#. Technical Education
-#. Other Experience
-#. Other Education
+   LaunchCode Resume Guide
 
-Personal Information
-^^^^^^^^^^^^^^^^^^^^
+Read through the entire guide. At the bottom you will links to four different templates for individuals with varying backgrounds. Choose the option that best describes you.
 
-You must include your first and last name, a phone number where you can
-be reached, and a professional email address*.
+.. figure:: figures/resume-template-links.png
+   :width: 800px
+   :alt: Resume Template Links
 
-.. note::
+   Resume Template Links
 
-    A professional email address is some variation of your name.
-    a.lovelace@gmail.com gives a much more professional feeling than
-    fluffytoes32@yahoo.com. If you don’t have an email account for
-    professional communication, you should create one. We personally
-    recommend gmail.
+You will then be directed to this page. Click *Make a copy* to make your own editable resume.
 
-You should also include a link to your GitHub profile, a link to your
-LinkedIn, a physical address, and a link to your personal website (if
-you have one).
+.. figure:: figures/copy-doc.png
+   :width: 600px
+   :alt: Copy document prompt
 
-Summary of Technical Skills
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   Copy document prompt
 
-After clearly marking your personal information at the top of the page,
-the next section should briefly outline your technical skills. You should
-prioritize programming languages, frameworks, and major libraries over
-operating systems and software. You should order your skills from most
-familiar to least familiar. As a final note, you should also consider the
-type of job you are looking for.
+From there, you can pick one of two template formats to edit. Edit only the template text and NOT the formatting. Do NOT delete the LaunchCode brands on the top right. If you already have text from an older resume, you can copy and paste text into your new resume. When doing so, be sure to match destination formatting (Command+SHIFT+V for Macs and CTRL+SHIFT+V for Windows).
 
-For example: I am looking for a Java back end development job.
+.. figure:: figures/resume-format-1.png
+   :width: 800px
+   :alt: First resume format option
 
-::
+   First resume format option
 
-   Technical Skills:
+.. figure:: figures/resume-format-2.png
+   :width: 800px
+   :alt: Second resume format option
 
-   Java, Spring, Hibernate, Thymeleaf, MySQL, Python, Flask, HTML, CSS, JavaScript, and jQuery.
+   Second resume format option
 
-This selection and order of skills shows my interviewer that I feel
-strongest with Java, Spring, and MySQL, then I have less familiarity
-with Python, and Flask (another back end skill set), and finally that I 
-have done a little with front end and am comfortable using those tools
-– but would need a ramp up to do them exclusively.
+After completing your resume template, share it with your course manager by clicking the blue *Share* button in the top right corner and entering their email address. It's a good idea to give them edit access so they can fix typos and other errors.
 
-.. tip:: 
+.. figure:: figures/share-doc.png
+   :width: 600px
+   :alt: Share document prompt
 
-   You should not include every language or technology you’ve heard of. You
-   should only include skills you would feel comfortable using to build a
-   project today. You’ve learned the skill and have some practical
-   experience with the skill. This will usually mean an entry level
-   developer will include fewer than 10 skills on their resume.
-
-
-Technical Experience
-^^^^^^^^^^^^^^^^^^^^
-
-After listing the skills you have, you need to back up your skills with
-some experience you have gained with those skills. You can do this by
-mentioning **projects** you have completed, or by outlining
-**professional experience** that required the use of those skills. Most
-of you do not have professional experience yet, but you have completed
-projects. You will want to include projects that used the skills you
-mentioned in your technical skills section.
-
-::
-
-   Project Experience:
-   Household Budgeting Web-app -- www.familybudget.com
-   A web-app that allows users to add members to their household and track incomes and expenses by categories.
-       - Java, Spring, Hibernate, Thymeleaf, MySQL, HTML, CSS, and jQuery
-       - Aside from the budget tracking features, it utilizes Spring Security to allow for secure authentication to the web server
-       - github.com/mygithubaccount/family-budget
-
-   Blogz
-   A school project completed in LC101, it allows users to signup, create, and read blog posts.
-       - Python, Flask, SQLAlchemy, Jinja, MySQL, and HTML
-       - Beyond the assigned tasks, I included a feature that allows users to write, edit, or delete their own blog posts
-       - github.com/mygithubaccount/blogz
-
-   Personal Portfolio -- myportfolio.com
-   A portfolio I am currently building. It will eventually contain links to my other projects, 
-   and document what I am currently learning.
-       - React, JavaScript, HTML, CSS, and Bootstrap
-       - I am currently learning React to incorporate into this project
-       - github.com/mygithubaccount/portfolio
-
-You need to include: - The project name - A brief description of the
-project - Skills/Technologies used in the project - A key feature of your project -
-github repo link
-
-You should include a live link to your project, if it is online.
-
-Technical Education
-^^^^^^^^^^^^^^^^^^^
-
-You need to show how you learned your technical skills. You can do this
-by including college courses you have taken, programs you have been a
-part of, books you have worked through, and MOOC’s you have completed.
-
-.. tip:: 
-
-   MOOC stands for Massive Open Online Course. This is the majority of your
-   online programs like Udacity, Udemy, EdX, KhanAcademy, etc.
-
-
-::
-
-   Technical Education:
-   LC101
-       - 20 week program that focuses on programming fundamentals, web basics, and more advanced concepts with Java.
-       - Curriculum covered: Python, Flask, Jinja2, SQLAlchemy, MySQL, Java, Spring, Hibernate, and Thymeleaf
-       - Built multiple in class projects
-
-   TeamTreeHouse.com
-       - Worked through the Java and Spring curriculum of TeamTreeHouse.com
-       - Skills: Java, Eclipse, Spring, Spring Security, Hibernate, and JDBC.
-       - Videos to cover concepts and projects to practice concepts
-
-   CS Courses from UMSL
-       - Completed 4 CS courses from UMSL
-       - Intro to Java Programming, Java Programming II, Intro to Databases, and Operating Systems I
-
-Other Experience
-^^^^^^^^^^^^^^^^
-
-After covering your technical experiences, you still need to include your
-non-technical work experience.
-
-::
-
-   Work Experience:
-   Assistant Manager, Upper Limits
-       - Day to day operations of a rock climbing gym, tending register, performing safety inspections, assisting customers, cleaning
-       - Worked with managers to plan and run special events including birthday parties, corporate team building, and climbing competitions
-       - Taught Rock Gym 101 - teaching novice climbers about top rope climbing, both how to and necessary safety precautions
-
-   Manager/Technical Support, Cellular Communication
-       - Provide technical support & information about mobile devices
-       - Troubleshoot hardware / software problems for customers and in house computers
-
-This section can be quite long, depending on the jobs you have had so
-far. You should try to include as much of it as possible, but focusing
-primarily on your experiences with problem solving, learning new things
-on the job, and working with others.
-
-Other Education
-^^^^^^^^^^^^^^^
-
-If you have any other formal education you didn’t include in the
-technical education section, you still need to include it as it provides
-invaluable information about you.
-
-::
-
-   Education:
-   Webster University, St. Louis, MO
-   Bachelor of Arts, History with a German minor
-
-Final Notes
-^^^^^^^^^^^
-
-Your resume should not be longer than two pages! If it is longer than
-two pages, try to eliminate sections from your non-technical education
-or non-technical work experience. If you are still short for room, try
-reducing the number of bullet points for each item of your resume.
-Again, you want to focus on showing them your problem solving skills.
-
-Some people like to have a master resume that contains all of the
-experience, education, skills, and projects they have ever worked on.
-This a great thing to have for yourself, but when you are sending a
-professional resume, you don’t want it to be longer than two pages. If
-you can, try to get your resume to one page.
-
+   Share document prompt
 
 GitHub Profiles
 ---------------
 
 Your GitHub profile can be an immensely powerful tool in showing other
 people projects you have completed, how often you work on projects, how
-long you’ve been a programmer, and the different languages and
+long you've been a programmer, and the different languages and
 technologies you have worked with. Also, the more you use GitHub, the
 more comfortable you will be with using any form of version control.
 
@@ -236,9 +93,8 @@ handles, gamertags, or anything that is not a variation of your name.
 
 ``a.lovelace`` is a great GitHub profile name for Ada Lovelace!
 
-countessofcomputers is a poor GitHub profile name for Ada Lovelace –
-although she has a steeped background with computers, she should still
-choose a professional github profile name.
+countessofcomputers is a poor GitHub profile name for Ada Lovelace---although she has a steeped background with computers, she should still
+choose a professional GitHub profile name.
 
 You should also include your professional email address with this GitHub
 profile.
@@ -287,11 +143,12 @@ pinned repositories. A repository of the live-coding problems we worked
 on in our last class, a repo for LC101 examples I created while teaching
 that class, a repo for Unit 2 of LC101 which contains all the
 presentations I gave throughout the class, and finally a repo called
-gmail_example which is a small Flask project I created to show how to
-connect to Gmail’s API and to send emails from a web app!
+``gmail_example`` which is a small Flask project I created to show how to
+connect to Gmail's API and to send emails from a web app!
 
 .. figure:: figures/github_pinned_repo.png
    :alt: GitHub Pinned Repositories
+   :width: 800px
 
    GitHub Pinned Repositories
 
