@@ -23,16 +23,16 @@ technical position.
 Technical Resume Format
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-For the Apprenticeship Program, we require you to complete a resume using `our template guide <https://docs.google.com/document/d/1Xr0O_ZnNizlWlUsxxCUZHL483NZWV7mmTCbWUhNVm74/view>`_. We require resumes of this format in order to enter our Apprenticeship program. Companies appreciate the shared template and it makes it easier for you to focus on the content of your resume rather than the style
+For the apprenticeship program, we require you to complete a resume using `our template guide <https://docs.google.com/document/d/1Xr0O_ZnNizlWlUsxxCUZHL483NZWV7mmTCbWUhNVm74/view>`_. We require resumes of this format in order to enter our apprenticeship program. Companies appreciate the shared template and it makes it easier for you to focus on the content of your resume rather than the style
 
-Upon clicking the link above you will be brought to this page.
+Upon clicking the link above, you will be brought to this page.
 
 .. figure:: figures/resume-guide.png
    :width: 800px
 
    LaunchCode Resume Guide
 
-Read through the entire guide. At the bottom you will links to four different templates for individuals with varying backgrounds. Choose the option that best describes you.
+Read through the entire guide. At the bottom, you will links to four different templates. Choose the option that best describes your background.
 
 .. figure:: figures/resume-template-links.png
    :width: 800px
@@ -48,7 +48,9 @@ You will then be directed to this page. Click *Make a copy* to make your own edi
 
    Copy document prompt
 
-From there, you can pick one of two template formats to edit. Edit only the template text and NOT the formatting. Do NOT delete the LaunchCode brands on the top right. If you already have text from an older resume, you can copy and paste text into your new resume. When doing so, be sure to match destination formatting (Command+SHIFT+V for Macs and CTRL+SHIFT+V for Windows).
+From there, you can pick one of two template formats to edit. To see the second format option, scroll down within the document.
+
+Edit only the template text and NOT the formatting. Do NOT delete the LaunchCode brands on the top right. If you already have text from an older resume, you can copy and paste text into your new resume. When doing so, be sure to match destination formatting (Command+SHIFT+V for Macs and CTRL+SHIFT+V for Windows).
 
 .. figure:: figures/resume-format-1.png
    :width: 800px
@@ -93,7 +95,7 @@ handles, gamertags, or anything that is not a variation of your name.
 
 ``a.lovelace`` is a great GitHub profile name for Ada Lovelace!
 
-countessofcomputers is a poor GitHub profile name for Ada Lovelace---although she has a steeped background with computers, she should still
+``countessofcomputers`` is a poor GitHub profile name for Ada Lovelace---although she has a steeped background with computers, she should still
 choose a professional GitHub profile name.
 
 You should also include your professional email address with this GitHub
