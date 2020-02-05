@@ -219,7 +219,7 @@ he’s going to get as much done as he can.
    More Sprint 2 Stories
 
 **Blockers:** At this point, there are no blockers. The tasks ahead are
-much like the tasks to create ``Cheese`` objects used in ``CheeseMVC``,
+much like the tasks to create ``Event`` objects used in ``coding-events``,
 so there are no obvious rough spots ahead for the current tasks.
 
 .. _el-week-5:

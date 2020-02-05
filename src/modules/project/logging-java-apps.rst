@@ -46,10 +46,10 @@ simplifies logger use. Under the hood, the logging implementation is
 provided by `Logback <https://logback.qos.ch/>`__.
 
 This tutorial will be based off of the
-`cheese-mvc <https://github.com/LaunchCodeEducation/cheese-mvc/tree/video-validation-end>`__
-project. Clone this project and check out the ``video-validation-end``
+`coding-events <https://github.com/LaunchCodeEducation/coding-events/tree/auth-filter>`__
+project. Clone this project and check out the ``auth-filter``
 branch. Create a new branch from here called ``logging`` (``git checkout -b logging``
-from the ``video-validation-end`` branch). If you’d like to keep the
+from the ``auth-filter`` branch). If you’d like to keep the
 changes we’ll be making, first fork the project to your own GitHub
 account.
 
@@ -65,7 +65,7 @@ examine a typical event logged by Spring.
 Here’s the first log message that displays immediately under the Spring
 Boot banner on startup:
 
-``2017-11-05 13:33:58.594  INFO 73394 --- [  restartedMain] org.launchcode.CheeseMvcApplication      : Starting CheeseMvcApplication on LaunchCodeComputer with PID 73394 (/Users/launchcoder/workspace/cheese-mvc/build/classes/main started by launchcoder in /Users/launchcoder/workspace/cheese-mvc)``
+``2017-11-05 13:33:58.594  INFO 73394 --- [  restartedMain] org.launchcode.CodingEventsApplication      : Starting CodingEventsApplication on LaunchCodeComputer with PID 73394 (/Users/launchcoder/workspace/coding-events/build/classes/main started by launchcoder in /Users/launchcoder/workspace/coding-events)``
 
 Here’s what’s displayed by default:
 
@@ -232,9 +232,9 @@ Reading Logs in Cloud Foundry
 
 If you’ve deployed your app via Cloud Foundry, you can view your logs by
 using the ``cf logs`` command. For example, if your app was named
-``cheese-mvc`` you’d type ``cf logs cheese-mvc``. This will display your
+``coding-events`` you’d type ``cf logs coding-events``. This will display your
 logs in real time. If you want to view recent logs, add the ``--recent``
-flag like so, ``cf logs cheese-mvc --recent``, and the most recent logs
+flag like so, ``cf logs coding-events --recent``, and the most recent logs
 will be displayed.
 
 Reading Logs in Pivotal Web Services

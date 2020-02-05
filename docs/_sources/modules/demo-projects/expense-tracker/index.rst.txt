@@ -138,8 +138,7 @@ stories. These are focused on basic user management (registration,
 login, logout). He couldn’t find any good external crates in Rust to
 help with user authentication. He will need to create user
 authentication on his own, and plans to use the same concepts we learned
-in Unit 2 – `Password Hashing &
-Salting <https://education.launchcode.org/web-fundamentals/class-prep/13/>`__.
+in Unit 2 – `Authentication <https://education.launchcode.org/java-web-development/chapters/auth/index.html>`__.
 
 .. figure:: figures/sprint_2_stories.png
    :alt: Sprint 2 user stories

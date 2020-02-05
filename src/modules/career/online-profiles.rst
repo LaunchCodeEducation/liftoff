@@ -143,10 +143,9 @@ will be highlighted to anyone that visits your GitHub profile.
 Below you will find an image of my personal GitHub account that has 4
 pinned repositories. A repository of the live-coding problems we worked
 on in our last class, a repo for LC101 examples I created while teaching
-that class, a repo for Unit 2 of LC101 which contains all the
-presentations I gave throughout the class, and finally a repo called
+that class, a repo with instruction slides created for teaching, and finally a repo called
 ``gmail_example`` which is a small Flask project I created to show how to
-connect to Gmail's API and to send emails from a web app!
+connect to Gmail's API and to send emails from a web app.
 
 .. figure:: figures/github_pinned_repo.png
    :alt: GitHub Pinned Repositories
@@ -155,7 +154,7 @@ connect to Gmail's API and to send emails from a web app!
    GitHub Pinned Repositories
 
 Anyone that comes to my main profile page will find these 4 repositories
-before anything else!
+before anything else.
 
 .. tip:: 
 

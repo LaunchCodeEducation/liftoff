@@ -136,10 +136,10 @@ additional logging to your application. You will be interacting with
 simplifies logger use. Under the hood, the logging implementation is
 provided by <a class="reference external" href="https://logback.qos.ch/" target="_blank">Logback<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
 <p>This tutorial will be based off of the
-<a class="reference external" href="https://github.com/LaunchCodeEducation/cheese-mvc/tree/video-validation-end" target="_blank">cheese-mvc<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
-project. Clone this project and check out the <code class="docutils literal notranslate"><span class="pre">video-validation-end</span></code>
+<a class="reference external" href="https://github.com/LaunchCodeEducation/coding-events/tree/auth-filter" target="_blank">coding-events<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+project. Clone this project and check out the <code class="docutils literal notranslate"><span class="pre">auth-filter</span></code>
 branch. Create a new branch from here called <code class="docutils literal notranslate"><span class="pre">logging</span></code> (<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">-b</span> <span class="pre">logging</span></code>
-from the <code class="docutils literal notranslate"><span class="pre">video-validation-end</span></code> branch). If you’d like to keep the
+from the <code class="docutils literal notranslate"><span class="pre">auth-filter</span></code> branch). If you’d like to keep the
 changes we’ll be making, first fork the project to your own GitHub
 account.</p>
 <p>Feel free to use your own project for this tutorial, just make sure you
@@ -151,7 +151,7 @@ update class and package names where relevant.</p>
 examine a typical event logged by Spring.</p>
 <p>Here’s the first log message that displays immediately under the Spring
 Boot banner on startup:</p>
-<p><code class="docutils literal notranslate"><span class="pre">2017-11-05</span> <span class="pre">13:33:58.594</span>&#160; <span class="pre">INFO</span> <span class="pre">73394</span> <span class="pre">---</span> <span class="pre">[</span>&#160; <span class="pre">restartedMain]</span> <span class="pre">org.launchcode.CheeseMvcApplication</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">:</span> <span class="pre">Starting</span> <span class="pre">CheeseMvcApplication</span> <span class="pre">on</span> <span class="pre">LaunchCodeComputer</span> <span class="pre">with</span> <span class="pre">PID</span> <span class="pre">73394</span> <span class="pre">(/Users/launchcoder/workspace/cheese-mvc/build/classes/main</span> <span class="pre">started</span> <span class="pre">by</span> <span class="pre">launchcoder</span> <span class="pre">in</span> <span class="pre">/Users/launchcoder/workspace/cheese-mvc)</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">2017-11-05</span> <span class="pre">13:33:58.594</span>&#160; <span class="pre">INFO</span> <span class="pre">73394</span> <span class="pre">---</span> <span class="pre">[</span>&#160; <span class="pre">restartedMain]</span> <span class="pre">org.launchcode.CodingEventsApplication</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">:</span> <span class="pre">Starting</span> <span class="pre">CodingEventsApplication</span> <span class="pre">on</span> <span class="pre">LaunchCodeComputer</span> <span class="pre">with</span> <span class="pre">PID</span> <span class="pre">73394</span> <span class="pre">(/Users/launchcoder/workspace/coding-events/build/classes/main</span> <span class="pre">started</span> <span class="pre">by</span> <span class="pre">launchcoder</span> <span class="pre">in</span> <span class="pre">/Users/launchcoder/workspace/coding-events)</span></code></p>
 <p>Here’s what’s displayed by default:</p>
 <ul class="simple">
 <li>Date and Timestamp</li>
@@ -293,9 +293,9 @@ stored in your object.</p>
 <h2><a class="toc-backref" href="#id11">Reading Logs in Cloud Foundry</a><a class="headerlink" href="#reading-logs-in-cloud-foundry" title="Permalink to this headline">¶</a></h2>
 <p>If you’ve deployed your app via Cloud Foundry, you can view your logs by
 using the <code class="docutils literal notranslate"><span class="pre">cf</span> <span class="pre">logs</span></code> command. For example, if your app was named
-<code class="docutils literal notranslate"><span class="pre">cheese-mvc</span></code> you’d type <code class="docutils literal notranslate"><span class="pre">cf</span> <span class="pre">logs</span> <span class="pre">cheese-mvc</span></code>. This will display your
+<code class="docutils literal notranslate"><span class="pre">coding-events</span></code> you’d type <code class="docutils literal notranslate"><span class="pre">cf</span> <span class="pre">logs</span> <span class="pre">coding-events</span></code>. This will display your
 logs in real time. If you want to view recent logs, add the <code class="docutils literal notranslate"><span class="pre">--recent</span></code>
-flag like so, <code class="docutils literal notranslate"><span class="pre">cf</span> <span class="pre">logs</span> <span class="pre">cheese-mvc</span> <span class="pre">--recent</span></code>, and the most recent logs
+flag like so, <code class="docutils literal notranslate"><span class="pre">cf</span> <span class="pre">logs</span> <span class="pre">coding-events</span> <span class="pre">--recent</span></code>, and the most recent logs
 will be displayed.</p>
 </div>
 <div class="section" id="reading-logs-in-pivotal-web-services">

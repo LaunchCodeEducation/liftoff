@@ -33,14 +33,14 @@ place for you. Flesh out your project outline by providing:
       logged in. New posts will appear in the user’s profile.
 
 3. **Technologies**: What languages and technologies will you use to
-   build your application? For example, for the Blogz application from
-   Unit 2, the technologies would be:
+   build your application? For example, for the `coding-events` application from
+   Unit 2 - Java, the technologies would be:
 
-   -  Python
-   -  Flask
+   -  Java
+   -  Spring Boot
    -  MySQL
-   -  SQLAlchemy
-   -  Jinja2 templates
+   -  Hibernate
+   -  Thymeleaf templates
 
 4. **What you’ll have to learn**: In the course of building your
    project, you’ll have to learn something new. Perhaps you want to use
