@@ -77,34 +77,37 @@
     <div class="col-md-12 content">
       
   <div class="section" id="logging-with-java-applications">
-<span id="java-logging"></span><h1>Logging With Java Applications<a class="headerlink" href="#logging-with-java-applications" title="Permalink to this headline">¶</a></h1>
+<span id="java-logging"></span><h1><a class="toc-backref" href="#id1">Logging With Java Applications</a><a class="headerlink" href="#logging-with-java-applications" title="Permalink to this headline">¶</a></h1>
 <p>In this tutorial, we’ll discuss why logging is important, how to control
 your logging output, how to write your own logging statements, and how
 to view your logs in production.</p>
-<div class="contents local topic" id="contents">
+<div class="contents topic" id="contents">
 <p class="topic-title first">Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="#introduction" id="id1" target="_blank">Introduction<i class="fas fa-external-link-alt" aria-hidden="true"></i></a><ul>
-<li><a class="reference internal" href="#requirements" id="id2" target="_blank">Requirements<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
-<li><a class="reference internal" href="#why-logging-matters" id="id3" target="_blank">Why Logging Matters<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
-<li><a class="reference internal" href="#considerations" id="id4" target="_blank">Considerations<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#logging-with-java-applications" id="id1" target="_blank">Logging With Java Applications<i class="fas fa-external-link-alt" aria-hidden="true"></i></a><ul>
+<li><a class="reference internal" href="#introduction" id="id2" target="_blank">Introduction<i class="fas fa-external-link-alt" aria-hidden="true"></i></a><ul>
+<li><a class="reference internal" href="#requirements" id="id3" target="_blank">Requirements<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#why-logging-matters" id="id4" target="_blank">Why Logging Matters<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#considerations" id="id5" target="_blank">Considerations<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#setup" id="id5" target="_blank">Setup<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
-<li><a class="reference internal" href="#reading-log-messages" id="id6" target="_blank">Reading Log Messages<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
-<li><a class="reference internal" href="#controlling-logging-output" id="id7" target="_blank">Controlling Logging Output<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
-<li><a class="reference internal" href="#adding-a-logger" id="id8" target="_blank">Adding a Logger<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
-<li><a class="reference internal" href="#creating-a-log-statement" id="id9" target="_blank">Creating a log statement<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
-<li><a class="reference internal" href="#passing-objects" id="id10" target="_blank">Passing Objects<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
-<li><a class="reference internal" href="#reading-logs-in-cloud-foundry" id="id11" target="_blank">Reading Logs in Cloud Foundry<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
-<li><a class="reference internal" href="#reading-logs-in-pivotal-web-services" id="id12" target="_blank">Reading Logs in Pivotal Web Services<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
-<li><a class="reference internal" href="#additional-resources" id="id13" target="_blank">Additional Resources<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#setup" id="id6" target="_blank">Setup<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#reading-log-messages" id="id7" target="_blank">Reading Log Messages<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#controlling-logging-output" id="id8" target="_blank">Controlling Logging Output<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#adding-a-logger" id="id9" target="_blank">Adding a Logger<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#creating-a-log-statement" id="id10" target="_blank">Creating a log statement<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#passing-objects" id="id11" target="_blank">Passing Objects<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#reading-logs-in-cloud-foundry" id="id12" target="_blank">Reading Logs in Cloud Foundry<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#reading-logs-in-pivotal-web-services" id="id13" target="_blank">Reading Logs in Pivotal Web Services<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#additional-resources" id="id14" target="_blank">Additional Resources<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="section" id="introduction">
-<h2><a class="toc-backref" href="#id1">Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id2">Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="requirements">
-<h3><a class="toc-backref" href="#id2">Requirements</a><a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id3">Requirements</a><a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h3>
 <p>This tutorial assumes you have the following installed:</p>
 <ul class="simple">
 <li><a class="reference external" href="https://spring.io/projects/spring-boot" target="_blank">Spring Boot<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
@@ -113,7 +116,7 @@ to view your logs in production.</p>
 </ul>
 </div>
 <div class="section" id="why-logging-matters">
-<h3><a class="toc-backref" href="#id3">Why Logging Matters</a><a class="headerlink" href="#why-logging-matters" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id4">Why Logging Matters</a><a class="headerlink" href="#why-logging-matters" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>Logging provides observability of your app in a live environment. What went wrong? What does the stack trace of an error experienced in production look like?</li>
 <li>Logging allows you to debug errors.</li>
@@ -121,7 +124,7 @@ to view your logs in production.</p>
 </ul>
 </div>
 <div class="section" id="considerations">
-<h3><a class="toc-backref" href="#id4">Considerations</a><a class="headerlink" href="#considerations" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id5">Considerations</a><a class="headerlink" href="#considerations" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>Don’t log sensitive information, such as passwords, PII (personally identifiable information), or credit card numbers.</li>
 <li>Too much logging is hard to sort through. Too little logging won’t provide insight into critical issues. We’ll talk about a few techniques to manage the <em>signal to noise</em> ratio inherent in getting this right.</li>
@@ -129,29 +132,29 @@ to view your logs in production.</p>
 </div>
 </div>
 <div class="section" id="setup">
-<h2><a class="toc-backref" href="#id5">Setup</a><a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id6">Setup</a><a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
 <p>Spring Boot by default ships with all the necessary libraries to add
 additional logging to your application. You will be interacting with
 <a class="reference external" href="https://www.slf4j.org/" target="_blank">SLF4J<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>, a logging abstraction which
 simplifies logger use. Under the hood, the logging implementation is
 provided by <a class="reference external" href="https://logback.qos.ch/" target="_blank">Logback<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
 <p>This tutorial will be based off of the
-<a class="reference external" href="https://github.com/LaunchCodeEducation/cheese-mvc/tree/video-validation-end" target="_blank">cheese-mvc<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
-project. Clone this project and check out the <code class="docutils literal notranslate"><span class="pre">video-validation-end</span></code>
+<a class="reference external" href="https://github.com/LaunchCodeEducation/coding-events/tree/auth-filter" target="_blank">coding-events<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+project. Clone this project and check out the <code class="docutils literal notranslate"><span class="pre">auth-filter</span></code>
 branch. Create a new branch from here called <code class="docutils literal notranslate"><span class="pre">logging</span></code> (<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">-b</span> <span class="pre">logging</span></code>
-from the <code class="docutils literal notranslate"><span class="pre">video-validation-end</span></code> branch). If you’d like to keep the
+from the <code class="docutils literal notranslate"><span class="pre">auth-filter</span></code> branch). If you’d like to keep the
 changes we’ll be making, first fork the project to your own GitHub
 account.</p>
 <p>Feel free to use your own project for this tutorial, just make sure you
 update class and package names where relevant.</p>
 </div>
 <div class="section" id="reading-log-messages">
-<h2><a class="toc-backref" href="#id6">Reading Log Messages</a><a class="headerlink" href="#reading-log-messages" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id7">Reading Log Messages</a><a class="headerlink" href="#reading-log-messages" title="Permalink to this headline">¶</a></h2>
 <p>You likely already have some experience reading log messages, but let’s
 examine a typical event logged by Spring.</p>
 <p>Here’s the first log message that displays immediately under the Spring
 Boot banner on startup:</p>
-<p><code class="docutils literal notranslate"><span class="pre">2017-11-05</span> <span class="pre">13:33:58.594</span>&#160; <span class="pre">INFO</span> <span class="pre">73394</span> <span class="pre">---</span> <span class="pre">[</span>&#160; <span class="pre">restartedMain]</span> <span class="pre">org.launchcode.CheeseMvcApplication</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">:</span> <span class="pre">Starting</span> <span class="pre">CheeseMvcApplication</span> <span class="pre">on</span> <span class="pre">LaunchCodeComputer</span> <span class="pre">with</span> <span class="pre">PID</span> <span class="pre">73394</span> <span class="pre">(/Users/launchcoder/workspace/cheese-mvc/build/classes/main</span> <span class="pre">started</span> <span class="pre">by</span> <span class="pre">launchcoder</span> <span class="pre">in</span> <span class="pre">/Users/launchcoder/workspace/cheese-mvc)</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">2017-11-05</span> <span class="pre">13:33:58.594</span>&#160; <span class="pre">INFO</span> <span class="pre">73394</span> <span class="pre">---</span> <span class="pre">[</span>&#160; <span class="pre">restartedMain]</span> <span class="pre">org.launchcode.CodingEventsApplication</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">:</span> <span class="pre">Starting</span> <span class="pre">CodingEventsApplication</span> <span class="pre">on</span> <span class="pre">LaunchCodeComputer</span> <span class="pre">with</span> <span class="pre">PID</span> <span class="pre">73394</span> <span class="pre">(/Users/launchcoder/workspace/coding-events/build/classes/main</span> <span class="pre">started</span> <span class="pre">by</span> <span class="pre">launchcoder</span> <span class="pre">in</span> <span class="pre">/Users/launchcoder/workspace/coding-events)</span></code></p>
 <p>Here’s what’s displayed by default:</p>
 <ul class="simple">
 <li>Date and Timestamp</li>
@@ -166,7 +169,7 @@ application started on, where it was started from, and by whom.</li>
 </ul>
 </div>
 <div class="section" id="controlling-logging-output">
-<h2><a class="toc-backref" href="#id7">Controlling Logging Output</a><a class="headerlink" href="#controlling-logging-output" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id8">Controlling Logging Output</a><a class="headerlink" href="#controlling-logging-output" title="Permalink to this headline">¶</a></h2>
 <p>Loggers typically support five different log levels, or degrees of
 severity, ranging from most severe (<code class="docutils literal notranslate"><span class="pre">ERROR</span></code>) to least severe
 (<code class="docutils literal notranslate"><span class="pre">TRACE</span></code>). As a developer, this provides context for the message (How
@@ -246,41 +249,41 @@ logging.level.org.apache.http = DEBUG
 </div>
 </div>
 <div class="section" id="adding-a-logger">
-<h2><a class="toc-backref" href="#id8">Adding a Logger</a><a class="headerlink" href="#adding-a-logger" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id9">Adding a Logger</a><a class="headerlink" href="#adding-a-logger" title="Permalink to this headline">¶</a></h2>
 <p>As you start to build more complex applications and host them in a live
 environment, you’ll want to start adding your own logging messages.</p>
 <p>To do so, you’ll need to instantiate (create) a logger inside the class
 we want to do some logging in. This is done by adding the following to
 the top of your class, inside of your class declaration.</p>
-<div class="code java highlight-none notranslate"><div class="highlight"><pre><span></span>private static final Logger logger = LoggerFactory.getLogger(CheeseController.class);
+<div class="code java highlight-none notranslate"><div class="highlight"><pre><span></span>private static final Logger logger = LoggerFactory.getLogger(EventController.class);
 </pre></div>
 </div>
-<p>Here, we’re adding a logger to our <code class="docutils literal notranslate"><span class="pre">CheeseController</span></code>, but if you’re
+<p>Here, we’re adding a logger to our <code class="docutils literal notranslate"><span class="pre">EventController</span></code>, but if you’re
 working on your own project, be sure to use the appropriate class name.</p>
 <p>This gives us access to a logging instance, which we can start using to
 create log messages.</p>
 </div>
 <div class="section" id="creating-a-log-statement">
-<h2><a class="toc-backref" href="#id9">Creating a log statement</a><a class="headerlink" href="#creating-a-log-statement" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id10">Creating a log statement</a><a class="headerlink" href="#creating-a-log-statement" title="Permalink to this headline">¶</a></h2>
 <p>Consider a situation where you might want to log why a user failed
 validation. This way, if the user contacts us confused as to why they
-can’t create a new cheese, register, or otherwise use our application,
+can’t create a new event, register, or otherwise use our application,
 we’ll have a record of what was the root problem. Add the following line
 inside one of our validation blocks, like so:</p>
 <div class="code java highlight-none notranslate"><div class="highlight"><pre><span></span>if (errors.hasErrors()) {
-    logger.info(&quot;Error during cheese registration: &quot; + errors.getAllErrors().toString());
-    model.addAttribute(&quot;title&quot;, &quot;Add Cheese&quot;);
-    return &quot;cheese/add&quot;;
+    logger.info(&quot;Error during event registration: &quot; + errors.getAllErrors().toString());
+    model.addAttribute(&quot;title&quot;, &quot;Add Event&quot;);
+    return &quot;events/create&quot;;
 }
 </pre></div>
 </div>
 <p>In the event that a user has provided incorrect information when adding
-a cheese, we will log that there was an error, as well as the errors
+an event, we will log that there was an error, as well as the errors
 themselves, which should give us insight into what was the root of the
 problem.</p>
 </div>
 <div class="section" id="passing-objects">
-<h2><a class="toc-backref" href="#id10">Passing Objects</a><a class="headerlink" href="#passing-objects" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id11">Passing Objects</a><a class="headerlink" href="#passing-objects" title="Permalink to this headline">¶</a></h2>
 <p>Here we are just logging a string which we concatenate with the <code class="docutils literal notranslate"><span class="pre">+</span></code>
 symbol. Each logger provides many overloaded methods allowing you to
 pass in additional parameters, such as an object or an exception. Any
@@ -290,16 +293,16 @@ default <code class="docutils literal notranslate"><span class="pre">toString</s
 stored in your object.</p>
 </div>
 <div class="section" id="reading-logs-in-cloud-foundry">
-<h2><a class="toc-backref" href="#id11">Reading Logs in Cloud Foundry</a><a class="headerlink" href="#reading-logs-in-cloud-foundry" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id12">Reading Logs in Cloud Foundry</a><a class="headerlink" href="#reading-logs-in-cloud-foundry" title="Permalink to this headline">¶</a></h2>
 <p>If you’ve deployed your app via Cloud Foundry, you can view your logs by
 using the <code class="docutils literal notranslate"><span class="pre">cf</span> <span class="pre">logs</span></code> command. For example, if your app was named
-<code class="docutils literal notranslate"><span class="pre">cheese-mvc</span></code> you’d type <code class="docutils literal notranslate"><span class="pre">cf</span> <span class="pre">logs</span> <span class="pre">cheese-mvc</span></code>. This will display your
+<code class="docutils literal notranslate"><span class="pre">coding-events</span></code> you’d type <code class="docutils literal notranslate"><span class="pre">cf</span> <span class="pre">logs</span> <span class="pre">coding-events</span></code>. This will display your
 logs in real time. If you want to view recent logs, add the <code class="docutils literal notranslate"><span class="pre">--recent</span></code>
-flag like so, <code class="docutils literal notranslate"><span class="pre">cf</span> <span class="pre">logs</span> <span class="pre">cheese-mvc</span> <span class="pre">--recent</span></code>, and the most recent logs
+flag like so, <code class="docutils literal notranslate"><span class="pre">cf</span> <span class="pre">logs</span> <span class="pre">coding-events</span> <span class="pre">--recent</span></code>, and the most recent logs
 will be displayed.</p>
 </div>
 <div class="section" id="reading-logs-in-pivotal-web-services">
-<h2><a class="toc-backref" href="#id12">Reading Logs in Pivotal Web Services</a><a class="headerlink" href="#reading-logs-in-pivotal-web-services" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id13">Reading Logs in Pivotal Web Services</a><a class="headerlink" href="#reading-logs-in-pivotal-web-services" title="Permalink to this headline">¶</a></h2>
 <p>If you’ve hosted your app using Pivotal Web Services, you can also view
 your logs by logging into your <a class="reference external" href="https://console.run.pivotal.io/" target="_blank">PWS
 console<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>. Navigate to your space and then your
@@ -307,7 +310,7 @@ application. There should be a tab for <em>Logs</em>. From there, you can
 view old logs, as well as monitor them in real time.</p>
 </div>
 <div class="section" id="additional-resources">
-<h2><a class="toc-backref" href="#id13">Additional Resources</a><a class="headerlink" href="#additional-resources" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id14">Additional Resources</a><a class="headerlink" href="#additional-resources" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-logging.html" target="_blank">Spring Boot Docs - Logging Features<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
 <li><a class="reference external" href="https://docs.spring.io/spring-boot/docs/current/reference/html/howto-logging.html" target="_blank">Spring Boot Docs - Logging How To<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>

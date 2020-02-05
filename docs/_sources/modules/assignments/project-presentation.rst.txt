@@ -3,17 +3,17 @@
 Assignment: Project Presentation
 ================================
 
-Odds are, you still have stories to complete on your project. That’s okay. In fact, we
+Odds are, you still have stories to complete on your project. That's okay. In fact, we
 encourage you to continue to work on your project well beyond the end of
 the Liftoff program. This helps you continue to learn and keep your skills
 sharp. And if you ever feel *done* with your project, start a new one!
-There’s no better way to acquire and demonstrate skills than by working
+There's no better way to acquire and demonstrate skills than by working
 on a project.
 
 That said, we want to you to create a set of presentation slides
 summarizing your project. This serves multiple purposes: 
 
-#. It shows us what you’ve accomplished to-date. 
+#. It shows us what you've accomplished to-date. 
 #. It forces you to go through the process of outlining your project work at a high level, which is a useful exercise to prepare you to talk about it in interviews. It also makes it easy for you to give an actual presentation on your app in the future. 
 #. Some of you will be asked to create a `demo video <https://www.youtube.com/watch?v=_8LRJHkTqsg&list=PLs5n5nYB22fIdV_HMkekxx7Yt06lXUptT>`__ that can help other learners with planning their projects.
 

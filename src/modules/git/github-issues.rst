@@ -33,7 +33,7 @@ large green New Issue button.
 Enabling GitHub Issues
 ----------------------
 
-Let’s look at the same repository after I have turned off Issues in the
+Let's look at the same repository after I have turned off Issues in the
 settings tab.
 
 .. figure:: figures//github_issues_3.png

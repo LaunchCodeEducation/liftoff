@@ -13,7 +13,7 @@ Getting Started
 The objectives for this assignment are simple to state:
 
 -  Create a GitHub repository for your project, which includes a license
--  Make an initial commit that includes a basic, working “Hello, world!”
+-  Make an initial commit that includes a basic, working "Hello, world!"
    level project
 -  Start working on your first user story
 
@@ -24,7 +24,7 @@ your mentor or the instructor.
 Pre-existing Projects
 ^^^^^^^^^^^^^^^^^^^^^
 
-If you’ve already started a project, make sure it’s in GitHub. Once you
+If you've already started a project, make sure it's in GitHub. Once you
 check that one off, take the extra step of creating a solid README file
 that gives a high-level overview of your project so that visitors to
 your profile can learn about it.
@@ -35,11 +35,11 @@ Java / Spring Boot Project Tips
 Revisit `lesson
 videos <http://education.launchcode.org/skills-back-end-java/videos/>`__
 from the Java / Spring Boot skill track as needed. In particular, if
-you’re starting from scratch, you’ll find these useful:
+you're starting from scratch, you'll find these useful:
 
 -  `Intro to Spring Boot:
    Controllers <http://education.launchcode.org/skills-back-end-java/videos/intro-to-spring-boot-controllers/>`__
-   - for creating a basic “Hello, world!” application
+   - for creating a basic "Hello, world!" application
 -  `Using Git in
    IntelliJ <http://education.launchcode.org/skills-back-end-java/videos/using-git-in-intellij/>`__
    - for connecting your local Git repository to a GitHub repository
@@ -49,12 +49,12 @@ C# / ASP.NET MVC Project Tips
 
 Revisit `lesson
 videos <http://education.launchcode.org/skills-back-end-csharp/videos/>`__
-from the C# / ASP.NET skill track as needed. In particular, if you’re
-starting from scratch you’ll find these useful:
+from the C# / ASP.NET skill track as needed. In particular, if you're
+starting from scratch you'll find these useful:
 
 -  `Intro to ASP.NET Core MVC:
    Controllers <http://education.launchcode.org/skills-back-end-csharp/videos/intro-to-mvc-controllers/>`__
-   - for creating a basic “Hello, world!” application
+   - for creating a basic "Hello, world!" application
 -  `Intro to Visual
    Studio <http://education.launchcode.org/skills-back-end-csharp/videos/intro-to-visual-studio/>`__
    - for connecting your local Git repository to a GitHub repository

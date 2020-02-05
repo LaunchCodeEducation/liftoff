@@ -15,7 +15,7 @@ Career Module
 -  Understand the parts of an interview: behavioral and technical
 -  Understand what you may encounter in a technical interview
 -  Can prepare for and practice answering technical questions
--  Can respond correctly when asked a technical question you don’t know
+-  Can respond correctly when asked a technical question you don't know
    how to answer
 -  Can incorporate project experiences and class experiences into
    technical questions
@@ -37,7 +37,7 @@ In Class
 Activity: Standup
 ^^^^^^^^^^^^^^^^^
 
-Before we get started with today’s assignment, take a few minutes to have
+Before we get started with today's assignment, take a few minutes to have
 your standup. Go around the group and allow time for each person to talk 
 about the user stories they completed this week, and the user stories they will be
 working on next week.

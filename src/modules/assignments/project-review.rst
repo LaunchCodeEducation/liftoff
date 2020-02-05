@@ -3,7 +3,7 @@
 Assignment: Project Review
 ==========================
 
-During class, you’ll spend 15-20 minutes with your mentor reviewing
+During class, you'll spend 15-20 minutes with your mentor reviewing
 your project work to date. This will be less of a pair programming
 exercise and more of a code review exercise. Your mentor will check in
 with you on things like:
@@ -15,4 +15,4 @@ with you on things like:
 
 If you have made progress on your project and you engage with your
 mentor to talk through your project, then
-you’ll be marked as having completed this assignment.
+you'll be marked as having completed this assignment.

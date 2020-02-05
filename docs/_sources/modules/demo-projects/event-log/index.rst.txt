@@ -30,12 +30,12 @@ Sprint 1 Kickoff
 
 Most sprint kickoffs will consist of planning, estimating, and committing
 to user stories to complete during the sprint. Since there are not user
-stories created yet (we’ll do that in week 2) this kickoff is a little
+stories created yet (we'll do that in week 2) this kickoff is a little
 different.
 
-We discussed our project ideas – Chris’ for an event log and Paul’s for an
+We discussed our project ideas – Chris' for an event log and Paul's for an
 expense tracker – and got some feedback on how big each project might be
-to be doable. We also discussed the particular technologies that we’ll
+to be doable. We also discussed the particular technologies that we'll
 be using to build our projects.
 
 Finally, we discussed the things that we expect to have to learn along
@@ -59,7 +59,7 @@ Sprint 1 Standup
 ^^^^^^^^^^^^^^^^
 
 During our sprint 1 standup, we discussed our completed project outlines
-and upcoming work. Here are Chris’ items:
+and upcoming work. Here are Chris' items:
 
 **What was accomplished:** The Event Log project outline was completed
 with a few features laid out. Some questions were raised about how to
@@ -69,7 +69,7 @@ figured out along the way.
 **What is planned next:** Next, wireframes and initial user stories will
 be developed.
 
-**Blockers:** There aren’t any significant blockers, though there are
+**Blockers:** There aren't any significant blockers, though there are
 some unknowns that were made clear as part of this early planning. In
 particular, Chris has done some research around using Spring Security
 framework to handle user authentication, though that seems like a
@@ -84,7 +84,7 @@ includes 3 initial wireframes for the Event Log app, along with a link
 to the Pivotal Tracker project that has been populated with some user
 stories.
 
-Here’s a screenshot of the project tracker app with initial user stories:
+Here's a screenshot of the project tracker app with initial user stories:
 
 .. figure:: figures/sprint_1_stories.png
    :alt: Sprint 1 Stories
@@ -106,7 +106,7 @@ clarify the initial work to be done, which will begin in earnest this
 week as the second sprint kicks off.
 
 During the retrospective portion of the discussion, they discussed how in
-some ways it didn’t feel like much had gotten done since there wasn’t
+some ways it didn't feel like much had gotten done since there wasn't
 much, if any, code written. Paul made the point that while little code
 was written, the planning that was done should help the initial coding
 phase of the project go more quickly than it otherwise would have. He noted
@@ -121,9 +121,9 @@ Assignment: Project Setup
 
 `Submission in liftoff-assignments <https://github.com/LaunchCodeEducation/liftoff-assignments-chris/tree/master/P4-Project_Setup>`__
 
-The project’s `GitHub
+The project's `GitHub
 repository <https://github.com/LaunchCodeEducation/event-log>`__ was set up.
-Initial commits created a basic “Hello, world!” Spring Boot app obtained
+Initial commits created a basic "Hello, world!" Spring Boot app obtained
 via `start.spring.io <http://start.spring.io/>`__. They also add some
 basic dependencies in the
 `build.gradle <https://github.com/LaunchCodeEducation/event-log/blob/3f91742a0527a65e64678c477d50f26a98b87f3e/build.gradle>`__
@@ -145,8 +145,8 @@ provided by LaunchCode, and may use that approach. However, he has also been
 learning about Spring Security and wants to see if he can use that
 framework for setting up registration and login.
 
-He hasn’t used Spring Security before, and it looks like it could be
-complicated to set up. To get started, he’s going to refer to the
+He hasn't used Spring Security before, and it looks like it could be
+complicated to set up. To get started, he's going to refer to the
 `Spring Security Series <http://www.baeldung.com/security-spring>`__ of
 articles at `baeldung.com <http://www.baeldung.com/>`__, which seem
 well-written and thorough. The only challenge may be in modifying the
@@ -161,14 +161,14 @@ column of Pivotal Tracker.
 
    Initial user stories
 
-The first story he’ll work on will be, “As a user, I can create an
-account so that I can access the app.” The other stories are focused on
-logging in and out, and one can’t log in or out without an existing
+The first story he'll work on will be, "As a user, I can create an
+account so that I can access the app." The other stories are focused on
+logging in and out, and one can't log in or out without an existing
 account. It therefore makes sense to start this one first. To verify that
-account registration works, he’ll be able to check the database.
+account registration works, he'll be able to check the database.
 
 Setting up account registration will require him to set up his first
-model class, ``User``, as well as setting up the app’s database. Some
+model class, ``User``, as well as setting up the app's database. Some
 other initial, one-time work–such as creating some shared template
 fragments–will also need to be done.
 
@@ -187,7 +187,7 @@ Sprint 2 Standup
 
 **What was accomplished:** All of the user registration and login
 stories are complete! (See associated commits and screenshots below.)
-Chris didn’t expect to get as much done, but he was able to get all of
+Chris didn't expect to get as much done, but he was able to get all of
 the desired features implemented.
 
 .. figure:: figures/sprint_2_commits.png
@@ -211,7 +211,7 @@ event model classes, along with associated controllers and views. He has
 estimated a few stories and moved them into the **Current Iteration**
 column (see Pivotal Tracker screenshot below). Right now, they seem like
 a lot of work to complete with only one week left in the sprint, but
-he’s going to get as much done as he can.
+he's going to get as much done as he can.
 
 .. figure:: figures/sprint_2_stories_2.png
    :alt: More Sprint 2 Stories
@@ -219,7 +219,7 @@ he’s going to get as much done as he can.
    More Sprint 2 Stories
 
 **Blockers:** At this point, there are no blockers. The tasks ahead are
-much like the tasks to create ``Cheese`` objects used in ``CheeseMVC``,
+much like the tasks to create ``Event`` objects used in ``coding-events``,
 so there are no obvious rough spots ahead for the current tasks.
 
 .. _el-week-5:
@@ -229,7 +229,7 @@ Week 5
 
 This week, the focus was on continuing to complete user stories, while
 also getting a code review from a mentor. With a few stories having been
-completed, and a solid base of code in place, it’s a good time to 
+completed, and a solid base of code in place, it's a good time to 
 review the project with a more experienced developer for some
 feedback. If there are better ways to approach things, or to structure
 your code, it will be easier to refactor now than it will be later!
@@ -249,7 +249,7 @@ user stories:
 -  `Event Details View <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/event-log/figures/event_details_view.png>`__
 
 He had estimated another story and moved it to the **Current Iteration**
-panel (“As a logged-in user, I can view all upcoming events…”) but he
+panel ("As a logged-in user, I can view all upcoming events…") but he
 was unable to get started on it. This story will carry over to the next
 sprint.
 
@@ -261,7 +261,7 @@ Here are the commits made during the second half of sprint 2:
    Sprint 2 Commits (Week 2)
 
 There were a few commits that consisted not of new stories, but of small
-amounts of *refactoring*. It’s a common and important task to constantly
+amounts of *refactoring*. It's a common and important task to constantly
 work to improve a code base via refactoring. Here are some specific
 types of refactoring tasks carried out this past week on the project:
 
@@ -284,7 +284,7 @@ the work done to-date. Chris gave Paul a demo of the applications as it
 stands, and they then began looking at the application code itself.
 
 By working in small units and refactoring as he goes, Chris has kept his
-code clean and readable. There is no “dead code” (i.e. code no longer
+code clean and readable. There is no "dead code" (i.e. code no longer
 being used), commented-out snippets, or messy files.
 
 He had a few comments on things that could be improved:
@@ -292,9 +292,9 @@ He had a few comments on things that could be improved:
 Changing user passwords
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Paul noted that there isn’t currently a way for users to change or reset
+Paul noted that there isn't currently a way for users to change or reset
 their passwords. This will be necessary in the long run (definitely
-before the app is to be used by the general public), but probably isn’t
+before the app is to be used by the general public), but probably isn't
 a short-term concern.
 
 UI improvements
@@ -303,7 +303,7 @@ UI improvements
 He also noted that for some of the newer features, while they work well,
 the UI and template work could use some improvements. There is no way to 
 click on a link and go to the ``Create Event`` form. The main event listing 
-at ``/`` shows event titles and dates, but the dates aren’t formatted very 
+at ``/`` shows event titles and dates, but the dates aren't formatted very 
 nicely. Additionally, users should be able to click on an event and go to the
 details page for that event.
 
@@ -312,10 +312,10 @@ Organization support
 
 Paul and Chris also talked about the fact that the app only supports use
 by a single organization. In other words, the app assumes that only one
-organization is using it, and so events don’t “belong to” any type of
+organization is using it, and so events don't "belong to" any type of
 organization. This is somewhat limiting.
 
-Chris commented that he’d like to add support for multiple organizations
+Chris commented that he'd like to add support for multiple organizations
 in the future, but for now he wants to focus on building out core
 functionality for working with events. Paul agreed that this is a good
 short-term strategy, and the app could always be modified in the future
@@ -325,7 +325,7 @@ functionality.
 
 Based on the code review, Chris added a couple of tasks to Pivotal
 tracker to improve aspects of the user interface. He estimated these as
-0 points, since they aren’t user stories that add specific
+0 points, since they aren't user stories that add specific
 functionality.
 
 Sprint 3 Kickoff
@@ -370,7 +370,7 @@ Sprint 3 Standup
 completed two user stories:
 
 -  As a logged-in user, I can view all upcoming events immediately upon logging in, so I can quickly get a view of upcoming events. (`screenshot <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/event-log/figures/event_listing_view.png>`__)
--  As a logged-in user, when I try to view an event with an ID that doesn’t exist, I see a helpful error message. (`screenshot <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/event-log/figures/event_error_message.png>`__)
+-  As a logged-in user, when I try to view an event with an ID that doesn't exist, I see a helpful error message. (`screenshot <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/event-log/figures/event_error_message.png>`__)
 
 He did not meet his stretch goal of implementing event editing. That
 will be the focus of the rest of the sprint.
@@ -390,16 +390,16 @@ for ``event-log`` as of the sprint 3 standup.
 **What is planned next:** For the rest of the sprint, Chris will focus
 on adding the ability to edit events that have already been created. He
 also hopes to work on some of the UI improvements that he and Paul
-discussed during last week’s code review.
+discussed during last week's code review.
 
-Here’s the current status of the **Current Iteration** tasks:
+Here's the current status of the **Current Iteration** tasks:
 
 .. figure:: figures/sprint_3_stories_2.png
    :alt: More Sprint 3 Stories
 
    More Sprint 3 Stories
 
-**Blockers:** Chris doesn’t have any blockers at this point, so full steam ahead.
+**Blockers:** Chris doesn't have any blockers at this point, so full steam ahead.
 
 .. _el-week-7:
 
@@ -416,15 +416,15 @@ In the final week of sprint 3, Chris completed the following stories:
 -  Improve the event listing view.
 -  Improve the event details view.
 
-The last two items above aren’t actually written as user stories, as you
+The last two items above aren't actually written as user stories, as you
 likely noticed. They also were given 0-point estimates. This is because
-they are refactoring tasks which don’t add any new features to the
+they are refactoring tasks which don't add any new features to the
 application.
 
 The stories completed include one additional story beyond what was
 planned as of the last standup. Chris finished the planned tasks and
-decided to tackle the story: “As a logged-in user, when viewing the
-main listing of events…”
+decided to tackle the story: "As a logged-in user, when viewing the
+main listing of events…"
 
 As part of the work improving views, he added a Bootstrap theme from the
 `Bootswatch <https://bootswatch.com/>`__ project to give the site some
@@ -437,7 +437,7 @@ views with the new theme:
 -  `Event Details View <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/event-log/figures/event_details_view_new.png>`__
 -  `Create Event Form <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/event-log/figures/create_event_form_new.png>`__
 
-There were quite a few commits for this week’s work since many of the
+There were quite a few commits for this week's work since many of the
 changes were small refactoring tasks:
 
 .. figure:: figures/sprint_3_commits_2.png
@@ -454,9 +454,9 @@ Sprint 4 Kickoff
 
 To start sprint 4, Chris will focus on adding volunteer tracking to the
 system. The goal is to allow users to create volunteers and add
-multiple volunteers to an event. He’ll also make events able to be deleted.
+multiple volunteers to an event. He'll also make events able to be deleted.
 
-Here’s the current status of the **Current Iteration** tasks:
+Here's the current status of the **Current Iteration** tasks:
 
 .. figure:: figures/sprint_4_stories.png
    :alt: Sprint 4 Stories
@@ -478,7 +478,7 @@ Sprint 4 Standup
 -  As a logged-in user, I can add a volunteer to an event
 -  As a logged-in user, I can remove a volunteer from an event
 
-The final story listed wasn’t planned at the beginning of the sprint,
+The final story listed wasn't planned at the beginning of the sprint,
 but in the course of implementing the ability to add volunteers to
 events, it made sense at the time to also make sure that removing
 volunteers (via the update event view) worked as well. In other words,
@@ -498,7 +498,7 @@ for ``event-log`` as of the sprint 4 standup.
 stories that were discussed with Paul during his project review that are
 focused on navigating event listings.
 
-Here’s the current status of the **Current Iteration** tasks:
+Here's the current status of the **Current Iteration** tasks:
 
 .. figure:: figures/sprint_4_stories_2.png
    :alt: More Sprint 4 Stories
@@ -509,9 +509,9 @@ While Liftoff is over, Chris will continue to work on his project on a
 regular basis and will continue to plan his work using user stories and
 sprints.
 
-**Blockers:** Chris hasn’t used the ``PagingAndSortingRepository``
-before, so he’ll need to learn about that before starting the stories
-for this sprint. He’s already identified `an
+**Blockers:** Chris hasn't used the ``PagingAndSortingRepository``
+before, so he'll need to learn about that before starting the stories
+for this sprint. He's already identified `an
 article <http://www.baeldung.com/spring-data-repositories>`__ that gives
 a nice overview of the repository interface.
 
@@ -541,7 +541,7 @@ good now, if there were a large number of events in the system (as would
 eventually happen in actual use), it would be hard for the user to
 navigate the page. And each time that the user displayed the page, a
 large number of records would be returned from the database even if most
-wouldn’t be relevant to what the user wanted to see.
+wouldn't be relevant to what the user wanted to see.
 
 Paul suggested that Chris implement paging for his event listing views,
 displaying a fixed number of events per pages along with links to view

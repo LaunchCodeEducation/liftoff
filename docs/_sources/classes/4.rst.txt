@@ -21,8 +21,8 @@ from your project to career readiness. You will still be expected to
 work on your project outside of class.
 
 You will have a project review with your mentor. They will be checking
-in on the progress of your project. Your mentor knows it’s a work in
-progress and doesn’t expect everything to be perfect, or even
+in on the progress of your project. Your mentor knows it's a work in
+progress and doesn't expect everything to be perfect, or even
 completed. Your mentor wants to see what you have completed so far. 
 
 Tasks
@@ -100,8 +100,8 @@ Activity: Project Review
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 You will sit down with your mentor one-on-one and demo what progress you
-have made so far. You might not feel like you’ve made much progress, but 
-you still need to show your mentor what you’ve done, and what you plan on 
+have made so far. You might not feel like you've made much progress, but 
+you still need to show your mentor what you've done, and what you plan on 
 doing next.
 
 To pass this assignment, you must have: 

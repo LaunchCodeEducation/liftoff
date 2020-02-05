@@ -12,5 +12,5 @@ correctly and using experiences from your life as evidence to your
 answers.
 
 You do not need to submit anything. Your score will be recorded in
-Canvas for you. If you don’t pass the assignment this time, you will
+Canvas for you. If you don't pass the assignment this time, you will
 need to schedule another mock interview with the course instructor.
