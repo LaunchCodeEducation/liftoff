@@ -38,7 +38,7 @@ un-deployed so you don't incur any nasty hosting fees.
 Once an account has been created, you will want to create a space.
 Developers typically use spaces to create segments to their
 environments, and may have one for production, development, testing, and
-so on. You should have an empty dashboard with a card present to ‘+ Add
+so on. You should have an empty dashboard with a card present to '+ Add
 a Space'. Do so, and create a space named "Production".
 
 .. _cloud-foundry-setup:

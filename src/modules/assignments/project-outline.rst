@@ -16,7 +16,7 @@ Within your ``liftoff-assignments`` repository, open up
 ``P2-Project_Outline/README.md``. You'll see a few sections headings in
 place for you. Flesh out your project outline by providing:
 
-1. **Overview**: In 1-2 paragraphs, provide an “elevator pitch” for your
+1. **Overview**: In 1-2 paragraphs, provide an "elevator pitch" for your
    project. This should be a high-level overview of your idea, in
    non-technical language. What will your app do? What might users find
    useful about it? Where did the idea come from?

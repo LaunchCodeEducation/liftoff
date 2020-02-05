@@ -60,10 +60,10 @@ Once the interviewee has a hold on the separate pieces of their intended
 solution, they can begin working on the logic of the problem.
 
 For the first chunk of their proposed solution, the interviewee wrote
-“Loop over input, remove vowels”.
+"Loop over input, remove vowels".
 
 For the second portion of their proposed solution, the interviewee wrote
-“Loop over vowel-less str, remove odd index chars”.
+"Loop over vowel-less str, remove odd index chars".
 
 Psuedocoding the problem promotes communication around the proposed
 solution. It is a way to share thoughts with the interviewer without
@@ -81,7 +81,7 @@ communicate effectively with another developer.
 
 As you write syntax, you may find that you still don't have all of the
 requirements. In this video, the interviewee did not know if the letter
-‘y' was considered a vowel. To overcome this confusion, they simply asked
+'y' was considered a vowel. To overcome this confusion, they simply asked
 the interviewer for more clarity on the requirements!
 
 While writing their code, occasionally the interviewee would realize

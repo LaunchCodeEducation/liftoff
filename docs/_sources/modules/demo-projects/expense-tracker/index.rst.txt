@@ -122,7 +122,7 @@ liftoff-assignments <https://github.com/LaunchCodeEducation/liftoff-assignments-
 
 The project's `GitHub
 repository <https://github.com/LaunchCodeEducation/expense_tracker>`__ was set up.
-Initial commits created a basic “Hello, world!” Rocket application via the
+Initial commits created a basic "Hello, world!" Rocket application via the
 `Rocket Quickstart <https://rocket.rs/guide/quickstart/>`__.
 
 .. figure:: figures/expense-tracker-initial-commit.png

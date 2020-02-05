@@ -123,7 +123,7 @@ Assignment: Project Setup
 
 The project's `GitHub
 repository <https://github.com/LaunchCodeEducation/event-log>`__ was set up.
-Initial commits created a basic “Hello, world!” Spring Boot app obtained
+Initial commits created a basic "Hello, world!" Spring Boot app obtained
 via `start.spring.io <http://start.spring.io/>`__. They also add some
 basic dependencies in the
 `build.gradle <https://github.com/LaunchCodeEducation/event-log/blob/3f91742a0527a65e64678c477d50f26a98b87f3e/build.gradle>`__
@@ -161,8 +161,8 @@ column of Pivotal Tracker.
 
    Initial user stories
 
-The first story he'll work on will be, “As a user, I can create an
-account so that I can access the app.” The other stories are focused on
+The first story he'll work on will be, "As a user, I can create an
+account so that I can access the app." The other stories are focused on
 logging in and out, and one can't log in or out without an existing
 account. It therefore makes sense to start this one first. To verify that
 account registration works, he'll be able to check the database.
@@ -249,7 +249,7 @@ user stories:
 -  `Event Details View <https://raw.githubusercontent.com/LaunchCodeEducation/liftoff/master/src/modules/demo-projects/event-log/figures/event_details_view.png>`__
 
 He had estimated another story and moved it to the **Current Iteration**
-panel (“As a logged-in user, I can view all upcoming events…”) but he
+panel ("As a logged-in user, I can view all upcoming events…") but he
 was unable to get started on it. This story will carry over to the next
 sprint.
 
@@ -284,7 +284,7 @@ the work done to-date. Chris gave Paul a demo of the applications as it
 stands, and they then began looking at the application code itself.
 
 By working in small units and refactoring as he goes, Chris has kept his
-code clean and readable. There is no “dead code” (i.e. code no longer
+code clean and readable. There is no "dead code" (i.e. code no longer
 being used), commented-out snippets, or messy files.
 
 He had a few comments on things that could be improved:
@@ -312,7 +312,7 @@ Organization support
 
 Paul and Chris also talked about the fact that the app only supports use
 by a single organization. In other words, the app assumes that only one
-organization is using it, and so events don't “belong to” any type of
+organization is using it, and so events don't "belong to" any type of
 organization. This is somewhat limiting.
 
 Chris commented that he'd like to add support for multiple organizations
@@ -423,8 +423,8 @@ application.
 
 The stories completed include one additional story beyond what was
 planned as of the last standup. Chris finished the planned tasks and
-decided to tackle the story: “As a logged-in user, when viewing the
-main listing of events…”
+decided to tackle the story: "As a logged-in user, when viewing the
+main listing of events…"
 
 As part of the work improving views, he added a Bootstrap theme from the
 `Bootswatch <https://bootswatch.com/>`__ project to give the site some

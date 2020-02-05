@@ -13,7 +13,7 @@ Getting Started
 The objectives for this assignment are simple to state:
 
 -  Create a GitHub repository for your project, which includes a license
--  Make an initial commit that includes a basic, working “Hello, world!”
+-  Make an initial commit that includes a basic, working "Hello, world!"
    level project
 -  Start working on your first user story
 
@@ -39,7 +39,7 @@ you're starting from scratch, you'll find these useful:
 
 -  `Intro to Spring Boot:
    Controllers <http://education.launchcode.org/skills-back-end-java/videos/intro-to-spring-boot-controllers/>`__
-   - for creating a basic “Hello, world!” application
+   - for creating a basic "Hello, world!" application
 -  `Using Git in
    IntelliJ <http://education.launchcode.org/skills-back-end-java/videos/using-git-in-intellij/>`__
    - for connecting your local Git repository to a GitHub repository
@@ -54,7 +54,7 @@ starting from scratch you'll find these useful:
 
 -  `Intro to ASP.NET Core MVC:
    Controllers <http://education.launchcode.org/skills-back-end-csharp/videos/intro-to-mvc-controllers/>`__
-   - for creating a basic “Hello, world!” application
+   - for creating a basic "Hello, world!" application
 -  `Intro to Visual
    Studio <http://education.launchcode.org/skills-back-end-csharp/videos/intro-to-visual-studio/>`__
    - for connecting your local Git repository to a GitHub repository
