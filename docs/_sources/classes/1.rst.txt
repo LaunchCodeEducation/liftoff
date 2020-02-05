@@ -53,7 +53,7 @@ Lecture: How do you ideate, and build a project?
 In class today, we will have a lecture and discussion on how to ideate
 and build a project. Most people struggle to build projects, especially
 their first project. In this class, we are going to learn some concepts
-that aren’t necessarily programming skills, but should help manage the
+that aren't necessarily programming skills, but should help manage the
 building of your project.
 
 Before lecture today, please take a few minutes to think about how you
@@ -63,19 +63,19 @@ project?
 Activity: Get to know your group!
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Each class will have you check in with your group. Since we don’t have
-much work to talk about yet, let’s take some time to get to know each
+Each class will have you check in with your group. Since we don't have
+much work to talk about yet, let's take some time to get to know each
 other.
 
-Circle up and go around the group starting with the group’s mentor.
+Circle up and go around the group starting with the group's mentor.
 Introduce yourself, state what you want to get out of this class, and
 finally state at least one idea you have for a project for this class.
 
 Lecture: Story mapping, user stories, and epics
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In a brief lecture, let’s talk about some of the key ways companies plan
-and organize their work while working on technical products. Then, let’s
+In a brief lecture, let's talk about some of the key ways companies plan
+and organize their work while working on technical products. Then, let's
 see an example of how to use these tools!
 
 Example: Attendance App User Stories
@@ -86,11 +86,11 @@ Watch the instructor take the example idea and write some user stories.
 Activity: Solidify Project Idea & Write user stories
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you didn’t come to an agreement with your mentor about which project
+If you didn't come to an agreement with your mentor about which project
 you will be working on, now is the time to do so! If you need a few
 extra minutes to decide on a project, let your mentor know and you can
 talk it out together. Remember that this is just the first project of
-many projects to come! If you’ve got a killer idea that might be
+many projects to come! If you've got a killer idea that might be
 slightly out of the scope of this class you can always put it on hold
 until after this class ends.
 

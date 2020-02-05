@@ -77,38 +77,41 @@
     <div class="col-md-12 content">
       
   <div class="section" id="deploying-java-applications">
-<span id="deploying-java-apps"></span><h1>Deploying Java Applications<a class="headerlink" href="#deploying-java-applications" title="Permalink to this headline">¶</a></h1>
+<span id="deploying-java-apps"></span><h1><a class="toc-backref" href="#id3">Deploying Java Applications</a><a class="headerlink" href="#deploying-java-applications" title="Permalink to this headline">¶</a></h1>
 <p>In this article, we’ll walk through deploying a Spring Boot application
 to Pivotal Web Services using Cloud Foundry. Along the way, we’ll
 address other topics to consider when deploying an application, such as
 database hosting and migration, password management, and network
 routing.</p>
-<div class="contents local topic" id="contents">
+<div class="contents topic" id="contents">
 <p class="topic-title first">Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="#requirements" id="id3" target="_blank">Requirements<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
-<li><a class="reference internal" href="#pivotal-web-services-setup" id="id4" target="_blank">Pivotal Web Services Setup<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
-<li><a class="reference internal" href="#cloud-foundry-setup" id="id5" target="_blank">Cloud Foundry Setup<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
-<li><a class="reference internal" href="#preparing-your-project" id="id6" target="_blank">Preparing Your Project<i class="fas fa-external-link-alt" aria-hidden="true"></i></a><ul>
-<li><a class="reference internal" href="#java-artifacts" id="id7" target="_blank">Java Artifacts<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
-<li><a class="reference internal" href="#creating-your-manifest" id="id8" target="_blank">Creating your manifest<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#deploying-java-applications" id="id3" target="_blank">Deploying Java Applications<i class="fas fa-external-link-alt" aria-hidden="true"></i></a><ul>
+<li><a class="reference internal" href="#requirements" id="id4" target="_blank">Requirements<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#pivotal-web-services-setup" id="id5" target="_blank">Pivotal Web Services Setup<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#cloud-foundry-setup" id="id6" target="_blank">Cloud Foundry Setup<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#preparing-your-project" id="id7" target="_blank">Preparing Your Project<i class="fas fa-external-link-alt" aria-hidden="true"></i></a><ul>
+<li><a class="reference internal" href="#java-artifacts" id="id8" target="_blank">Java Artifacts<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#creating-your-manifest" id="id9" target="_blank">Creating your manifest<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#configure-the-app-for-a-cloud-database" id="id9" target="_blank">Configure the App for a Cloud Database<i class="fas fa-external-link-alt" aria-hidden="true"></i></a><ul>
-<li><a class="reference internal" href="#flyway-database-migration" id="id10" target="_blank">Flyway database migration<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
-<li><a class="reference internal" href="#creating-a-database-service" id="id11" target="_blank">Creating a database service<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
-<li><a class="reference internal" href="#service-binding" id="id12" target="_blank">Service binding<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
-<li><a class="reference internal" href="#adding-a-service-to-the-manifest" id="id13" target="_blank">Adding a service to the manifest<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#configure-the-app-for-a-cloud-database" id="id10" target="_blank">Configure the App for a Cloud Database<i class="fas fa-external-link-alt" aria-hidden="true"></i></a><ul>
+<li><a class="reference internal" href="#flyway-database-migration" id="id11" target="_blank">Flyway database migration<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#creating-a-database-service" id="id12" target="_blank">Creating a database service<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#service-binding" id="id13" target="_blank">Service binding<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#adding-a-service-to-the-manifest" id="id14" target="_blank">Adding a service to the manifest<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#deploying-with-our-database" id="id14" target="_blank">Deploying With Our Database<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
-<li><a class="reference internal" href="#shut-it-down" id="id15" target="_blank">Shut It Down<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
-<li><a class="reference internal" href="#scripting" id="id16" target="_blank">Scripting<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
-<li><a class="reference internal" href="#further-learning" id="id17" target="_blank">Further Learning<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#deploying-with-our-database" id="id15" target="_blank">Deploying With Our Database<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#shut-it-down" id="id16" target="_blank">Shut It Down<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#scripting" id="id17" target="_blank">Scripting<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#further-learning" id="id18" target="_blank">Further Learning<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="section" id="requirements">
-<h2><a class="toc-backref" href="#id3">Requirements</a><a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id4">Requirements</a><a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
 <p>This article assumes you have the following installed:</p>
 <ul class="simple">
 <li><a class="reference external" href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank">Java  8<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
@@ -118,7 +121,7 @@ routing.</p>
 </ul>
 </div>
 <div class="section" id="pivotal-web-services-setup">
-<h2><a class="toc-backref" href="#id4">Pivotal Web Services Setup</a><a class="headerlink" href="#pivotal-web-services-setup" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id5">Pivotal Web Services Setup</a><a class="headerlink" href="#pivotal-web-services-setup" title="Permalink to this headline">¶</a></h2>
 <p>Pivotal Web Services will be the cloud hosting provider for this
 article. There are many cloud hosts available to consider (Amazon,
 Azure, etc), but we’ll be using Pivotal because it has a lot of support
@@ -134,7 +137,7 @@ so on. You should have an empty dashboard with a card present to ‘+ Add
 a Space’. Do so, and create a space named “Production”.</p>
 </div>
 <div class="section" id="cloud-foundry-setup">
-<span id="id1"></span><h2><a class="toc-backref" href="#id5">Cloud Foundry Setup</a><a class="headerlink" href="#cloud-foundry-setup" title="Permalink to this headline">¶</a></h2>
+<span id="id1"></span><h2><a class="toc-backref" href="#id6">Cloud Foundry Setup</a><a class="headerlink" href="#cloud-foundry-setup" title="Permalink to this headline">¶</a></h2>
 <p>We’ll be using a tool called Cloud Foundry to manage our deployment.
 Cloud Foundry is widely used in the industry to manage applications and
 services. It provides tools to package and deploy our code to production
@@ -151,7 +154,7 @@ deploy and manage our apps.</p>
 created on the confirmation message.</p>
 </div>
 <div class="section" id="preparing-your-project">
-<h2><a class="toc-backref" href="#id6">Preparing Your Project</a><a class="headerlink" href="#preparing-your-project" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id7">Preparing Your Project</a><a class="headerlink" href="#preparing-your-project" title="Permalink to this headline">¶</a></h2>
 <p>This article will be based off of the
 <a class="reference external" href="https://github.com/LaunchCodeEducation/coding-events" target="_blank">coding-events<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
 project used in the LC101 Java curriculum.</p>
@@ -179,7 +182,7 @@ a new database user called <code class="docutils literal notranslate"><span clas
 database.) You should now be able to start the application using
 <code class="docutils literal notranslate"><span class="pre">gradle</span> <span class="pre">bootRun</span></code> at the command line, from the project root.</p>
 <div class="section" id="java-artifacts">
-<h3><a class="toc-backref" href="#id7">Java Artifacts</a><a class="headerlink" href="#java-artifacts" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id8">Java Artifacts</a><a class="headerlink" href="#java-artifacts" title="Permalink to this headline">¶</a></h3>
 <p>Typically, when we’re working on our projects, we’re building and running
 them locally. We have tools like Gradle and our IntelliJ that help us.
 These tools make compiling and running our application simple. We won’t
@@ -210,7 +213,7 @@ command:</p>
 step is to prepare Cloud Foundry to host our application.</p>
 </div>
 <div class="section" id="creating-your-manifest">
-<h3><a class="toc-backref" href="#id8">Creating your manifest</a><a class="headerlink" href="#creating-your-manifest" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id9">Creating your manifest</a><a class="headerlink" href="#creating-your-manifest" title="Permalink to this headline">¶</a></h3>
 <p>In order to deploy an application with Cloud Foundry, you first must
 define what your application is and how it should be run. Cloud Foundry
 uses a <code class="docutils literal notranslate"><span class="pre">manifest.yml</span></code> file to manage this configuration. Create a file
@@ -244,7 +247,7 @@ haven’t set up a remote database for our app.</p>
 </div>
 </div>
 <div class="section" id="configure-the-app-for-a-cloud-database">
-<h2><a class="toc-backref" href="#id9">Configure the App for a Cloud Database</a><a class="headerlink" href="#configure-the-app-for-a-cloud-database" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id10">Configure the App for a Cloud Database</a><a class="headerlink" href="#configure-the-app-for-a-cloud-database" title="Permalink to this headline">¶</a></h2>
 <p>If you had a project without any service dependencies (like a database),
 the above steps would be all you need to deploy your application. In our
 case, we want to also deploy a database. Luckily, Pivotal provides an
@@ -277,7 +280,7 @@ sets reasonable defaults to the number of active connections, but the
 database service we will use (Pivotal’s Spark) only allows four
 connections at a time.</p>
 <div class="section" id="flyway-database-migration">
-<h3><a class="toc-backref" href="#id10">Flyway database migration</a><a class="headerlink" href="#flyway-database-migration" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id11">Flyway database migration</a><a class="headerlink" href="#flyway-database-migration" title="Permalink to this headline">¶</a></h3>
 <p>Flyway is a tool that uses SQL scripts to create, change, and migrate
 database schemas and data. These SQL scripts will live alongside our
 project and will provide a way for us to easily recreate the structure
@@ -434,7 +437,7 @@ up any <code class="docutils literal notranslate"><span class="pre">INSERT</span
 </td></tr></table></div>
 </div>
 <div class="section" id="creating-a-database-service">
-<h3><a class="toc-backref" href="#id11">Creating a database service</a><a class="headerlink" href="#creating-a-database-service" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id12">Creating a database service</a><a class="headerlink" href="#creating-a-database-service" title="Permalink to this headline">¶</a></h3>
 <p>Next, let’s configure a <strong>service</strong> inside Cloud Foundry for our
 database. Cloud Foundry considers anything that isn’t an application to
 be a service, and can provide pre-configured services to help speed up
@@ -457,7 +460,7 @@ credentials into version control (because we shouldn’t!).</p>
 tied to it.</p>
 </div>
 <div class="section" id="service-binding">
-<h3><a class="toc-backref" href="#id12">Service binding</a><a class="headerlink" href="#service-binding" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id13">Service binding</a><a class="headerlink" href="#service-binding" title="Permalink to this headline">¶</a></h3>
 <p>Now you need to attach our application to your service. Cloud Foundry
 calls this <strong>service binding</strong> and provides a network connection between
 the application and the service. This also removes the need for us to
@@ -471,7 +474,7 @@ again, and we should see our app name has been added.</p>
 redeploy.</p>
 </div>
 <div class="section" id="adding-a-service-to-the-manifest">
-<h3><a class="toc-backref" href="#id13">Adding a service to the manifest</a><a class="headerlink" href="#adding-a-service-to-the-manifest" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id14">Adding a service to the manifest</a><a class="headerlink" href="#adding-a-service-to-the-manifest" title="Permalink to this headline">¶</a></h3>
 <p>Above, we manually configured our service binding for our application.
 Alternatively, the <code class="docutils literal notranslate"><span class="pre">manifest.yml</span></code> can bind services as well. Update
 your <code class="docutils literal notranslate"><span class="pre">manifest.yml</span></code> to the following:</p>
@@ -486,7 +489,7 @@ your <code class="docutils literal notranslate"><span class="pre">manifest.yml</
 </div>
 </div>
 <div class="section" id="deploying-with-our-database">
-<h2><a class="toc-backref" href="#id14">Deploying With Our Database</a><a class="headerlink" href="#deploying-with-our-database" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id15">Deploying With Our Database</a><a class="headerlink" href="#deploying-with-our-database" title="Permalink to this headline">¶</a></h2>
 <p>Now that there is a database service, and matching service binding,
 deploy your app again:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ cf push
@@ -504,7 +507,7 @@ app. Cloud Foundry has handled all of the network routing for us, so we
 don’t have to configure this ourselves.</p>
 </div>
 <div class="section" id="shut-it-down">
-<h2><a class="toc-backref" href="#id15">Shut It Down</a><a class="headerlink" href="#shut-it-down" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id16">Shut It Down</a><a class="headerlink" href="#shut-it-down" title="Permalink to this headline">¶</a></h2>
 <p>All good things must come to an end. Or, at the very least, will be
 billed hourly. When you’re not showing off your new application, it’s
 economical to stop the service.</p>
@@ -535,7 +538,7 @@ the application:</p>
 </div>
 </div>
 <div class="section" id="scripting">
-<h2><a class="toc-backref" href="#id16">Scripting</a><a class="headerlink" href="#scripting" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id17">Scripting</a><a class="headerlink" href="#scripting" title="Permalink to this headline">¶</a></h2>
 <p>Once you start making changes to your own applications, you are going to
 want to be able to easily deploy your application. It may be helpful to
 build some helper scripts, so that you don’t have to remember all the
@@ -580,7 +583,7 @@ cf delete coding-events -f
 </div>
 </div>
 <div class="section" id="further-learning">
-<h2><a class="toc-backref" href="#id17">Further Learning</a><a class="headerlink" href="#further-learning" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id18">Further Learning</a><a class="headerlink" href="#further-learning" title="Permalink to this headline">¶</a></h2>
 <p><strong>How can I keep a set of properties for local development to connect
 to my database?</strong> Using spring profiles, and two sets of property files,
 you can create properties for both local and deployment. <a class="reference external" href="https://docs.spring.io/spring-boot/docs/current/reference/html/howto-properties-and-configuration.html#howto-change-configuration-depending-on-the-environment" target="_blank">Read more

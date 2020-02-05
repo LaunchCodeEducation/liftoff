@@ -15,7 +15,7 @@ written by others.
 While your first instinct may be to prevent others from using your work,
 that is often not the best choice. Many software developers and
 companies choose to allow others to use their code, which is great!
-Think about some of the tools, libraries, and frameworks that you’ve
+Think about some of the tools, libraries, and frameworks that you've
 used throughout your learning. Most, if not all, of these were used
 legally via **open source licenses**. Such licenses ensure that
 developers can share and use code appropriately, making the world of

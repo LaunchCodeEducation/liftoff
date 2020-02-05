@@ -68,7 +68,7 @@ talking through the user stories and showing the wireframes.
 Regroup: Instructor Demo and Questions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The instructor has an MVP for the example Attendance application. Let’s
+The instructor has an MVP for the example Attendance application. Let's
 watch them develop a user story and wireframe and then create
 the code to see the final results.
 

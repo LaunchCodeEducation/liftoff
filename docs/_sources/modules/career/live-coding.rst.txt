@@ -39,7 +39,7 @@ intentionally vague. The first thing the interviewee had to do was to
 gather additional requirements to have a strong understanding of the
 problem.
 
-This required communication on the interviewee’s behalf. They went as
+This required communication on the interviewee's behalf. They went as
 far as to talk through the given input, and create an output that was
 verified as correct by the interviewer.
 
@@ -75,20 +75,20 @@ Write Syntax
 Now that we have a plan, and a map drawn out in the form of our
 pseudocode, we can start coding!
 
-You’ll notice the interviewee is talking through their actions as they
+You'll notice the interviewee is talking through their actions as they
 write code down. This shows the interviewee has the ability to
 communicate effectively with another developer.
 
-As you write syntax, you may find that you still don’t have all of the
+As you write syntax, you may find that you still don't have all of the
 requirements. In this video, the interviewee did not know if the letter
-‘y’ was considered a vowel. To overcome this confusion, they simply asked
+‘y' was considered a vowel. To overcome this confusion, they simply asked
 the interviewer for more clarity on the requirements!
 
 While writing their code, occasionally the interviewee would realize
-they didn’t declare a variable before, or forgot to include something
+they didn't declare a variable before, or forgot to include something
 above their already written code. That is okay! You want to show the
 interviewer your problem-solving process. Very rarely will you write
-something perfect from top to bottom. Don’t hesitate adding new lines
+something perfect from top to bottom. Don't hesitate adding new lines
 above your already written solution if you need to declare more
 variables!
 
@@ -96,11 +96,11 @@ Test
 ^^^^
 
 After the interviewee finishes the first version of their solution, they
-need to test it! As programmers, we don’t usually get the right answer on
+need to test it! As programmers, we don't usually get the right answer on
 the first try. Without our debugger to point us in the correct
 direction, we are left to walking through a test case ourselves.
 
-You’ll notice the interviewee keeps track of the variables throughout
+You'll notice the interviewee keeps track of the variables throughout
 the entire program by writing them on the board and updating them as
 they step through the program line by line.
 

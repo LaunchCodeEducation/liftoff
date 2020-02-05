@@ -13,8 +13,8 @@ A critical part of the UX design process is wireframing, which is a technique
 used to roughly sketch out web pages and application views to focus on 
 how elements are arranged and how users are likely to interact with them.
 
-This isn’t a design class and most developers work with designers to
-create the best products possible. While you won’t be expected to be an
+This isn't a design class and most developers work with designers to
+create the best products possible. While you won't be expected to be an
 expert in UX and design, it is important to have an appreciation for the
 elements involved and think about the user when working on your project.
 

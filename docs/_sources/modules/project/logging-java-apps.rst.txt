@@ -3,13 +3,12 @@
 Logging With Java Applications
 ==============================
 
-In this tutorial, we’ll discuss why logging is important, how to control
+In this tutorial, we'll discuss why logging is important, how to control
 your logging output, how to write your own logging statements, and how
 to view your logs in production.
 
 .. contents:: Contents
-   :local:
-   :depth: 2
+   :depth: 3
 
 Introduction
 ------------
@@ -28,13 +27,13 @@ Why Logging Matters
 
 -  Logging provides observability of your app in a live environment. What went wrong? What does the stack trace of an error experienced in production look like?
 -  Logging allows you to debug errors.
--  Using a logging framework provides a consistent, informative, timestamped output, and handles the formatting and display of stack traces. If you’ve used ``System.out.println`` to output information, you’ve noticed that these messages lack that extra context that the other messages have.
+-  Using a logging framework provides a consistent, informative, timestamped output, and handles the formatting and display of stack traces. If you've used ``System.out.println`` to output information, you've noticed that these messages lack that extra context that the other messages have.
 
 Considerations
 ^^^^^^^^^^^^^^
 
--  Don’t log sensitive information, such as passwords, PII (personally identifiable information), or credit card numbers.
--  Too much logging is hard to sort through. Too little logging won’t provide insight into critical issues. We’ll talk about a few techniques to manage the *signal to noise* ratio inherent in getting this right.
+-  Don't log sensitive information, such as passwords, PII (personally identifiable information), or credit card numbers.
+-  Too much logging is hard to sort through. Too little logging won't provide insight into critical issues. We'll talk about a few techniques to manage the *signal to noise* ratio inherent in getting this right.
 
 Setup
 -----
@@ -49,8 +48,8 @@ This tutorial will be based off of the
 `coding-events <https://github.com/LaunchCodeEducation/coding-events/tree/auth-filter>`__
 project. Clone this project and check out the ``auth-filter``
 branch. Create a new branch from here called ``logging`` (``git checkout -b logging``
-from the ``auth-filter`` branch). If you’d like to keep the
-changes we’ll be making, first fork the project to your own GitHub
+from the ``auth-filter`` branch). If you'd like to keep the
+changes we'll be making, first fork the project to your own GitHub
 account.
 
 Feel free to use your own project for this tutorial, just make sure you
@@ -59,15 +58,15 @@ update class and package names where relevant.
 Reading Log Messages
 --------------------
 
-You likely already have some experience reading log messages, but let’s
+You likely already have some experience reading log messages, but let's
 examine a typical event logged by Spring.
 
-Here’s the first log message that displays immediately under the Spring
+Here's the first log message that displays immediately under the Spring
 Boot banner on startup:
 
 ``2017-11-05 13:33:58.594  INFO 73394 --- [  restartedMain] org.launchcode.CodingEventsApplication      : Starting CodingEventsApplication on LaunchCodeComputer with PID 73394 (/Users/launchcoder/workspace/coding-events/build/classes/main started by launchcoder in /Users/launchcoder/workspace/coding-events)``
 
-Here’s what’s displayed by default:
+Here's what's displayed by default:
 
 -  Date and Timestamp
 -  Log Level — ERROR, WARN, INFO, DEBUG or TRACE (discussed next)
@@ -132,13 +131,13 @@ For example, if you want to log every event at a specific level, use:
 
    logging.level.root=DEBUG
 
-If you want to log everything that Spring is doing, you’ll set:
+If you want to log everything that Spring is doing, you'll set:
 
 ::
 
    logging.level.org.springframework=TRACE
 
-Notice that we’re setting the log level here only for the package
+Notice that we're setting the log level here only for the package
 ``org.springframework``. Any ``DEBUG`` message emitted by a class at or
 below this package/directory will be displayed.
 
@@ -178,17 +177,17 @@ Adding a Logger
 ---------------
 
 As you start to build more complex applications and host them in a live
-environment, you’ll want to start adding your own logging messages.
+environment, you'll want to start adding your own logging messages.
 
-To do so, you’ll need to instantiate (create) a logger inside the class
+To do so, you'll need to instantiate (create) a logger inside the class
 we want to do some logging in. This is done by adding the following to
 the top of your class, inside of your class declaration.
 
 .. code:: java
 
-   private static final Logger logger = LoggerFactory.getLogger(CheeseController.class);
+   private static final Logger logger = LoggerFactory.getLogger(EventController.class);
 
-Here, we’re adding a logger to our ``CheeseController``, but if you’re
+Here, we're adding a logger to our ``EventController``, but if you're
 working on your own project, be sure to use the appropriate class name.
 
 This gives us access to a logging instance, which we can start using to
@@ -199,20 +198,20 @@ Creating a log statement
 
 Consider a situation where you might want to log why a user failed
 validation. This way, if the user contacts us confused as to why they
-can’t create a new cheese, register, or otherwise use our application,
-we’ll have a record of what was the root problem. Add the following line
+can't create a new event, register, or otherwise use our application,
+we'll have a record of what was the root problem. Add the following line
 inside one of our validation blocks, like so:
 
 .. code:: java
 
    if (errors.hasErrors()) {
-       logger.info("Error during cheese registration: " + errors.getAllErrors().toString());
-       model.addAttribute("title", "Add Cheese");
-       return "cheese/add";
+       logger.info("Error during event registration: " + errors.getAllErrors().toString());
+       model.addAttribute("title", "Add Event");
+       return "events/create";
    }
 
 In the event that a user has provided incorrect information when adding
-a cheese, we will log that there was an error, as well as the errors
+an event, we will log that there was an error, as well as the errors
 themselves, which should give us insight into what was the root of the
 problem.
 
@@ -223,16 +222,16 @@ Here we are just logging a string which we concatenate with the ``+``
 symbol. Each logger provides many overloaded methods allowing you to
 pass in additional parameters, such as an object or an exception. Any
 objects that are passed in will be logged via their ``toString`` method.
-If it’s an object you’ve created, make sure you’ve overridden the
-default ``toString`` and you aren’t logging any sensitive information
+If it's an object you've created, make sure you've overridden the
+default ``toString`` and you aren't logging any sensitive information
 stored in your object.
 
 Reading Logs in Cloud Foundry
 -----------------------------
 
-If you’ve deployed your app via Cloud Foundry, you can view your logs by
+If you've deployed your app via Cloud Foundry, you can view your logs by
 using the ``cf logs`` command. For example, if your app was named
-``coding-events`` you’d type ``cf logs coding-events``. This will display your
+``coding-events`` you'd type ``cf logs coding-events``. This will display your
 logs in real time. If you want to view recent logs, add the ``--recent``
 flag like so, ``cf logs coding-events --recent``, and the most recent logs
 will be displayed.
@@ -240,7 +239,7 @@ will be displayed.
 Reading Logs in Pivotal Web Services
 ------------------------------------
 
-If you’ve hosted your app using Pivotal Web Services, you can also view
+If you've hosted your app using Pivotal Web Services, you can also view
 your logs by logging into your `PWS
 console <https://console.run.pivotal.io/>`__. Navigate to your space and then your
 application. There should be a tab for *Logs*. From there, you can
@@ -249,6 +248,6 @@ view old logs, as well as monitor them in real time.
 Additional Resources
 --------------------
 
--  `Spring Boot Docs - Logging Features <https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-logging.html>`__
--  `Spring Boot Docs - Logging How To <https://docs.spring.io/spring-boot/docs/current/reference/html/howto-logging.html>`__
--  `Cloud Foundry Logging <https://docs.cloudfoundry.org/devguide/deploy-apps/streaming-logs.html>`__
+- `Spring Boot Docs - Logging Features <https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-logging.html>`__
+- `Spring Boot Docs - Logging How To <https://docs.spring.io/spring-boot/docs/current/reference/html/howto-logging.html>`__
+- `Cloud Foundry Logging <https://docs.cloudfoundry.org/devguide/deploy-apps/streaming-logs.html>`__

@@ -3,14 +3,14 @@
 Assignment: Project Planning
 =============================
 
-For this assignment, you’ll create some initial plans for your project
-and create your project’s repo.
+For this assignment, you'll create some initial plans for your project
+and create your project's repo.
 
 Getting Started
 ---------------
 
 Within your ``liftoff-assignments`` repository, open up
-``P3-Project_Planning/README.md``. You’ll see a couple of section
+``P3-Project_Planning/README.md``. You'll see a couple of section
 headings in place for you. Flesh out your project plan by creating:
 
 #. A wireframe for each page in the MVP of your project, at least 3
@@ -21,7 +21,7 @@ headings in place for you. Flesh out your project plan by creating:
    and readable and they should be added as files within your Git
    repository. Be sure to submit following the formatting directives in
    the README, *which includes adding your images to your repo, along
-   with links to them within the README.* Consult `GitHub’s markdown
+   with links to them within the README.* Consult `GitHub's markdown
    reference <https://guides.github.com/features/mastering-markdown/>`__
    as necessary.
 #. A link to your *public* project tracker (i.e. Trello). As part of the setup for this class, you created a project tracker and a
@@ -29,7 +29,7 @@ headings in place for you. Flesh out your project plan by creating:
    your initial stories into the "Next" column. Your
    stories should be clear and formatted as proper user stories and not
    just tasks.
-#. Create your initial project repository in GitHub. Don’t worry, you
+#. Create your initial project repository in GitHub. Don't worry, you
    can always rename this later. Link this in the above README as well.
 
 Submitting Your Work
