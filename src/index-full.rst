@@ -1,11 +1,11 @@
-Liftoff
-=======
+LiftOff
+========
 
 Classes
 -------
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :glob:
 
    classes/1
@@ -23,5 +23,16 @@ Classes
 
    todos
    modules/index
-   index-full
+
+
+
+.. toctree::
+   :numbered:
+   :maxdepth: 1
+   :name: chapterstoc
+
+.. toctree::
+
+   genindex
+
 
