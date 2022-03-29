@@ -33,7 +33,7 @@ your interviews.
 .. tip:: 
 
    If you are more familiar with another strategy for answering interview
-   questions, like the STAR method, feel free to use whichever strategy you
+   questions, like the `STAR method <https://www.indeed.com/career-advice/interviewing/how-to-use-the-star-interview-response-technique>`_, feel free to use whichever strategy you
    are more comfortable with.
 
 
