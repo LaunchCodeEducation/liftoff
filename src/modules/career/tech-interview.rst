@@ -1,5 +1,8 @@
 .. _tech-interview:
 
+
+
+
 Mastering the Technical Interview
 =================================
 
@@ -78,4 +81,187 @@ but they’ll still want to have a good idea of what your skills are like before
 an apprentice, so that they have confidence that the apprenticeship will be successful. 
 
 
+What Does A Programming Interview Consist Of?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+In March of 2018, LaunchCode pulled data from `Glassdoor <https://www.glassdoor.com/index.htm>`_, a site that allows individuals to 
+post questions from job interviews that they have participated in. We pulled several 
+hundred of these questions for programming jobs in St. Louis, MO and Miami, FL, and 
+categorized them. The results are shown in the chart below, with behavioral categories in 
+orange and technical categories in blue.
+
+.. figure:: figures/interview-questions-chart.png
+
+   Breakdown of programming interview questions by type
+
+The first thing to keep in mind is that this is self-reported data from users on the 
+Glassdoor site, so we should certainly not consider it to be a completely accurate reflection 
+of *all* job interviews. Additionally, we can’t view this data as representing the breakdown of 
+the questions within an “average” interview. 
+
+What we *can* say about it is that it reflects a significant emphasis on both 
+behavioral and technical components. The most often reported question type in 
+each of these categories is “Sell yourself” (behavioral) and “Technical 
+concepts” (technical). This indicates that these are extremely important components 
+of an interview; if a candidate shines in these areas, they stand to have a much 
+better chance of getting a job offer. 
+
+Considering technical questions only, it’s tempting to diminish the importance 
+of live coding questions, since they represented only 7.1% of the questions reported. 
+At LaunchCode, however, we observe that **one of the most common reasons a candidate 
+is not offered a job is due to poor performance in a live coding exercise**. 
+Live coding can be very different from the experience of programming on the job, 
+but if the employer gets the impression that you are likely to struggle with a 
+relatively small-scale coding problem, they are going to infer--reasonably or not--that 
+your coding skills are not mature enough.
+
+Why Employers Conduct Technical Interviews
+------------------------------------------
+
+The technical interview is intended to gauge whether a candidate has the 
+skills necessary to be a productive team member within minimal on-boarding time. 
+Employers generally accept the fact that LaunchCode candidates are 
+entry-level candidates and may need more mentoring and support than other new 
+hires, but they still need confidence in a candidate’s skills.
+
+One other important aspect of the interview is to determine how you will work on 
+the team, from a technical perspective. Despite popular perception, being a 
+professional programmer is a very collaborative role. One of the questions 
+the technical interviewer is trying to answer is, 
+
+   If this person was on my team, are they somebody that I could work through problems with?
+
+Therefore, you should treat the technical interview as a conversation more than 
+an exam. Don’t just strive to give the “correct” answer, but also engage the 
+interviewer. Ask follow-up questions and be honest about what you know and 
+don’t know. It’s better to clearly state that you don’t know the answer to a 
+question than to try to cobble together an answer; this will not fool the interviewer.
+
+A Note on “Classical” Tech Interviews
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The ways in which companies assess technical skill has evolved over time, 
+and continues to change. The reasons why are myriad, but one of the primary 
+reasons is that, quite frankly, nobody has figured out a foolproof way to 
+measure skill in the interview process. The evolution of techniques is in 
+part an attempt to improve the process.
+
+That said, you will sometimes encounter companies that do “classical” or 
+“old-school” technical interviews. Broadly speaking, these interviews 
+consist of questions and challenges that most often have are meant to 
+serve as a hurdle to be cleared rather than as an accurate gauge of skill. 
+They often rely heavily on questions about algorithms (searching, sorting, 
+graph traversal, etc), data structures, and algorithm analysis. 
+Questions of this sort are well-documented on blogs, forums, and even 
+`entire books <https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/ref=sr_1_1?s=books&ie=UTF8&qid=1536247115&sr=1-1&keywords=cracking+the+coding+interview>`_. 
+It’s not that these concepts don’t come up from time-to-time 
+on the job, or that they aren’t required for some programming roles, 
+but the degree to which they have been used historically is out of proportion.
+
+One popular theory about why data structures and algorithm questions used to be 
+more ubiquitous in job interviews is that they were popularized by the 
+big tech companies like Google, Amazon, and Microsoft. 
+These companies have the luxury of choosing the best of the best, 
+and they often recruit programmers from top-tier university Computer 
+Science departments. In such programs, algorithms and data analysis 
+are taught in-depth. And indeed, jobs at these companies are more likely 
+to require a higher level of skill in these areas than in the industry 
+as a whole. That said, other companies adopted the same interview 
+techniques as the tech giants, with little regard to how well that 
+process aligned with the work at their companies. 
+
+This trend has been reversing in the last 5-10 years, as companies 
+have realized that such mis-aligned interview processes are likely 
+to screen out qualified candidates.
+
+How You Can Prepare
+-------------------
+The best way to prepare for technical interviews, in our experience, 
+is to become a strong learner and programmer. This doesn’t mean that 
+you have the flashiest capstone project in your class, or that you 
+finished your assignments earlier than others. It means that you 
+understand and can explain the concepts behind the design and 
+implementation of the programs you have written, you can talk about 
+the how and why of your code in addition to writing code that works.
+
+While we don’t necessarily believe in “teaching to the test,” there are 
+some additional ways you prepare for technical interviews.
+
+The first is to practice the type of problems that regularly show up 
+in live coding exercises during interviews. These problems are often 
+much smaller in size than the larger assignments and projects that 
+you are used to working on, but often compact multiple core concepts 
+into a single problem. For instance, you may be tasked to write a 
+function that requires you to exercise nuanced knowledge of data structures, 
+control flow, data types, and exceptions. Sites like 
+`HackerRank <https://www.hackerrank.com/>`_ and 
+`Exercism <https://exercism.org/>`_ provide such practice problems 
+in a variety of skill levels and languages. 
+
+Finally, research can go a long way when preparing to interview for a company. 
+If you have an interview scheduled with a specific employer, there are multiple 
+ways to gain insight into their process. Search for interview questions 
+encountered by others using `Glassdoor <https://www.glassdoor.com/index.htm>`_. 
+If you know other programmers that have worked at the company, ask them for advice. 
+If you know details about the area(s) the job will focus on (language, platform, etc.), 
+then refresh your knowledge of those concepts.  
+And if your interview was facilitated by LaunchCode, ask your Company Relations 
+contact if they have any insight into what you might encounter in the interview. 
+
+Types of Technical Questions
+----------------------------
+
+The following question types are very common for tech interviews:
+   * Technical Concepts
+   * Live Coding
+   * Logical Problem
+   * Your Technical Experience
+
+Best Practices: Nailing Your Interview
+--------------------------------------
+
+Engaging With the Interviewer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   The interviewer is on your team.
+
+* Avoid approaching the interview like an exam
+* Prefer more in-depth explanations and examples over short, direct responses
+
+What To Do When You Don’t Know the Answer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+It is inevitable that you will, eventually, be asked a question that you 
+can not answer. In fact, this is sometimes the goal of the interviewer, 
+to ask questions of increasing difficulty until they find the boundary 
+of your knowledge. Knowing how to respond in such a situation is important 
+in order to properly convey that you are a capable programmer, aware of 
+your limitations and hungry to continue learning.
+
+There’s no shame in saying, “I don’t have experience with that concept,” 
+or, “We discussed that in class, but my memory of the concept isn’t very 
+solid.” When you give one of these responses, though, be sure to follow up 
+with an explanation of how you would go about learning it if you needed to 
+use it on the job. 
+
+All programmers, no matter their experience level, have gaps in their knowledge. 
+**A good programmer is not distinguished by the sheer volume of technical 
+knowledge, but rather by the ability to learn on the job and solve difficult 
+problems.** If you can convey to the interviewer that you are capable of doing 
+so, you’ll be well on your way to landing the job! 
+
+Responding To Conceptual Questions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Explain the concept
+* Give a concrete example
+* Prefer examples from projects you've worked on over abstract examples
+
+Working Through Coding Challenges
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Restate and clarify the problem; create an example test-case
+* Outline a solution using comments or pseudo-code
+* Code the solution, talking through your work as you go
+* Test your solution 
+* Refactor 
