@@ -22,7 +22,7 @@ predictors of success on the job. Candidates can feel unduly stressed
 by these interviews, leading to situations where they don’t fully 
 convey the depth of their skills to an employer. 
 
-   A candidate might miss out on a job opportunity that they would excel at, and an employer might miss out on a great employee.
+   **A candidate might miss out on a job opportunity that they would excel at, and an employer might miss out on a great employee.**
 
 
 As an industry, we’re all still working this out. Educators, employers, 
@@ -129,7 +129,7 @@ the team, from a technical perspective. Despite popular perception, being a
 professional programmer is a very collaborative role. One of the questions 
 the technical interviewer is trying to answer is, 
 
-   If this person was on my team, are they somebody that I could work through problems with?
+   **If this person was on my team, are they somebody that I could work through problems with?**
 
 Therefore, you should treat the technical interview as a conversation more than 
 an exam. Don’t just strive to give the “correct” answer, but also engage the 
@@ -223,7 +223,7 @@ Best Practices: Nailing Your Interview
 Engaging With the Interviewer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-   The interviewer is on your team.
+   **The interviewer is on your team.**
 
 * Avoid approaching the interview like an exam
 * Prefer more in-depth explanations and examples over short, direct responses
