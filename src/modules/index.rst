@@ -38,6 +38,7 @@ Career Modules
    career/online-profiles
    career/live-coding
    career/interviewing
+   career/tech-interview
 
 Assignments
 -----------
