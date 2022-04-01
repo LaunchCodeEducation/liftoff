@@ -12,6 +12,7 @@ The Technical Job Interview
 
 To warm up, here are a couple of interviews that place some context around the technical job interview:
 
+- :ref:`Mastering the Technical Interview<tech-interview>`
 - `How to Prepare For (and Ace) the Technical Interview <https://www.cio.com/article/2383000/careers-staffing-how-to-prepare-for-and-ace-the-technical-interview.html>`_
 - `10 Tech Interview Errors <https://www.monster.com/career-advice/article/ten-tech-it-interview-errors>`_
 
