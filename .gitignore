@@ -1,8 +1,9 @@
 .DS_Store
 _build/
 .vscode
-__pycache__
 !.nojekyll
 .pyc
+pdf/
+.idea/
 __pycache__/
 docs/
