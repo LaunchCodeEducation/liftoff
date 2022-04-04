@@ -46,13 +46,13 @@ extensions = [
 replit_user = 'launchcode'
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+templates_path = ['./_templates']
 
 # The suffix(es) of source filenames.
 source_suffix = ['.rst']
 
 # Configure markdown parsing
-source_parsers = {'.md': 'recommonmark.parser.CommonMarkParser'}
+# source_parsers = {'.md': 'recommonmark.parser.CommonMarkParser'}
 
 html_copy_source = True
 html_show_sourcelink = True
@@ -185,3 +185,7 @@ def setup(app):
    app.add_css_file('fa/css/all.css')
    app.add_css_file('css/launchcode.css')
    app.add_css_file('css/site.css')
+   app.add_config_value('recommonmark_config', {
+      'enable_eval_rst': True,
+      }, True)
+   app.add_transform(AutoStructify)
