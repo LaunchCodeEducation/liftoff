@@ -9,29 +9,30 @@ Project Module
 
 -  Understand the goal of creating a capstone project
 -  Explain the key components of a meaningful project
--  Generate an idea for a project that meets the provided criteria
+-  Generate an idea for a group project that meets the provided criteria
+-  Identify and assign group roles for the project
 -  Describe story mapping, epics, and user stories.
--  Create user stories that clearly identify the targeted user and
-   describe a single use-case or action
+-  Create user stories that clearly identify the targeted user and describe a single use case or action
 
 Prep Work
 ---------
 
 To hit the ground running in class one we need to cover a lot of ground!
-We need to:
 
-* Set up a GitHub repository so we can upload our assignments
+You will need to:
+
+* One group member will need to set up the GitHub repository
+* All other members will need to fork and clone the project
 * Understand what makes a *good* capstone project
 * Learn about **user stories**. 
 
-We want to handle as much setup and logistical work as possible now so the
-remaining weeks of the class we can focus on making progress on our
-projects!
+We want to handle as much setup and logistical work as possible now we can focus on making progress on our
+projects for the remainder of the course!
 
 Tasks
 ^^^^^
 
-Before class, complete these modules:
+*Before* class, complete these modules:
 
 * :ref:`liftoff-overview`
 * :ref:`setup`
@@ -50,15 +51,14 @@ In Class
 Lecture: How do you ideate, and build a project?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In class today, we will have a lecture and discussion on how to ideate
-and build a project. Most people struggle to build projects, especially
-their first project. In this class, we are going to learn some concepts
-that aren't necessarily programming skills, but should help manage the
-building of your project.
+In class today, we will have a lecture and discussion on how to ideate and build a project. 
+Most people struggle to build projects, especially their first project. 
+In this class, we are going to learn some concepts that aren’t necessarily programming skills 
+but should help manage the building of your project.
 
-Before lecture today, please take a few minutes to think about how you
-would build a project. What steps would need to take to build a
-project?
+Before today’s lecture, please take a few minutes to think about how you would build a project. 
+What steps would you need to take to build a project?
+
 
 Activity: Get to know your group!
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
