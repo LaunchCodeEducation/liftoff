@@ -5,7 +5,7 @@ Liftoff Overview
 
 Liftoff is an 8 week class with two objectives:
 
-#. Complete a significant amount of work towards a project.
+#. Complete a significant amount of work towards a collaborative, team project.
 #. Be prepared for the job interview process.
 
 Class time will be similar to LC101. You will complete prep work before each
@@ -33,11 +33,21 @@ Since you are working on a team project,
 you may have to schedule working time with your team outside of class.  
 We estimate that you will need to work at least **20 hours each week** to make it through this course successfully.  
 
+.. admonition:: Tip
+
+   Schedule at least 1meeting time outside of class for project work before Class 2 meets. You can decide when, where, and for how long together.
+   
+   Creating regular meeting times and places can help set the pace for your team.  
+   
+   If you need more together time, schedule it.  Hold each other accountable for making each meeting.
+
+   
+
 Team Project Overview
 ---------------------
 
-The capstone project is one of the most important pieces of landing the
-perfect LaunchCode apprenticeship. Your team project is one of the primary
+The capstone project is one of the most essential pieces of landing 
+a LaunchCode apprenticeship. Your team project is one of the primary
 ways that LaunchCode and potential employers will verify that you are
 job-ready, and it should be something that you're proud to show off. So
 don't skimp on the time, energy, and thought that you put into this!
@@ -105,7 +115,7 @@ Regardless of the project your team tackles, you should:
    * **Build an application entirely as a team from scratch**, or nearly so. 
       If you use starter code, you need to go well beyond what was provided or worked on by others. 
       You should be able to clearly articulate what you built yourself versus what was built by others.
-   * **Include 3-5 significant features**. 
+   * **Include 5-7 significant features**. 
       Each feature should add a new component to your project but not be so small as to be trivial. 
       It’s difficult to define what a significant feature is, but we’ll help you understand as you go. 
 
@@ -122,7 +132,8 @@ Regardless of the project your team tackles, you should:
    To give you an idea of what a good project idea looks like, check out our :ref:`demo-projects`, as well as `project demo videos made by previous students <https://www.youtube.com/watch?v=_8LRJHkTqsg&list=PLs5n5nYB22fIdV_HMkekxx7Yt06lXUptT>`__
 
    ..TODO Demo added
-
+   
+   ``New idea for consideration``
    Other idea for project demos:  could students make a google site?  
    Here is an example with my `final project <https://sites.google.com/launchcode.org/bearpawpages/home>`_.
 

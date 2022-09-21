@@ -31,7 +31,7 @@ You will need to:
    * `10 Tips for Working On A Dev Team <https://www.codecademy.com/resources/blog/tips-for-working-on-a-dev-team/>`_
 * **Learn** about the purpose and expectations of :ref:`liftoff-overview`
 
-Optional Reading:
+Optional reading for working on a team project:
 
 * `Seven Steps for Leading Successful Team Projects <https://www.helloteam.com/seven-steps-for-leading-successful-team-projects>`_
 * `How to Assemble a Good Web Development Team <https://www.helloteam.com/seven-steps-for-leading-successful-team-projects>`_
@@ -101,7 +101,7 @@ All other roles should be assigned before meeting for the next class.
 Lecture: Story mapping, user stories, and epics
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In a brief lecture, let's talk about some of the key ways companies plan
+Let's talk about some of the key ways companies plan
 and organize their work while working on technical products. Then, let's
 see an example of how to use these tools!
 
@@ -110,8 +110,8 @@ Example: Attendance App User Stories
 
 Watch the instructor take the example idea and write some user stories.
 
-Team Activity: Solidify Project Idea & Write user stories
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Team Activity: Solidify your project idea & write user stories
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If your team is still undecided about which project you will be working on or your team name, 
 now is the time to do so! If you need a few extra minutes to decide on a project, 
@@ -129,7 +129,7 @@ What does the end user need? What other users might there be for this applicatio
 You must have your mentor approve at least one of your user stories to count towards your attendance today.
 
 
-Class Regroup: Instructor Overview, and Questions
+Class Regroup: Instructor overview and questions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The instructor should have a few additional user stories for the example
@@ -139,13 +139,14 @@ complete the user story!
 By the *end of class*, your team should have the following completed:
 
 * The team leader 
-   * Sets up the project GitHub repository
-   * Creates a readme and team helps add information about your team
+   * Set up the project GitHub repository
+   * Created a ``README`` and filled it out with the team
 
 * All other members 
-   * Fork and clone the project repo
-   * Fork the team leader’s assignment repo
-   * Assign roles/stories before next class
+   * Forked and cloned the project repo
+   * Forked the team leader’s assignment repo
+   * Assigned roles/stories before next class
+   * Helped fill out the project's ``README`` file
 
 
 Class 1 Assignment

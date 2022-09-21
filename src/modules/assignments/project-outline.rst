@@ -9,21 +9,22 @@ your mentor will provide feedback and direction to help sharpen your
 ideas. So don't worry if you feel unsure about some aspects of the
 outline, or if you have to change some things later.
 
-Since this is a team project, 
 
 Creating Your Outline
 ---------------------
 
 Within your ``liftoff-assignments`` repository, open up
 ``P2-Project_Outline/README.md``. You'll see a few sections headings in
-place for you. As a team, flesh out your project outline by providing:
+place for you. 
+
+As a team, flesh out your project outline by providing:
 
 1. **Overview**: In 1-2 paragraphs, provide an "elevator pitch" for your
    project. This should be a high-level overview of your idea, in
    non-technical language. What will your app do? What might users find
    useful about it? Where did the idea come from?
 
-2. **Features**: List 3-5 features that you will implement in your
+2. **Features**: List 5-7 features that you will implement in your
    project. Each feature should have a name and a 1-2 sentence
    description. Here are a few examples for a blog application:
 

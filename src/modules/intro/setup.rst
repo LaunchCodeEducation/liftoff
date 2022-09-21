@@ -13,29 +13,29 @@ this course by following the directions in the `main
 README Demo <https://github.com/speudusa/liftoff-project-assignments>`__
 of the ``speudusa/liftoff-assignments`` repo.
 
-.. admonition:: note
+.. admonition:: Note
 
    link updated to Courtney's demo repo idea.
 
-   Will need to fix it 
+   Will need restore to original link, or make changes to liftoff repo then restore correct link.
 
 Trello
 ------
 
-Create a free `Trello <https://trello.com/>`_ account for your team. 
-Trello is a project management tool. 
-You will use it to document and organize tasks while working together on your project. 
+One team member will need to create a free `Trello <https://trello.com/>`_ account for your team. 
+This same team member should create a project board and then invite teammates to the board.
+Once all your team has joined your Trello board, you can start adding user stories and assigning or delegating tasks. 
 
-One team member should create an account and a project board.  
-Once the board is complete, share the link with your team members and make sure everyone can join.
-Once all your team has joined your trello, start adding user stories and tasks. 
-
-A single board typically contains all of the information and tasks for a specific project. 
 On your new board, create 3 lists. From left to right, name these:
 
 - Next
 - In Progress
 - Done
+
+Trello is a project management tool. 
+You will use it to assign/delegate tasks, document progress, and organize tasks while working together on your project.  
+A single board typically contains all of the information and tasks for a specific project. 
+
 
 Git Refresher
 -------------
