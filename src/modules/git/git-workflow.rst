@@ -1,7 +1,7 @@
 .. _git-workflow:
 
-Group Project Git Workflow
-==========================
+Team Project Git Workflow
+=========================
 
 This guide is for mentors and students in Liftoff. Using this Git workflow will allow for easier and more productive collaboration.
 
@@ -259,7 +259,7 @@ Focus on these topics when reviewing code:
 
     Comment added to pull request.
 
-  5. Next the programmer that created the PR needs to address the issue.
+  5. Next, the programmer that created the PR needs to address the issue.
   6. The programmer updates the code and pushes a new commit to the feature branch.
 
      * As soon as the push happens, the new commit appears on the pull request page.
@@ -272,7 +272,7 @@ Focus on these topics when reviewing code:
 
     Conversation tab showing comment and reply.
 
-  9. Finally the pull request can be approved.
+  9. Finally, the pull request can be approved.
 
      * Since that is the only issue the reviewer found, the pull request can be approved.
      * This will mark the pull request as approved.
