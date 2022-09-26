@@ -1,3 +1,21 @@
-# Liftoff
+# About this Repository
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Liftoff</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://www.launchcode.org/" property="cc:attributionName" rel="cc:attributionURL">The LaunchCode Foundation</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+This repository is a template used by the LaunchCode Education team for creating LaunchCode education sites for LaunchCode classes. 
+
+## Sites that use this template
+
+[Introduction to Professional Web Development in JavaScript](https://education.launchcode.org/intro-to-professional-web-dev/)
+
+[Java Web Development](https://education.launchcode.org/java-web-development/)
+
+[C# Web Development](https://education.launchcode.org/csharp-web-development/)
+
+## How to Use this Repository
+
+This template is derived from [LaunchCode's Curriculum Module Template](https://github.com/LaunchCodeEducation/curriculum-module-template) and used for original LaunchCode Education content.
+
+When creating a new LaunchCode Education book, use this template as a starting point and add it as a remote repository so that you may pull down updates made to it into your book. 
+
+### Customize conf.py
+
+Change ``site_theme_options.navbar_title`` and ``project`` to match your curriculum content.

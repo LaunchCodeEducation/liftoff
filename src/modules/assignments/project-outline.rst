@@ -9,22 +9,19 @@ your mentor will provide feedback and direction to help sharpen your
 ideas. So don't worry if you feel unsure about some aspects of the
 outline, or if you have to change some things later.
 
-
 Creating Your Outline
 ---------------------
 
 Within your ``liftoff-assignments`` repository, open up
 ``P2-Project_Outline/README.md``. You'll see a few sections headings in
-place for you. 
-
-As a team, flesh out your project outline by providing:
+place for you. Flesh out your project outline by providing:
 
 1. **Overview**: In 1-2 paragraphs, provide an "elevator pitch" for your
    project. This should be a high-level overview of your idea, in
    non-technical language. What will your app do? What might users find
    useful about it? Where did the idea come from?
 
-2. **Features**: List 5-7 features that you will implement in your
+2. **Features**: List 3-5 features that you will implement in your
    project. Each feature should have a name and a 1-2 sentence
    description. Here are a few examples for a blog application:
 
@@ -36,9 +33,8 @@ As a team, flesh out your project outline by providing:
       logged in. New posts will appear in the user's profile.
 
 3. **Technologies**: What languages and technologies will you use to
-   build your application? 
-   
-   For example, for the `coding-events` application from the Java Unit 2, the technologies would be:
+   build your application? For example, for the `coding-events` application from
+   Unit 2 - Java, the technologies would be:
 
    -  Java
    -  Spring Boot
@@ -54,7 +50,7 @@ As a team, flesh out your project outline by providing:
    describe a problem that you have identified that you don't currently
    know how to solve.
 
-5. **Project Tracker**: Link to your *team* Trello board here.
+5. **Project Tracker**: Link to your Trello board here.
 
 6. **Enable GitHub Issues**: If you haven't already enabled :ref:`GitHub
    Issues <github-issues>` do so before submitting
