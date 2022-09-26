@@ -1,0 +1,61 @@
+Class 8: Project Review, Deployment, Continued Education
+=========================================================
+
+Objectives
+----------
+
+Project Module
+^^^^^^^^^^^^^^
+
+-  Understand the deployment process
+
+Career Module
+^^^^^^^^^^^^^
+
+-  Understand how to continue learning on your own
+
+Prep Work
+---------
+
+Tasks
+^^^^^
+
+- Read `Being a Developer After 40 <https://deprogrammaticaipsum.com/2016/04/25/being-a-developer-after-40/>`_. Read points 4 and 5 under the *Advice for the Young at Heart* section. The entire article is a good read, but the author specifically mentions tips about continued education in points 4 and 5.
+- Read `4 Things I Wish I Would Have Known When I Started My Software Development Career <https://simpleprogrammer.com/software-development-career/>`_. This brief article in which a developer shares his thoughts on programming fads and continued learning.
+- Review week 8 of the demo projects: :ref:`Event List Week 8 <el-week-8>` | :ref:`Expense Tracker Week 8 <et-week-8>`.
+
+In Class
+--------
+
+Activity: Standup
+^^^^^^^^^^^^^^^^^
+
+Before we get started, take a minute to have your standup meeting.
+
+Activity: Continued Education
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+For our final class today, we want to talk about continued education. You
+must continue learning on your own after this class, and you must
+continue learning on the job. We will talk about how to do this.
+
+Regroup: Project Review
+^^^^^^^^^^^^^^^^^^^^^^^
+
+As a final activity for LaunchCode, you will be having a final project
+review. Your instructor will introduce this activity and give you
+direction on how to proceed.
+
+Activity: Project Review
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+You will meet with your mentor one-on-one. They will be reviewing your
+project. They want to see that you have made significant progress from
+your first project review 4 weeks ago.
+
+Assignment
+----------
+
+In class, you will complete your second :ref:`Project Review <project-review-assignment>`.
+
+A final, optional assignment shows you how to deploy your application, so others may use it. While not required, we highly recommend that you complete :ref:`assignment-deployment`.

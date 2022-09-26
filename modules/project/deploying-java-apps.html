@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deploying Java Applications &#8212; Liftoff  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/js/jquery-1.11.0.min.js"></script>
+    <script src="../../_static/js/jquery-fix.js"></script>
+    <script src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="../../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Logging With Java Applications" href="logging-java-apps.html" />
+    <link rel="prev" title="Licensing" href="licensing.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+        </a>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../../index.html">Classes</a></li>
+                <li><a href="../index.html">Modules</a></li>
+            
+            
+              
+            
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="../index.html">Liftoff</a></li>
+    <li class="active">Deploying Java Applications</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content ">
+
+    
+  <div class="section" id="deploying-java-applications">
+<span id="deploying-java-apps"></span><h1><a class="toc-backref" href="#id3">Deploying Java Applications</a><a class="headerlink" href="#deploying-java-applications" title="Permalink to this headline">¶</a></h1>
+<p>In this article, we’ll walk through deploying a Spring Boot application
+to Pivotal Web Services using Cloud Foundry. Along the way, we’ll
+address other topics to consider when deploying an application, such as
+database hosting and migration, password management, and network
+routing.</p>
+<div class="contents topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#deploying-java-applications" id="id3" target="_blank">Deploying Java Applications<i class="fas fa-external-link-alt" aria-hidden="true"></i></a><ul>
+<li><a class="reference internal" href="#requirements" id="id4" target="_blank">Requirements<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#pivotal-web-services-setup" id="id5" target="_blank">Pivotal Web Services Setup<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#cloud-foundry-setup" id="id6" target="_blank">Cloud Foundry Setup<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#preparing-your-project" id="id7" target="_blank">Preparing Your Project<i class="fas fa-external-link-alt" aria-hidden="true"></i></a><ul>
+<li><a class="reference internal" href="#java-artifacts" id="id8" target="_blank">Java Artifacts<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#creating-your-manifest" id="id9" target="_blank">Creating your manifest<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#configure-the-app-for-a-cloud-database" id="id10" target="_blank">Configure the App for a Cloud Database<i class="fas fa-external-link-alt" aria-hidden="true"></i></a><ul>
+<li><a class="reference internal" href="#flyway-database-migration" id="id11" target="_blank">Flyway database migration<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#creating-a-database-service" id="id12" target="_blank">Creating a database service<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#service-binding" id="id13" target="_blank">Service binding<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#adding-a-service-to-the-manifest" id="id14" target="_blank">Adding a service to the manifest<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#deploying-with-our-database" id="id15" target="_blank">Deploying With Our Database<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#shut-it-down" id="id16" target="_blank">Shut It Down<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#scripting" id="id17" target="_blank">Scripting<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#further-learning" id="id18" target="_blank">Further Learning<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="requirements">
+<h2><a class="toc-backref" href="#id4">Requirements</a><a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
+<p>This article assumes you have the following installed:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank">Java  8<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference external" href="https://gradle.org/install/" target="_blank">Gradle<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference external" href="https://www.mamp.info/en/" target="_blank">MAMP<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference internal" href="#cloud-foundry-setup"><span class="std std-ref">Cloud Foundry CLI</span></a></li>
+</ul>
+</div>
+<div class="section" id="pivotal-web-services-setup">
+<h2><a class="toc-backref" href="#id5">Pivotal Web Services Setup</a><a class="headerlink" href="#pivotal-web-services-setup" title="Permalink to this headline">¶</a></h2>
+<p>Pivotal Web Services will be the cloud hosting provider for this
+article. There are many cloud hosts available to consider (Amazon,
+Azure, etc), but we’ll be using Pivotal because it has a lot of support
+for deploying Spring Boot applications and is relatively inexpensive.</p>
+<p>Create a <a class="reference external" href="https://pivotal.io/platform" target="_blank">Pivotal Account<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>. You will
+need to provide a credit card number and a phone number to verify your account.
+Later in this guide, we’ll cover how to make sure everything is
+un-deployed so you don’t incur any nasty hosting fees.</p>
+<p>Once an account has been created, you will want to create a space.
+Developers typically use spaces to create segments to their
+environments, and may have one for production, development, testing, and
+so on. You should have an empty dashboard with a card present to ‘+ Add
+a Space’. Do so, and create a space named “Production”.</p>
+</div>
+<div class="section" id="cloud-foundry-setup">
+<span id="id1"></span><h2><a class="toc-backref" href="#id6">Cloud Foundry Setup</a><a class="headerlink" href="#cloud-foundry-setup" title="Permalink to this headline">¶</a></h2>
+<p>We’ll be using a tool called Cloud Foundry to manage our deployment.
+Cloud Foundry is widely used in the industry to manage applications and
+services. It provides tools to package and deploy our code to production
+with minimal configuration.</p>
+<p>If you haven’t already, install the <a class="reference external" href="https://docs.cloudfoundry.org/cf-cli/install-go-cli.html" target="_blank">Cloud Foundry
+CLI<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>. This
+tool will connect our computer to our Pivotal account, and allow us to
+deploy and manage our apps.</p>
+<p>In a terminal, log into your Pivotal account:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ cf login
+</pre></div>
+</div>
+<p>You should see your email, organization name, and the space you just
+created on the confirmation message.</p>
+</div>
+<div class="section" id="preparing-your-project">
+<h2><a class="toc-backref" href="#id7">Preparing Your Project</a><a class="headerlink" href="#preparing-your-project" title="Permalink to this headline">¶</a></h2>
+<p>This article will be based off of the
+<a class="reference external" href="https://github.com/LaunchCodeEducation/coding-events" target="_blank">coding-events<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+project used in the LC101 Java curriculum.</p>
+<div class="admonition">
+<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p class="last">While we have to choose a specific project for the purposes of illustration, any Spring Boot project could be deployed using the same steps used in this guide.</p>
+</div>
+<p>Clone this project and checkout the <code class="docutils literal notranslate"><span class="pre">auth-filter</span></code> branch. Base a new branch
+off of this called <code class="docutils literal notranslate"><span class="pre">deploy</span></code>. If you’d like to keep the
+changes we’ll be making in your GitHub account, first fork the project to your own repository,
+and continue based on the new Git repository url.</p>
+<p>Here are the Git commands to carry out these steps.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/LaunchCodeEducation/coding-events.git
+$ git checkout --track origin/auth-filter
+$ git checkout -b deploy
+</pre></div>
+</div>
+<div class="admonition">
+<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p class="last">It’s a best practice to create a Git branch solely for the purpose of deploying your application. We’ll use the <code class="docutils literal notranslate"><span class="pre">deploy</span></code> branch for this purpose. This will allow for separate configurations to be stored for local development and remote deployment.</p>
+</div>
+<p>If you don’t have a database user for this project already—you may have
+created one when going through unit 2—you should create one now. Create
+a new database user called <code class="docutils literal notranslate"><span class="pre">coding-events</span></code> (along with the corresponding
+database.) You should now be able to start the application using
+<code class="docutils literal notranslate"><span class="pre">gradle</span> <span class="pre">bootRun</span></code> at the command line, from the project root.</p>
+<div class="section" id="java-artifacts">
+<h3><a class="toc-backref" href="#id8">Java Artifacts</a><a class="headerlink" href="#java-artifacts" title="Permalink to this headline">¶</a></h3>
+<p>Typically, when we’re working on our projects, we’re building and running
+them locally. We have tools like Gradle and our IntelliJ that help us.
+These tools make compiling and running our application simple. We won’t
+have those tools in production, however, so we’ll need to package up our
+code into an executable JAR file.</p>
+<p>A JAR file is a <strong>Java archive</strong>, which is essentially a ZIP file
+containing a bunch of compiled Java classes. We could use the <code class="docutils literal notranslate"><span class="pre">javac</span></code>
+command to take our source files and build an executable JAR file.
+However, when the JAR is executed, it also needs to be able to find all
+the dependencies (for instance, Spring) at runtime in order to use them.
+We’ll need to build our JAR file using Gradle so that these dependencies
+are packaged up alongside the compiled Java code that we wrote.</p>
+<p>Spring Boot adds a plugin to Gradle that allows us to package up
+our source code alongside any dependencies, creating a <strong>fat JAR</strong> that
+contains compiled versions of our code and all of its dependencies. This
+JAR file can then be deployed to our server, and run anywhere that has
+the <a class="reference external" href="https://en.wikipedia.org/wiki/Java_virtual_machine" target="_blank">JVM<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+installed. Try building a fat JAR yourself by running</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ gradle assemble
+</pre></div>
+</div>
+<p>This created a fat JAR which we can run from the command line with the
+command:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ java -jar build/libs/coding-events-0.0.1-SNAPSHOT.jar
+</pre></div>
+</div>
+<p>Our application is now ready to be run on a remote machine. Our next
+step is to prepare Cloud Foundry to host our application.</p>
+</div>
+<div class="section" id="creating-your-manifest">
+<h3><a class="toc-backref" href="#id9">Creating your manifest</a><a class="headerlink" href="#creating-your-manifest" title="Permalink to this headline">¶</a></h3>
+<p>In order to deploy an application with Cloud Foundry, you first must
+define what your application is and how it should be run. Cloud Foundry
+uses a <code class="docutils literal notranslate"><span class="pre">manifest.yml</span></code> file to manage this configuration. Create a file
+at the root of the project named <code class="docutils literal notranslate"><span class="pre">manifest.yml</span></code>. And add the following
+lines.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">applications</span><span class="p">:</span>
+<span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">coding-events</span>
+  <span class="nt">buildpack</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">java_buildpack</span>
+  <span class="nt">path</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">build/libs/coding-events-0.0.1-SNAPSHOT.jar</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">name</span></code> will specify the unique name for our application, in this
+case <code class="docutils literal notranslate"><span class="pre">coding-events</span></code>. The <code class="docutils literal notranslate"><span class="pre">buildpack</span></code> tells Cloud Foundry what type of
+application this is and how to manage it. The <code class="docutils literal notranslate"><span class="pre">path</span></code> is where to find
+our executable project, the fat JAR. If you’re following along with
+another project, check <code class="docutils literal notranslate"><span class="pre">build/libs/</span></code> to find the name of the JAR you
+just built.</p>
+<p>Let’s try and deploy our app using:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ cf push
+</pre></div>
+</div>
+<p>This will fail. To find out why, let’s try our hand with a little
+debugging.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ cf logs coding-events --recent
+</pre></div>
+</div>
+<p>Now we can view the recent logs from our app (denoted by the
+<code class="docutils literal notranslate"><span class="pre">--recent</span></code> flag). Does anything here look familiar? You’ll see that
+our app can’t connect to the database, which makes sense, since we
+haven’t set up a remote database for our app.</p>
+</div>
+</div>
+<div class="section" id="configure-the-app-for-a-cloud-database">
+<h2><a class="toc-backref" href="#id10">Configure the App for a Cloud Database</a><a class="headerlink" href="#configure-the-app-for-a-cloud-database" title="Permalink to this headline">¶</a></h2>
+<p>If you had a project without any service dependencies (like a database),
+the above steps would be all you need to deploy your application. In our
+case, we want to also deploy a database. Luckily, Pivotal provides an
+easy (and free) way to setup a MySQL database in our cloud environment.</p>
+<p>First, we need to make some changes to our properties to support our
+changes. Update your <code class="docutils literal notranslate"><span class="pre">application.properties</span></code> so it matches the
+following.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span># Hibernate ddl auto (create, create-drop, update, none)
+# In this case, we&#39;ll want the default behavior to do nothing
+spring.jpa.hibernate.ddl-auto = none
+
+# Limit the number of active database connections
+# Cloud Foundry&#39;s Spark databases can only provide up to four connections
+spring.datasource.tomcat.max-active = 4
+</pre></div>
+</div>
+<p>The first property is <code class="docutils literal notranslate"><span class="pre">spring.jpa.hibernate.ddl-auto</span></code>, which we’ll
+change to <code class="docutils literal notranslate"><span class="pre">none</span></code>. Previously, we let Hibernate manage our
+database - creating and updating tables as our model classes change. This is
+great for testing, as it allows us to add and change our database schema
+on the fly. But in the real world, we have to be careful to maintain our
+data in production and be very intentional in the changes that we make
+to our database. Allowing tools like Hibernate to automatically modify a
+database schema is dangerous. To manage our remote database more
+manually, we’ll use another tool in a moment to help manage how our
+database is configured.</p>
+<p>The second property, <code class="docutils literal notranslate"><span class="pre">spring.datasource.tomcat.max-active</span></code>, is used to
+limit our active connections to our database. Typically, Spring Boot
+sets reasonable defaults to the number of active connections, but the
+database service we will use (Pivotal’s Spark) only allows four
+connections at a time.</p>
+<div class="section" id="flyway-database-migration">
+<h3><a class="toc-backref" href="#id11">Flyway database migration</a><a class="headerlink" href="#flyway-database-migration" title="Permalink to this headline">¶</a></h3>
+<p>Flyway is a tool that uses SQL scripts to create, change, and migrate
+database schemas and data. These SQL scripts will live alongside our
+project and will provide a way for us to easily recreate the structure
+of our database, as well as make additional changes in the future.
+Flyway tracks scripts that have been executed and detects new scripts
+and runs them at startup.</p>
+<p>First, we add the following dependency to our <code class="docutils literal notranslate"><span class="pre">build.gradle</span></code> file, in
+the <code class="docutils literal notranslate"><span class="pre">dependencies</span></code> section.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>implementation &#39;org.flywaydb:flyway-core&#39;
+</pre></div>
+</div>
+<p>Spring Boot will detect this dependency and automatically start using
+Flyway. We will also need to provide our application with SQL scripts
+that specify <em>how</em> Flyway should manage our database.</p>
+<p>Create a directory in your project called
+<code class="docutils literal notranslate"><span class="pre">src/main/resources/db/migration</span></code> and create a file named in this
+directory named <code class="docutils literal notranslate"><span class="pre">V1__initialize.sql</span></code>. Note that this file name:</p>
+<ul class="simple">
+<li>Starts with a capital V followed by the migration #. Your second migration would start with V2.</li>
+<li>Has two underscores between the version and the rest of the file name.</li>
+<li>Has a descriptive <em>tail</em> that makes it easy to tell what this migration includes. For example, you might name your second migration something like <code class="docutils literal notranslate"><span class="pre">V2__add_user_profile.sql</span></code></li>
+</ul>
+<p>Flyway will load these alphabetically and apply our changes. Since
+Flyway keeps track of which migrations it has performed previously, it
+is important to not change this file once deployed. Instead, to make a
+change to your database, create a new file using the naming conventions
+above (e.g. <code class="docutils literal notranslate"><span class="pre">V2__my_new_change.sql</span></code>).</p>
+<p>The easiest way to create our initialization script is to export our
+existing <code class="docutils literal notranslate"><span class="pre">coding-events</span></code> schema. To do this, open MySQL Workbench, select our
+database, and choose <em>Server &gt; Data Export</em>. Customize the export by selecting:</p>
+<ol class="arabic simple">
+<li>The <code class="docutils literal notranslate"><span class="pre">coding-events</span></code> database from the <em>Schema</em> pane.</li>
+<li>All tables in the <code class="docutils literal notranslate"><span class="pre">Schema</span> <span class="pre">Objects</span></code> pane.</li>
+<li><em>Dump Structure Only</em> from the center dropdown.</li>
+<li><em>Export to Self-Contained File</em> from the <em>Export Options</em> pane.</li>
+<li>Both checkboxes at the bottom: <em>Create Dump in a Single Transaction</em> and <em>Include Create Schema</em>.</li>
+</ol>
+<div class="figure align-default" id="id2">
+<img alt="The preferences screen for exporting database schema for the coding-events database" src="../../_images/sql-export.png" />
+<p class="caption"><span class="caption-text">Exporting database schema from MySQL Server</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>Copy the contents of this SQL file into your <code class="docutils literal notranslate"><span class="pre">V1__initialize.sql</span></code> file. This will
+include any test data you have already created, so you may want to clean
+up any <code class="docutils literal notranslate"><span class="pre">INSERT</span></code> statements if you’d like to start with a clean slate.</p>
+<p>An example <code class="docutils literal notranslate"><span class="pre">V1__initalize.sql</span></code> might look like:</p>
+<div class="highlight-sql notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">CREATE</span> <span class="k">DATABASE</span>  <span class="k">IF</span> <span class="k">NOT</span> <span class="k">EXISTS</span> <span class="o">`</span><span class="n">coding_events</span><span class="o">`</span> <span class="cm">/*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */</span> <span class="cm">/*!80016 DEFAULT ENCRYPTION=&#39;N&#39; */</span><span class="p">;</span>
+<span class="n">USE</span> <span class="o">`</span><span class="n">coding_events</span><span class="o">`</span><span class="p">;</span>
+<span class="c1">-- MySQL dump 10.13  Distrib 8.0.18, for macos10.14 (x86_64)</span>
+<span class="c1">--</span>
+<span class="c1">-- Host: localhost    Database: coding_events</span>
+<span class="c1">-- ------------------------------------------------------</span>
+<span class="c1">-- Server version    8.0.18</span>
+
+<span class="cm">/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */</span><span class="p">;</span>
+<span class="cm">/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */</span><span class="p">;</span>
+<span class="cm">/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */</span><span class="p">;</span>
+<span class="cm">/*!50503 SET NAMES utf8 */</span><span class="p">;</span>
+<span class="cm">/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */</span><span class="p">;</span>
+<span class="cm">/*!40103 SET TIME_ZONE=&#39;+00:00&#39; */</span><span class="p">;</span>
+<span class="cm">/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */</span><span class="p">;</span>
+<span class="cm">/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */</span><span class="p">;</span>
+<span class="cm">/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE=&#39;NO_AUTO_VALUE_ON_ZERO&#39; */</span><span class="p">;</span>
+<span class="cm">/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */</span><span class="p">;</span>
+
+<span class="c1">--</span>
+<span class="c1">-- Table structure for table `event`</span>
+<span class="c1">--</span>
+
+<span class="k">DROP</span> <span class="k">TABLE</span> <span class="k">IF</span> <span class="k">EXISTS</span> <span class="o">`</span><span class="n">event</span><span class="o">`</span><span class="p">;</span>
+<span class="cm">/*!40101 SET @saved_cs_client     = @@character_set_client */</span><span class="p">;</span>
+<span class="cm">/*!50503 SET character_set_client = utf8mb4 */</span><span class="p">;</span>
+<span class="k">CREATE</span> <span class="k">TABLE</span> <span class="o">`</span><span class="n">event</span><span class="o">`</span> <span class="p">(</span>
+<span class="o">`</span><span class="n">id</span><span class="o">`</span> <span class="nb">int</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+<span class="o">`</span><span class="n">name</span><span class="o">`</span> <span class="nb">varchar</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="k">DEFAULT</span> <span class="k">NULL</span><span class="p">,</span>
+<span class="o">`</span><span class="n">event_category_id</span><span class="o">`</span> <span class="nb">int</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+<span class="o">`</span><span class="n">event_details_id</span><span class="o">`</span> <span class="nb">int</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+<span class="k">PRIMARY</span> <span class="k">KEY</span> <span class="p">(</span><span class="o">`</span><span class="n">id</span><span class="o">`</span><span class="p">),</span>
+<span class="k">KEY</span> <span class="o">`</span><span class="n">FKnk9w760hnelms32e9oqecw6ru</span><span class="o">`</span> <span class="p">(</span><span class="o">`</span><span class="n">event_category_id</span><span class="o">`</span><span class="p">),</span>
+<span class="k">KEY</span> <span class="o">`</span><span class="n">FKons5d3ebm4d3233lhlem44ae7</span><span class="o">`</span> <span class="p">(</span><span class="o">`</span><span class="n">event_details_id</span><span class="o">`</span><span class="p">),</span>
+<span class="k">CONSTRAINT</span> <span class="o">`</span><span class="n">FKnk9w760hnelms32e9oqecw6ru</span><span class="o">`</span> <span class="k">FOREIGN</span> <span class="k">KEY</span> <span class="p">(</span><span class="o">`</span><span class="n">event_category_id</span><span class="o">`</span><span class="p">)</span> <span class="k">REFERENCES</span> <span class="o">`</span><span class="n">event_category</span><span class="o">`</span> <span class="p">(</span><span class="o">`</span><span class="n">id</span><span class="o">`</span><span class="p">),</span>
+<span class="k">CONSTRAINT</span> <span class="o">`</span><span class="n">FKons5d3ebm4d3233lhlem44ae7</span><span class="o">`</span> <span class="k">FOREIGN</span> <span class="k">KEY</span> <span class="p">(</span><span class="o">`</span><span class="n">event_details_id</span><span class="o">`</span><span class="p">)</span> <span class="k">REFERENCES</span> <span class="o">`</span><span class="n">event_details</span><span class="o">`</span> <span class="p">(</span><span class="o">`</span><span class="n">id</span><span class="o">`</span><span class="p">)</span>
+<span class="p">)</span> <span class="n">ENGINE</span><span class="o">=</span><span class="n">InnoDB</span> <span class="k">DEFAULT</span> <span class="n">CHARSET</span><span class="o">=</span><span class="n">utf8mb4</span> <span class="k">COLLATE</span><span class="o">=</span><span class="n">utf8mb4_0900_ai_ci</span><span class="p">;</span>
+<span class="cm">/*!40101 SET character_set_client = @saved_cs_client */</span><span class="p">;</span>
+
+<span class="c1">--</span>
+<span class="c1">-- Table structure for table `event_category`</span>
+<span class="c1">--</span>
+
+<span class="k">DROP</span> <span class="k">TABLE</span> <span class="k">IF</span> <span class="k">EXISTS</span> <span class="o">`</span><span class="n">event_category</span><span class="o">`</span><span class="p">;</span>
+<span class="cm">/*!40101 SET @saved_cs_client     = @@character_set_client */</span><span class="p">;</span>
+<span class="cm">/*!50503 SET character_set_client = utf8mb4 */</span><span class="p">;</span>
+<span class="k">CREATE</span> <span class="k">TABLE</span> <span class="o">`</span><span class="n">event_category</span><span class="o">`</span> <span class="p">(</span>
+<span class="o">`</span><span class="n">id</span><span class="o">`</span> <span class="nb">int</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+<span class="o">`</span><span class="n">name</span><span class="o">`</span> <span class="nb">varchar</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span> <span class="k">DEFAULT</span> <span class="k">NULL</span><span class="p">,</span>
+<span class="k">PRIMARY</span> <span class="k">KEY</span> <span class="p">(</span><span class="o">`</span><span class="n">id</span><span class="o">`</span><span class="p">)</span>
+<span class="p">)</span> <span class="n">ENGINE</span><span class="o">=</span><span class="n">InnoDB</span> <span class="k">DEFAULT</span> <span class="n">CHARSET</span><span class="o">=</span><span class="n">utf8mb4</span> <span class="k">COLLATE</span><span class="o">=</span><span class="n">utf8mb4_0900_ai_ci</span><span class="p">;</span>
+<span class="cm">/*!40101 SET character_set_client = @saved_cs_client */</span><span class="p">;</span>
+
+<span class="c1">-- Remaining tables omitted</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="creating-a-database-service">
+<h3><a class="toc-backref" href="#id12">Creating a database service</a><a class="headerlink" href="#creating-a-database-service" title="Permalink to this headline">¶</a></h3>
+<p>Next, let’s configure a <strong>service</strong> inside Cloud Foundry for our
+database. Cloud Foundry considers anything that isn’t an application to
+be a service, and can provide pre-configured services to help speed up
+deployment. In this case, we want to create a MySQL database service for
+our application. Pivotal has a database called <code class="docutils literal notranslate"><span class="pre">cleardb</span></code>, a flavor of
+MySQL designed for cloud hosting. The <em>spark</em> instance size is free and
+will be fine for almost all student projects. Creating a service in
+Cloud Foundry will also manage passwords and inject them into the
+application. This means that we do not need to check in our database
+credentials into version control (because we shouldn’t!).</p>
+<p>Create a new service:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ cf create-service cleardb spark coding-events-db
+</pre></div>
+</div>
+<p>Check running services:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ cf services
+</pre></div>
+</div>
+<p>You should see your newly created service displayed but no application
+tied to it.</p>
+</div>
+<div class="section" id="service-binding">
+<h3><a class="toc-backref" href="#id13">Service binding</a><a class="headerlink" href="#service-binding" title="Permalink to this headline">¶</a></h3>
+<p>Now you need to attach our application to your service. Cloud Foundry
+calls this <strong>service binding</strong> and provides a network connection between
+the application and the service. This also removes the need for us to
+manually define and configure our database URLs.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ cf bind-service coding-events coding-events-db
+</pre></div>
+</div>
+<p>We can confirm this has been configured by running <code class="docutils literal notranslate"><span class="pre">cf</span> <span class="pre">services</span></code>
+again, and we should see our app name has been added.</p>
+<p>Once this has been established, it does not need to be re-bound when we
+redeploy.</p>
+</div>
+<div class="section" id="adding-a-service-to-the-manifest">
+<h3><a class="toc-backref" href="#id14">Adding a service to the manifest</a><a class="headerlink" href="#adding-a-service-to-the-manifest" title="Permalink to this headline">¶</a></h3>
+<p>Above, we manually configured our service binding for our application.
+Alternatively, the <code class="docutils literal notranslate"><span class="pre">manifest.yml</span></code> can bind services as well. Update
+your <code class="docutils literal notranslate"><span class="pre">manifest.yml</span></code> to the following:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>applications:
+- name: coding-events
+  buildpack: java_buildpack
+  path: build/libs/coding-events-0.0.1-SNAPSHOT.jar
+  services:
+    - coding-events-db
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="deploying-with-our-database">
+<h2><a class="toc-backref" href="#id15">Deploying With Our Database</a><a class="headerlink" href="#deploying-with-our-database" title="Permalink to this headline">¶</a></h2>
+<p>Now that there is a database service, and matching service binding,
+deploy your app again:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ cf push
+</pre></div>
+</div>
+<p>We should see a message that our application has started. Open up the
+<a class="reference external" href="https://console.run.pivotal.io/" target="_blank">Pivotal Control panel<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>, select your
+space, and find your application. Click the <em>Route</em> Tab to see the
+public URL of your application. In my case, it was
+<code class="docutils literal notranslate"><span class="pre">https://coding-events.cfapps.io</span></code>. But yours may be something else, since
+these must be unique and are generated for you. Be sure to append
+<code class="docutils literal notranslate"><span class="pre">/events</span></code> onto the end of the url (i.e.
+<code class="docutils literal notranslate"><span class="pre">https://coding-events.cfapps.io/events</span></code>, and try out your newly deployed
+app. Cloud Foundry has handled all of the network routing for us, so we
+don’t have to configure this ourselves.</p>
+</div>
+<div class="section" id="shut-it-down">
+<h2><a class="toc-backref" href="#id16">Shut It Down</a><a class="headerlink" href="#shut-it-down" title="Permalink to this headline">¶</a></h2>
+<p>All good things must come to an end. Or, at the very least, will be
+billed hourly. When you’re not showing off your new application, it’s
+economical to stop the service.</p>
+<p>To stop an application:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ cf stop coding-events
+</pre></div>
+</div>
+<p>And when you’re ready to use it again</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ cf start coding-events
+</pre></div>
+</div>
+<p>Since the <em>spark</em> instance of our database is free, we can leave it
+running. This way we can always have some test data in our application
+to demo. However, if you like, you can remove the database service as
+well.</p>
+<p>To do so, first remove the service binding, which ties the database to
+the application:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ cf unbind-service coding-events coding-events-db
+</pre></div>
+</div>
+<p>Then, remove the database service:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ cf delete-service coding-events-db
+</pre></div>
+</div>
+<p>And then you can delete your application entirely:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ cf delete coding-events
+</pre></div>
+</div>
+</div>
+<div class="section" id="scripting">
+<h2><a class="toc-backref" href="#id17">Scripting</a><a class="headerlink" href="#scripting" title="Permalink to this headline">¶</a></h2>
+<p>Once you start making changes to your own applications, you are going to
+want to be able to easily deploy your application. It may be helpful to
+build some helper scripts, so that you don’t have to remember all the
+right commands. Here is an example of a deployment script you can use:</p>
+<p><code class="docutils literal notranslate"><span class="pre">deploy.sh</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env bash</span>
+
+<span class="c1"># Clean up any old artifacts, and rebuild the jar</span>
+gradle clean assemble
+
+<span class="c1"># Create the database (will give a warning if already exists)</span>
+cf create-service cleardb spark coding-events-db
+
+<span class="c1"># Deploy to cf</span>
+cf push
+</pre></div>
+</div>
+<p>Mac and Linux users should be able to deploy the application via
+<code class="docutils literal notranslate"><span class="pre">sh</span> <span class="pre">./deploy.sh</span></code>. Windows users, if you have Git Bash installed, open
+a new Bash prompt and do the same.</p>
+<p>Alternatively, you can make the script executable using
+<code class="docutils literal notranslate"><span class="pre">chmod</span> <span class="pre">+x</span> <span class="pre">deploy.sh</span></code>. Then it will be directly executable via
+<code class="docutils literal notranslate"><span class="pre">./deploy.sh</span></code>.</p>
+<p>You can script the destruction of your application as well. These
+commands will completely delete your application, database, and any
+associated information, so be careful with them!</p>
+<p><code class="docutils literal notranslate"><span class="pre">destroy.sh</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env bash</span>
+
+<span class="c1"># Stops the running app</span>
+cf stop coding-events
+
+<span class="c1"># Removes the binding between services</span>
+cf unbind-service coding-events coding-events-db
+
+<span class="c1"># Removes the db service</span>
+cf delete-service coding-events-db -f
+
+<span class="c1"># Deletes the app entirely</span>
+cf delete coding-events -f
+</pre></div>
+</div>
+</div>
+<div class="section" id="further-learning">
+<h2><a class="toc-backref" href="#id18">Further Learning</a><a class="headerlink" href="#further-learning" title="Permalink to this headline">¶</a></h2>
+<p><strong>How can I keep a set of properties for local development to connect
+to my database?</strong> Using spring profiles, and two sets of property files,
+you can create properties for both local and deployment. <a class="reference external" href="https://docs.spring.io/spring-boot/docs/current/reference/html/howto-properties-and-configuration.html#howto-change-configuration-depending-on-the-environment" target="_blank">Read more
+about profiles in
+Spring<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+<p><strong>How can I work with logs for my deployed Java application?</strong> Logging
+gives valuable info about your running application, including the
+potential sources of errors. <a class="reference internal" href="logging-java-apps.html#java-logging"><span class="std std-ref">Read more about logging in
+Java</span></a>.</p>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="licensing.html"><span aria-hidden="true">&larr;</span> Licensing</a></li>
+        
+        
+        <li class="next"><a href="logging-java-apps.html">Logging With Java Applications <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
