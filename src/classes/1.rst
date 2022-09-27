@@ -34,7 +34,7 @@ You will need to:
 Optional reading for working on a team project:
 
 * `Seven Steps for Leading Successful Team Projects <https://www.helloteam.com/seven-steps-for-leading-successful-team-projects>`_
-* `How to Assemble a Good Web Development Team <https://www.helloteam.com/seven-steps-for-leading-successful-team-projects>`_
+* `How to Assemble a Good Web Development Team <https://www.scnsoft.com/blog/how-to-assemble-a-good-web-development-team>`_
 
 We want to handle as much setup and logistical work as possible now, so we can focus on making progress on our projects for the remainder of the course!
 
@@ -54,7 +54,7 @@ In this class, we are going to learn some concepts that aren’t necessarily pro
  
 Before today’s lecture, please take a few minutes to think about how you would build a project. 
 Think outside of any code you would need to write.  
-What steps would you need to take to **build** your project?   
+What steps would you need to take to *build* your project?   
 
 
 Team Activity: Get to know your team!
@@ -73,17 +73,17 @@ As a team, you will divide up the work and assign roles.
 This may require you to work together outside of class time.  
 Scheduling meetings outside of class time is your responsibility. 
 
-Many development teams contain members in a variety of roles.  
-There is a team leader, and then a role for each major section of the team.  
-In LiftOff, the Team Leader will be responsible for creating the main 
-repo that the whole team will work on, keeping track of how members are working on the 
+Many development teams contain members in a variety of roles starting with a team leader, 
+and then a role for each major section of the project.  
+In LiftOff, the team leader will be responsible for creating the main 
+repository that the whole team will work on, keeping track of how members are working on the 
 project, and being aware of upcoming deadlines.  
-Other roles should fit the work.  You can assign work by user story or by
+Other roles should fit the work.  You can assign work by user story or
 where the work lies in the process, such as front-end development compared to database development.
 
 Since we don’t have much work to talk about yet, let’s take some time to get to know each other.
 
-Circle up and go around the team starting with the group’s mentor.
+Circle up and go around your team starting with the group’s mentor.
 
 Share the following with your new team:
    * Introduce yourself
@@ -140,13 +140,11 @@ By the *end of class*, your team should have the following completed:
 
 * The team leader 
    * Set up the project GitHub repository
-   * Created a ``README`` and filled it out with the team
+   * Created a ``README`` page for the project repository
 
 * All other members 
    * Forked and cloned the project repo
-   * Forked the team leader’s assignment repo
    * Assigned roles/stories before next class
-   * Helped fill out the project's ``README`` file
 
 
 Class 1 Assignment

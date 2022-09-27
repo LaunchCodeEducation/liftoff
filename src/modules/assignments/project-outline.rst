@@ -34,17 +34,17 @@ As a team, flesh out your project outline by providing:
       given text.
    -  **Create Post**: Users will be able to create new blog posts when
       logged in. New posts will appear in the user's profile.
+   -  **Post Tags**: Users will be able to create tags for blog posts which can be used to sort and filter posts
+   -  **Scheduled Posting**: Allow users to schedule the dates and times they would like blogs posted.
 
 3. **Technologies**: What languages and technologies will you use to
    build your application? 
    
-   For example, for the `coding-events` application from the Java Unit 2, the technologies would be:
-
-   -  Java
-   -  Spring Boot
-   -  MySQL
-   -  Hibernate
-   -  Thymeleaf templates
+   For example, the Unit 2 coding-events application was created in either Java or C#, depending on which language you learned.  
+   The technologies to make this application in either language would include the following:
+   
+   - Java, Spring Boot, MySQL, Hibernate, and Thymeleaf templates
+   - C#, ASP.NET Core, MySQL, and Postman
 
 4. **What you'll have to learn**: In the course of building your
    project, you'll have to learn something new. Perhaps you want to use
