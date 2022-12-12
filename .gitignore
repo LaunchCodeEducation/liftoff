@@ -7,5 +7,4 @@ pdf/
 .idea/
 __pycache__/
 docs/
-build
 .travis.yml
