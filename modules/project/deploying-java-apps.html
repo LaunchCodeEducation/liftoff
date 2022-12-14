@@ -96,26 +96,29 @@ routing.</p>
 <div class="contents topic" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="#deploying-java-applications" id="id3" target="_blank">Deploying Java Applications<i class="fas fa-external-link-alt" aria-hidden="true"></i></a><ul>
-<li><a class="reference internal" href="#requirements" id="id4" target="_blank">Requirements<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
-<li><a class="reference internal" href="#pivotal-web-services-setup" id="id5" target="_blank">Pivotal Web Services Setup<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
-<li><a class="reference internal" href="#cloud-foundry-setup" id="id6" target="_blank">Cloud Foundry Setup<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
-<li><a class="reference internal" href="#preparing-your-project" id="id7" target="_blank">Preparing Your Project<i class="fas fa-external-link-alt" aria-hidden="true"></i></a><ul>
-<li><a class="reference internal" href="#java-artifacts" id="id8" target="_blank">Java Artifacts<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
-<li><a class="reference internal" href="#creating-your-manifest" id="id9" target="_blank">Creating your manifest<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><p><a class="reference internal" href="#deploying-java-applications" id="id3" target="_blank">Deploying Java Applications<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<ul>
+<li><p><a class="reference internal" href="#requirements" id="id4" target="_blank">Requirements<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p></li>
+<li><p><a class="reference internal" href="#pivotal-web-services-setup" id="id5" target="_blank">Pivotal Web Services Setup<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p></li>
+<li><p><a class="reference internal" href="#cloud-foundry-setup" id="id6" target="_blank">Cloud Foundry Setup<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p></li>
+<li><p><a class="reference internal" href="#preparing-your-project" id="id7" target="_blank">Preparing Your Project<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<ul>
+<li><p><a class="reference internal" href="#java-artifacts" id="id8" target="_blank">Java Artifacts<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p></li>
+<li><p><a class="reference internal" href="#creating-your-manifest" id="id9" target="_blank">Creating your manifest<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#configure-the-app-for-a-cloud-database" id="id10" target="_blank">Configure the App for a Cloud Database<i class="fas fa-external-link-alt" aria-hidden="true"></i></a><ul>
-<li><a class="reference internal" href="#flyway-database-migration" id="id11" target="_blank">Flyway database migration<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
-<li><a class="reference internal" href="#creating-a-database-service" id="id12" target="_blank">Creating a database service<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
-<li><a class="reference internal" href="#service-binding" id="id13" target="_blank">Service binding<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
-<li><a class="reference internal" href="#adding-a-service-to-the-manifest" id="id14" target="_blank">Adding a service to the manifest<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><p><a class="reference internal" href="#configure-the-app-for-a-cloud-database" id="id10" target="_blank">Configure the App for a Cloud Database<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<ul>
+<li><p><a class="reference internal" href="#flyway-database-migration" id="id11" target="_blank">Flyway database migration<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p></li>
+<li><p><a class="reference internal" href="#creating-a-database-service" id="id12" target="_blank">Creating a database service<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p></li>
+<li><p><a class="reference internal" href="#service-binding" id="id13" target="_blank">Service binding<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p></li>
+<li><p><a class="reference internal" href="#adding-a-service-to-the-manifest" id="id14" target="_blank">Adding a service to the manifest<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#deploying-with-our-database" id="id15" target="_blank">Deploying With Our Database<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
-<li><a class="reference internal" href="#shut-it-down" id="id16" target="_blank">Shut It Down<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
-<li><a class="reference internal" href="#scripting" id="id17" target="_blank">Scripting<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
-<li><a class="reference internal" href="#further-learning" id="id18" target="_blank">Further Learning<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><p><a class="reference internal" href="#deploying-with-our-database" id="id15" target="_blank">Deploying With Our Database<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p></li>
+<li><p><a class="reference internal" href="#shut-it-down" id="id16" target="_blank">Shut It Down<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p></li>
+<li><p><a class="reference internal" href="#scripting" id="id17" target="_blank">Scripting<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p></li>
+<li><p><a class="reference internal" href="#further-learning" id="id18" target="_blank">Further Learning<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p></li>
 </ul>
 </li>
 </ul>
@@ -124,10 +127,10 @@ routing.</p>
 <h2><a class="toc-backref" href="#id4">Requirements</a><a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
 <p>This article assumes you have the following installed:</p>
 <ul class="simple">
-<li><a class="reference external" href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank">Java  8<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
-<li><a class="reference external" href="https://gradle.org/install/" target="_blank">Gradle<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
-<li><a class="reference external" href="https://www.mamp.info/en/" target="_blank">MAMP<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
-<li><a class="reference internal" href="#cloud-foundry-setup"><span class="std std-ref">Cloud Foundry CLI</span></a></li>
+<li><p><a class="reference external" href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank">Java  8<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p></li>
+<li><p><a class="reference external" href="https://gradle.org/install/" target="_blank">Gradle<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p></li>
+<li><p><a class="reference external" href="https://www.mamp.info/en/" target="_blank">MAMP<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p></li>
+<li><p><a class="reference internal" href="#cloud-foundry-setup"><span class="std std-ref">Cloud Foundry CLI</span></a></p></li>
 </ul>
 </div>
 <div class="section" id="pivotal-web-services-setup">
@@ -169,8 +172,8 @@ created on the confirmation message.</p>
 <a class="reference external" href="https://github.com/LaunchCodeEducation/coding-events" target="_blank">coding-events<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
 project used in the LC101 Java curriculum.</p>
 <div class="admonition">
-<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
-<p class="last">While we have to choose a specific project for the purposes of illustration, any Spring Boot project could be deployed using the same steps used in this guide.</p>
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p>While we have to choose a specific project for the purposes of illustration, any Spring Boot project could be deployed using the same steps used in this guide.</p>
 </div>
 <p>Clone this project and checkout the <code class="docutils literal notranslate"><span class="pre">auth-filter</span></code> branch. Base a new branch
 off of this called <code class="docutils literal notranslate"><span class="pre">deploy</span></code>. If you’d like to keep the
@@ -183,8 +186,8 @@ $ git checkout -b deploy
 </pre></div>
 </div>
 <div class="admonition">
-<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
-<p class="last">It’s a best practice to create a Git branch solely for the purpose of deploying your application. We’ll use the <code class="docutils literal notranslate"><span class="pre">deploy</span></code> branch for this purpose. This will allow for separate configurations to be stored for local development and remote deployment.</p>
+<p class="admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p>It’s a best practice to create a Git branch solely for the purpose of deploying your application. We’ll use the <code class="docutils literal notranslate"><span class="pre">deploy</span></code> branch for this purpose. This will allow for separate configurations to be stored for local development and remote deployment.</p>
 </div>
 <p>If you don’t have a database user for this project already—you may have
 created one when going through unit 2—you should create one now. Create
@@ -309,9 +312,9 @@ that specify <em>how</em> Flyway should manage our database.</p>
 <code class="docutils literal notranslate"><span class="pre">src/main/resources/db/migration</span></code> and create a file named in this
 directory named <code class="docutils literal notranslate"><span class="pre">V1__initialize.sql</span></code>. Note that this file name:</p>
 <ul class="simple">
-<li>Starts with a capital V followed by the migration #. Your second migration would start with V2.</li>
-<li>Has two underscores between the version and the rest of the file name.</li>
-<li>Has a descriptive <em>tail</em> that makes it easy to tell what this migration includes. For example, you might name your second migration something like <code class="docutils literal notranslate"><span class="pre">V2__add_user_profile.sql</span></code></li>
+<li><p>Starts with a capital V followed by the migration #. Your second migration would start with V2.</p></li>
+<li><p>Has two underscores between the version and the rest of the file name.</p></li>
+<li><p>Has a descriptive <em>tail</em> that makes it easy to tell what this migration includes. For example, you might name your second migration something like <code class="docutils literal notranslate"><span class="pre">V2__add_user_profile.sql</span></code></p></li>
 </ul>
 <p>Flyway will load these alphabetically and apply our changes. Since
 Flyway keeps track of which migrations it has performed previously, it
@@ -322,11 +325,11 @@ above (e.g. <code class="docutils literal notranslate"><span class="pre">V2__my_
 existing <code class="docutils literal notranslate"><span class="pre">coding-events</span></code> schema. To do this, open MySQL Workbench, select our
 database, and choose <em>Server &gt; Data Export</em>. Customize the export by selecting:</p>
 <ol class="arabic simple">
-<li>The <code class="docutils literal notranslate"><span class="pre">coding-events</span></code> database from the <em>Schema</em> pane.</li>
-<li>All tables in the <code class="docutils literal notranslate"><span class="pre">Schema</span> <span class="pre">Objects</span></code> pane.</li>
-<li><em>Dump Structure Only</em> from the center dropdown.</li>
-<li><em>Export to Self-Contained File</em> from the <em>Export Options</em> pane.</li>
-<li>Both checkboxes at the bottom: <em>Create Dump in a Single Transaction</em> and <em>Include Create Schema</em>.</li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">coding-events</span></code> database from the <em>Schema</em> pane.</p></li>
+<li><p>All tables in the <code class="docutils literal notranslate"><span class="pre">Schema</span> <span class="pre">Objects</span></code> pane.</p></li>
+<li><p><em>Dump Structure Only</em> from the center dropdown.</p></li>
+<li><p><em>Export to Self-Contained File</em> from the <em>Export Options</em> pane.</p></li>
+<li><p>Both checkboxes at the bottom: <em>Create Dump in a Single Transaction</em> and <em>Include Create Schema</em>.</p></li>
 </ol>
 <div class="figure align-default" id="id2">
 <img alt="The preferences screen for exporting database schema for the coding-events database" src="../../_images/sql-export.png" />

@@ -107,22 +107,26 @@ with HTTPS will also work.</p>
 that are present in the remote repository.</p>
 <p>Cloning Options:</p>
 <ol class="arabic simple">
-<li>SSH<ul>
-<li>Uses SSH to clone the repository.<ul>
-<li>Example: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">git&#64;github.com:LaunchCodeEducation/liftoff.git</span></code></li>
+<li><p>SSH</p>
+<ul class="simple">
+<li><p>Uses SSH to clone the repository.</p>
+<ul>
+<li><p>Example: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">git&#64;github.com:LaunchCodeEducation/liftoff.git</span></code></p></li>
 </ul>
 </li>
-<li>Requires a file to be created and uploaded to GitHub.</li>
-<li>You do NOT have to enter your password when pushing commits to a remote repository.</li>
-<li><a class="reference external" href="https://help.github.com/en/articles/connecting-to-github-with-ssh" target="_blank">Instructions for using SSH<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><p>Requires a file to be created and uploaded to GitHub.</p></li>
+<li><p>You do NOT have to enter your password when pushing commits to a remote repository.</p></li>
+<li><p><a class="reference external" href="https://help.github.com/en/articles/connecting-to-github-with-ssh" target="_blank">Instructions for using SSH<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p></li>
 </ul>
 </li>
-<li>HTTPS<ul>
-<li>Uses an HTTPS url for the repository.<ul>
-<li>Example: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/LaunchCodeEducation/liftoff.git</span></code></li>
+<li><p>HTTPS</p>
+<ul class="simple">
+<li><p>Uses an HTTPS url for the repository.</p>
+<ul>
+<li><p>Example: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/LaunchCodeEducation/liftoff.git</span></code></p></li>
 </ul>
 </li>
-<li>Requires that you enter your password pushing commits to a remote repository.</li>
+<li><p>Requires that you enter your password pushing commits to a remote repository.</p></li>
 </ul>
 </li>
 </ol>
@@ -155,17 +159,19 @@ are working on. This allows features to be developed in isolation, to avoid disr
 being worked on.</p>
 <p>Creating a new branch:</p>
 <ol class="arabic simple">
-<li>Use <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> to make sure you are on the base branch you want. The base branch is usually master.<ul>
-<li>WARNING: if you have uncommitted changes, you can:<ol class="arabic">
-<li>Stash them.</li>
-<li>Commit them to the current branch.</li>
-<li>Leave them and commit them on the new branch.</li>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> to make sure you are on the base branch you want. The base branch is usually master.</p>
+<ul class="simple">
+<li><p>WARNING: if you have uncommitted changes, you can:</p>
+<ol class="arabic simple">
+<li><p>Stash them.</p></li>
+<li><p>Commit them to the current branch.</p></li>
+<li><p>Leave them and commit them on the new branch.</p></li>
 </ol>
 </li>
 </ul>
 </li>
-<li>Use <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">-b</span> <span class="pre">feature-branch-name</span></code> to create and switch to the new branch.</li>
-<li>You can now make commits and push this branch to the remote repository.</li>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">-b</span> <span class="pre">feature-branch-name</span></code> to create and switch to the new branch.</p></li>
+<li><p>You can now make commits and push this branch to the remote repository.</p></li>
 </ol>
 </div>
 <div class="section" id="committing-your-work">
@@ -173,22 +179,25 @@ being worked on.</p>
 <p>You need to have <em>write</em> access to the remote repository. If working on a group project, this is setup by the group mentor. After you have write
 access, you can push up commits to the remote repository.</p>
 <ol class="arabic simple">
-<li>Run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> to verify the changes you made show up as not staged or untracked.<ul>
-<li>It’s also a good idea to double check you are on the correct branch.</li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> to verify the changes you made show up as not staged or untracked.</p>
+<ul class="simple">
+<li><p>It’s also a good idea to double check you are on the correct branch.</p></li>
 </ul>
 </li>
-<li>Run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">.</span></code> to stage all files for commit.<ul>
-<li>It’s best to run this command from the root folder of the repository</li>
-<li>The <code class="docutils literal notranslate"><span class="pre">.</span></code> refers to the current directory.</li>
-<li>You can stage one file at a time if you need to commit only certain files.<ul>
-<li>In that case, replace the <code class="docutils literal notranslate"><span class="pre">.</span></code> with a file name or path.</li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">.</span></code> to stage all files for commit.</p>
+<ul class="simple">
+<li><p>It’s best to run this command from the root folder of the repository</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">.</span></code> refers to the current directory.</p></li>
+<li><p>You can stage one file at a time if you need to commit only certain files.</p>
+<ul>
+<li><p>In that case, replace the <code class="docutils literal notranslate"><span class="pre">.</span></code> with a file name or path.</p></li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> to verify that the changes have been staged.</li>
-<li>Run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;short</span> <span class="pre">description&quot;</span></code> to make a commit containing all staged changes.</li>
-<li>Run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> to verify that there are no uncommitted changes.</li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> to verify that the changes have been staged.</p></li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;short</span> <span class="pre">description&quot;</span></code> to make a commit containing all staged changes.</p></li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> to verify that there are no uncommitted changes.</p></li>
 </ol>
 </div>
 <div class="section" id="pushing-to-remote-repository">
@@ -196,16 +205,19 @@ access, you can push up commits to the remote repository.</p>
 <p>When you make a new branch or new commits, you can push them to the remote repository so that
 other people can access them.</p>
 <ol class="arabic simple">
-<li>Run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> to verify your branch and all changes have been committed.<ul>
-<li>Are you noticing a pattern of using <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code>?</li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> to verify your branch and all changes have been committed.</p>
+<ul class="simple">
+<li><p>Are you noticing a pattern of using <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code>?</p></li>
 </ul>
 </li>
-<li>Run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code>.<ul>
-<li>This defaults to pushing to <code class="docutils literal notranslate"><span class="pre">origin</span> <span class="pre">master</span></code> which is the remote repository.</li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code>.</p>
+<ul class="simple">
+<li><p>This defaults to pushing to <code class="docutils literal notranslate"><span class="pre">origin</span> <span class="pre">master</span></code> which is the remote repository.</p></li>
 </ul>
 </li>
-<li>Review the Git message to see if the push worked.<ul>
-<li>Git may need you to to do a <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code> before pushing.</li>
+<li><p>Review the Git message to see if the push worked.</p>
+<ul class="simple">
+<li><p>Git may need you to to do a <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code> before pushing.</p></li>
 </ul>
 </li>
 </ol>
@@ -214,10 +226,10 @@ other people can access them.</p>
 <h2>Cheat Sheet for Committing and Pushing<a class="headerlink" href="#cheat-sheet-for-committing-and-pushing" title="Permalink to this headline">¶</a></h2>
 <p>Remember these steps when you need to commit and push your code:</p>
 <ol class="arabic simple">
-<li><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> - verify branch</li>
-<li><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">.</span></code> - stage changes</li>
-<li><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;short</span> <span class="pre">description&quot;</span></code> - commit changes</li>
-<li><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> - push commits to remote repository</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> - verify branch</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">.</span></code> - stage changes</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;short</span> <span class="pre">description&quot;</span></code> - commit changes</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> - push commits to remote repository</p></li>
 </ol>
 </div>
 <div class="section" id="stashing-instead-of-committing">
@@ -232,60 +244,60 @@ for how to use stash.</p>
 <div class="section" id="git-commands">
 <h2>Git Commands<a class="headerlink" href="#git-commands" title="Permalink to this headline">¶</a></h2>
 <p>For a full list of Git commands and more detailed examples, see the resources section below.</p>
-<table border="1" class="colwidths-auto docutils align-default">
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Command</th>
-<th class="head">Description</th>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Description</p></th>
 </tr>
 </thead>
-<tbody valign="top">
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">help</span></code></td>
-<td>Information about git commands</td>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">help</span></code></p></td>
+<td><p>Information about git commands</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">COMMAND</span> <span class="pre">-h</span></code></td>
-<td>Information and options for the specific COMMAND</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">COMMAND</span> <span class="pre">-h</span></code></p></td>
+<td><p>Information and options for the specific COMMAND</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">A-URL-GOES-HERE</span></code></td>
-<td>Clones a remote repository into a local folder</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">A-URL-GOES-HERE</span></code></p></td>
+<td><p>Clones a remote repository into a local folder</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span> <span class="pre">-a</span></code></td>
-<td>Shows all local and remote branches</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span> <span class="pre">-a</span></code></p></td>
+<td><p>Shows all local and remote branches</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">BRANCH-NAME</span></code></td>
-<td>Switches the branch you are on to BRANCH-NAME</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">BRANCH-NAME</span></code></p></td>
+<td><p>Switches the branch you are on to BRANCH-NAME</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">-b</span> <span class="pre">NEW-BRANCH-NAME</span></code></td>
-<td>Creates a new branch using given name and then switches to that branch</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">-b</span> <span class="pre">NEW-BRANCH-NAME</span></code></p></td>
+<td><p>Creates a new branch using given name and then switches to that branch</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code></td>
-<td>Reports the current state of the repo. Make sure to run this at the top level of your repository</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code></p></td>
+<td><p>Reports the current state of the repo. Make sure to run this at the top level of your repository</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">.</span></code></td>
-<td>Stages (adds) files to be committed. Changes have to be staged before they can be committed</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">.</span></code></p></td>
+<td><p>Stages (adds) files to be committed. Changes have to be staged before they can be committed</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;short</span> <span class="pre">description</span> <span class="pre">of</span> <span class="pre">changes&quot;</span></code></td>
-<td>Creates a commit that contains all the staged changes.</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;short</span> <span class="pre">description</span> <span class="pre">of</span> <span class="pre">changes&quot;</span></code></p></td>
+<td><p>Creates a commit that contains all the staged changes.</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code></td>
-<td>Pushes local commits to the remote repository. Then the commits can be pulled down by other team members</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code></p></td>
+<td><p>Pushes local commits to the remote repository. Then the commits can be pulled down by other team members</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">fetch</span></code></td>
-<td>Makes your local repository aware of new branches and commits on the remote repository. Does NOT update any local branches, only makes your local aware of new commits.</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">fetch</span></code></p></td>
+<td><p>Makes your local repository aware of new branches and commits on the remote repository. Does NOT update any local branches, only makes your local aware of new commits.</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">merge</span> <span class="pre">BRANCH-NAME</span></code></td>
-<td>Merges the commits from BRANCH-NAME into your current branch</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">merge</span> <span class="pre">BRANCH-NAME</span></code></p></td>
+<td><p>Merges the commits from BRANCH-NAME into your current branch</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code></td>
-<td>Runs a <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">fetch</span></code> and <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">merge</span></code></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code></p></td>
+<td><p>Runs a <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">fetch</span></code> and <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">merge</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">stash</span></code></td>
-<td>A way of keeping changes without committing them to your branch.</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">stash</span></code></p></td>
+<td><p>A way of keeping changes without committing them to your branch.</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">log</span></code></td>
-<td>See a list of commits with info about the author, date, and time of each commit</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">log</span></code></p></td>
+<td><p>See a list of commits with info about the author, date, and time of each commit</p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">diff</span> <span class="pre">OPTION</span></code></td>
-<td>Will show differences in files between two branches or commits.</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">diff</span> <span class="pre">OPTION</span></code></p></td>
+<td><p>Will show differences in files between two branches or commits.</p></td>
 </tr>
 </tbody>
 </table>
@@ -293,11 +305,11 @@ for how to use stash.</p>
 <div class="section" id="additional-resources">
 <h2>Additional Resources<a class="headerlink" href="#additional-resources" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><a class="reference external" href="https://git-scm.com/docs" target="_blank">Official Git Reference<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> - A Git command reference from the creators of Git.</li>
-<li><a class="reference external" href="https://git-scm.com/book/en/v2" target="_blank">Pro Git Book<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> - A reference book covering Git in depth.</li>
-<li><a class="reference external" href="https://github.com/k88hudson/git-flight-rules" target="_blank">Flight Rules for Git<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> - A “How to” guide for Git.</li>
-<li><a class="reference external" href="https://try.github.io" target="_blank">Interactive GitHub Sandbox<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> - A place to practice Git without fear of messing anything up.</li>
-<li><a class="reference external" href="https://help.github.com/articles/connecting-to-github-with-ssh/" target="_blank">Connecting to GitHub with SSH<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><p><a class="reference external" href="https://git-scm.com/docs" target="_blank">Official Git Reference<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> - A Git command reference from the creators of Git.</p></li>
+<li><p><a class="reference external" href="https://git-scm.com/book/en/v2" target="_blank">Pro Git Book<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> - A reference book covering Git in depth.</p></li>
+<li><p><a class="reference external" href="https://github.com/k88hudson/git-flight-rules" target="_blank">Flight Rules for Git<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> - A “How to” guide for Git.</p></li>
+<li><p><a class="reference external" href="https://try.github.io" target="_blank">Interactive GitHub Sandbox<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> - A place to practice Git without fear of messing anything up.</p></li>
+<li><p><a class="reference external" href="https://help.github.com/articles/connecting-to-github-with-ssh/" target="_blank">Connecting to GitHub with SSH<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p></li>
 </ul>
 </div>
 </div>
